@@ -27,7 +27,7 @@ d.text((512,866),'PRESS START',font=ImageFont.truetype(fontpath,25),anchor='mm',
 title_ui.save(P/'title_prompt.png')
 # Dynamic instrument glyphs remain tied to original CHR data.
 trans=Image.new('RGBA',(32,32));trans.save(P/'transparent.png')
-lines=['# Top Gun HD v0.2.0 - opening sequence and cockpit','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
+lines=['# Top Gun HD v0.3.0 - opening, mission menus and cockpit','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
 def capture(n,s):return (R/f'captures/baseline/{n:05d}.{s}').read_bytes()
 def pat(n,i):return capture(n,'chr')[i*16:(i+1)*16].hex().upper()
 def tile_cond(name,n,x,y,i):lines.append(f'<condition>{name},tileAtPosition,{x},{y},{pat(n,i)},00000000,Y')
@@ -99,5 +99,6 @@ t=t.replace('[carrier]<background>carrier.png,1,0,0,30','[carrier]<background>ca
 (P/'hires.txt').write_text(t)
 subprocess.run(['python3',str(R/'scripts/build_panels.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_flight_ui.py')],check=True)
+subprocess.run(['python3',str(R/'scripts/build_menus.py')],check=True)
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

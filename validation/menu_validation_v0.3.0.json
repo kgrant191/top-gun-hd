@@ -1,0 +1,187 @@
+{
+  "version": "0.3.0",
+  "base_commit": "135f618af35893614cd921c084e7134f40b0efc7",
+  "emulator": "User-supplied MesenCE 2.2.1 Linux x64",
+  "movie": "reference/Top_Gun_HD_menus.mmo",
+  "movie_sha256": "d73d95968b94738971617cb39fdacf246e1ef9be219c2c6900eff30c67b86ac0",
+  "input_frames_per_run": 777,
+  "choices": {
+    "hound": {
+      "native_capture": "native_original",
+      "hd_capture": "review_final",
+      "identical_trace_frames": 777,
+      "trace_sha256": "3e025d038477af020e454628e30d2f1a10071aa2f9417d12adbb00a613132c5c",
+      "identical_checkpoints": {
+        "ram": 35,
+        "oam": 35,
+        "chr": 35,
+        "nt": 35,
+        "pal": 35,
+        "state": 35
+      },
+      "audio_identical": true,
+      "audio": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 48000,
+        "sample_frames": 620316,
+        "pcm_sha256": "b137acb38b24abf8079ccf62c900128990df0ecc483f02f3e03db205121b9cf7"
+      },
+      "hd_video": {
+        "width": 1024,
+        "height": 960,
+        "r_frame_rate": "60098811/1000000",
+        "nb_frames": "776"
+      },
+      "loader_or_capture_errors": 0,
+      "select_button_frames_inclusive": []
+    },
+    "wolf": {
+      "native_capture": "probe_select",
+      "hd_capture": "wolf_select_hd",
+      "identical_trace_frames": 777,
+      "trace_sha256": "d27a3ed4acedf3d8c17b74cbfd26932f1c7f87681b026cc98fe328772bcd3270",
+      "identical_checkpoints": {
+        "ram": 35,
+        "oam": 35,
+        "chr": 35,
+        "nt": 35,
+        "pal": 35,
+        "state": 35
+      },
+      "audio_identical": true,
+      "audio": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 48000,
+        "sample_frames": 620316,
+        "pcm_sha256": "ee816f01637e7b2ccbd65042a00afeddaf187d8f58e6c5d2a0c9fc8b631d2a9c"
+      },
+      "hd_video": {
+        "width": 1024,
+        "height": 960,
+        "r_frame_rate": "60098811/1000000",
+        "nb_frames": "776"
+      },
+      "loader_or_capture_errors": 0,
+      "select_button_frames_inclusive": [
+        [
+          330,
+          333
+        ]
+      ]
+    },
+    "tiger": {
+      "native_capture": "tiger_select_native",
+      "hd_capture": "tiger_final_hd",
+      "identical_trace_frames": 777,
+      "trace_sha256": "54fde403456b367228adcab7e625386da99325b0575a8524c38409651b924918",
+      "identical_checkpoints": {
+        "ram": 35,
+        "oam": 35,
+        "chr": 35,
+        "nt": 35,
+        "pal": 35,
+        "state": 35
+      },
+      "audio_identical": true,
+      "audio": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 48000,
+        "sample_frames": 620316,
+        "pcm_sha256": "c314720832caffa7eb7cb7af14d5eb2dd7b085ce148f1b103ab1fb12d5797a18"
+      },
+      "hd_video": {
+        "width": 1024,
+        "height": 960,
+        "r_frame_rate": "60098811/1000000",
+        "nb_frames": "776"
+      },
+      "loader_or_capture_errors": 0,
+      "select_button_frames_inclusive": [
+        [
+          330,
+          333
+        ],
+        [
+          355,
+          358
+        ]
+      ]
+    }
+  },
+  "preserved_png_sha256": {
+    "carrier.png": "16a881f1c1eb4fd8c29c0494489e74446623b670f311570f425602748313f581",
+    "cockpit.png": "253792e8354d206ed65652c41b39ddfb51d9e3b1ebc873b637fd43f780a005be",
+    "cockpit_left.png": "5b9d5d3a9c89f733181841d151a40ed2965b64a798e8657265b11e0ac5cee4e1",
+    "cockpit_right.png": "a3c8050a667317b0480785dbe88c9078ebb844111cc0146d4c92ba075cebf115",
+    "director_0.png": "3c6a3233d0977f38b3cb3b045ecafeb37963fbff4bfade87557d91ed58386a8f",
+    "director_1.png": "3f8a589a7a4b96655fbd80b221fdf89187293e4578d1048ddbf3fa9e5b91ec84",
+    "exhaust_02.png": "a54b77f35e4389cf5d3412f6287c01449d95a4ef18269bdac08f650dd43967c0",
+    "exhaust_08.png": "8bdf707d2030782e09733311e9d152a96a4a991dad03f991782dabd876486b21",
+    "exhaust_10.png": "7dc22a42bf11898355a0b462c1528f154ccb704a97ff9a54aeae63d89184bb0b",
+    "exhaust_1B.png": "5f985cd6de3b04a5be28ec5f378386d1fddf7bd4fd5f8a016a91571c5f6a4701",
+    "exhaust_28.png": "b2a19e32d2389d5f235f135984685149a09198967f1e4e60d37a25a330201289",
+    "exhaust_3A.png": "d54da2049b308619f21f76279467c8067cfa4b6190e602d0670cadfdab5e7192",
+    "exhaust_50.png": "f05959ee001508927c6b0ab8daee0f2ae83b26fb449e836f966b445dee6fe53d",
+    "exhaust_68.png": "82715219249dce8e60c8174187d54bff7a96876c99ee095e851e941a1c797685",
+    "flight_ui.png": "7825772dc52fada3e7af0bebecb3b0d399da17770617404e4fe73bd0853f40a7",
+    "instruments.png": "d4f8d0d901316f4f300f92165c586435dfb742cc5d4722cdd2064e4b17935760",
+    "panel_details.png": "330b58a4e7766fb77a65fb04245f02cb9b8eb8a41042062f714a7ce09a9292a4",
+    "title.png": "d3d22136d4ab3baf8b57915c4e6894f5fe60a12b15cd7776cbbc29266dfcb606",
+    "title_prompt.png": "740899f28f224686738d5cdfee2e24d43280cedcafadd97525b05d9f2ad805cd",
+    "transparent.png": "b0775cba09eadf2fde241b35daa28cdcd03af6d23e99e0decd32b42f13f6d220"
+  },
+  "previous_pack_rules_preserved_in_order": true,
+  "rom_or_audio_replacements": false,
+  "pack_png_count": 27,
+  "pack_sha256": {
+    "README.txt": "bc0356ee66d7032032f306d29b576a35d37f36901cdb1fe294105cc29f91c23e",
+    "carrier.png": "16a881f1c1eb4fd8c29c0494489e74446623b670f311570f425602748313f581",
+    "cockpit.png": "253792e8354d206ed65652c41b39ddfb51d9e3b1ebc873b637fd43f780a005be",
+    "cockpit_left.png": "5b9d5d3a9c89f733181841d151a40ed2965b64a798e8657265b11e0ac5cee4e1",
+    "cockpit_right.png": "a3c8050a667317b0480785dbe88c9078ebb844111cc0146d4c92ba075cebf115",
+    "director_0.png": "3c6a3233d0977f38b3cb3b045ecafeb37963fbff4bfade87557d91ed58386a8f",
+    "director_1.png": "3f8a589a7a4b96655fbd80b221fdf89187293e4578d1048ddbf3fa9e5b91ec84",
+    "exhaust_02.png": "a54b77f35e4389cf5d3412f6287c01449d95a4ef18269bdac08f650dd43967c0",
+    "exhaust_08.png": "8bdf707d2030782e09733311e9d152a96a4a991dad03f991782dabd876486b21",
+    "exhaust_10.png": "7dc22a42bf11898355a0b462c1528f154ccb704a97ff9a54aeae63d89184bb0b",
+    "exhaust_1B.png": "5f985cd6de3b04a5be28ec5f378386d1fddf7bd4fd5f8a016a91571c5f6a4701",
+    "exhaust_28.png": "b2a19e32d2389d5f235f135984685149a09198967f1e4e60d37a25a330201289",
+    "exhaust_3A.png": "d54da2049b308619f21f76279467c8067cfa4b6190e602d0670cadfdab5e7192",
+    "exhaust_50.png": "f05959ee001508927c6b0ab8daee0f2ae83b26fb449e836f966b445dee6fe53d",
+    "exhaust_68.png": "82715219249dce8e60c8174187d54bff7a96876c99ee095e851e941a1c797685",
+    "flight_ui.png": "7825772dc52fada3e7af0bebecb3b0d399da17770617404e4fe73bd0853f40a7",
+    "hires.txt": "34e8c7f2801bf2768183035dc7adc2f47f116f32297cc38dfe5285f567b90124",
+    "instruments.png": "d4f8d0d901316f4f300f92165c586435dfb742cc5d4722cdd2064e4b17935760",
+    "menu_console.png": "982bd782cda0ded226aae26ac6363146aad4cc5ef4c8bf141f856004f8571d7a",
+    "menu_hound.png": "1a6acb8ed5b5f8c9733c704f35c56264159baf537bdd80c93672c4ae0b657544",
+    "menu_map.png": "0c6546e415910c794a4fdb277578490d51a7c4ee26dd774d2dd10ffe1a93089b",
+    "menu_tiger.png": "dc91d104153ee5c196ad38ea91b325e4551e0d9c22ddc4e9c6d12ffde611338f",
+    "menu_ui.png": "4b6e7415ec2581558cffecfd1a29a1b59f5a0d39b434deb7781f4ce34bc4d806",
+    "menu_weapon_headers.png": "5af352e3276fea13062dcaa36cf44f13e66be8b986fd03734e8cc8ea2c482608",
+    "menu_wolf.png": "9badfcacc525032f1b372b80fd04e88e02f57e8c7bd86ac72c65aed4ff1c57fb",
+    "panel_details.png": "330b58a4e7766fb77a65fb04245f02cb9b8eb8a41042062f714a7ce09a9292a4",
+    "title.png": "d3d22136d4ab3baf8b57915c4e6894f5fe60a12b15cd7776cbbc29266dfcb606",
+    "title_prompt.png": "740899f28f224686738d5cdfee2e24d43280cedcafadd97525b05d9f2ad805cd",
+    "transparent.png": "b0775cba09eadf2fde241b35daa28cdcd03af6d23e99e0decd32b42f13f6d220"
+  },
+  "transition_and_cockpit_checkpoint_frames_identical_to_v021": [
+    581,
+    630,
+    720
+  ],
+  "state_comparison_note": "All exported emulation fields compared; HD-only hdAudioDevice metadata excluded.",
+  "visual_review": [
+    "Mission 1 map and carrier marker",
+    "Three missile diagrams, power and quantity",
+    "Hound, Wolf and Tiger selector positions and confirmation visibility",
+    "Transition back to the preserved cockpit"
+  ],
+  "limitations": [
+    "Mission 1 opening only; no new later-mission, landing or refuelling QA claim.",
+    "Recorder begins after initial state load: 777 input/trace frames, 776 video frames.",
+    "Full emulator states, traces and raw recordings are local validation inputs, not installable pack files."
+  ]
+}
