@@ -1,6 +1,7 @@
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
 import numpy as np, json, shutil, math
+from build_dials import draw_dials
 R=Path(__file__).resolve().parents[1]; P=R/'pack';P.mkdir(exist_ok=True)
 S=4
 # Original imagegen artwork; build script only sizes, masks and assembles pack assets.
@@ -17,13 +18,7 @@ for k,v in assets.items():
   for a,b,c,d in zip(srcys,srcys[1:],dstys,dstys[1:]):out.paste(im.crop((0,a*4,1024,b*4)).resize((1024,(d-c)*4),Image.Resampling.LANCZOS),(0,c*4))
   im=out
   # Decorative dial scales are vector UI; flight values and attitude remain native.
-  dr=ImageDraw.Draw(im)
-  for cx,cy in [(200,192),(232,192),(216,224)]:
-   for j in range(24):
-    a=2*math.pi*j/24;ra=10.2 if j%3 else 9
-    dr.line((4*(cx+ra*math.cos(a)),4*(cy+ra*math.sin(a)),4*(cx+11.8*math.cos(a)),4*(cy+11.8*math.sin(a))),fill=(143,177,180,220),width=2)
-   dr.line((4*(cx-7),4*cy,4*(cx+7),4*cy),fill=(191,223,218,255),width=3)
-   dr.ellipse((cx*4-4,cy*4-4,cx*4+4,cy*4+4),fill=(129,172,178,255))
+  draw_dials(im)
  im.save(P/f'{k}.png')
 fontpath=str(R/'source/fonts/DejaVuSansMono-Bold.ttf')
 font=ImageFont.truetype(fontpath,25)
