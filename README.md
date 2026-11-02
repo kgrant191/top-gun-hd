@@ -1,10 +1,18 @@
 # Top Gun HD
 
-Development review build **v0.3.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.4.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
-Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. The recorded ROM SHA-1 is `A39376136CCCA0025063F3356B9EB41666AFF0BE`. No ROM or emulator executable is included.
+Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## New combat artwork
+
+- Painted enemy jets in rear, approaching and overhead views, with native banks, inverted views and distance sizes: 116 mapped layouts using 145 tile patterns.
+- Missiles, tracers, ignition flashes, fireballs and smoke: 23 mapped layouts using 37 tile patterns.
+- Native positions, animation timing, hit detection and audio remain under game control.
+
+The new artwork is limited to the windshield and exact sprite palettes. All 30 existing pack PNGs are preserved, including the approved cockpit and map fixes. See `source/COMBAT_ART_NOTES.md` and `validation/combat_art_v0.4.0.json` for integration details and tested coverage.
 
 ## Preserved work
 
@@ -15,7 +23,7 @@ Copy the contents of `pack/` (not the surrounding source tree) into the emulator
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-More artwork and gameplay work remains. Enemy/world/projectile graphics, later missions and refuelling need further coverage. See `source/MAP_WATER_NOTES.md` for this revision, `source/COCKPIT_COLOR_NOTES.md` for the included cockpit corrections, `source/SCREEN_POLISH_NOTES.md` for the menu work, and `README.txt`, `source/PROJECT_NOTES.txt` and `source/build_manifest.json` for the earlier handoff. Validation reports identify the exact tested revision and scope; they are not a full-game QA claim.
+Clouds, ocean, terrain, later missions and refuelling still need further artwork and coverage. The combat pass covers the recovered mission-one layouts and observed palettes; it is not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
@@ -35,4 +43,4 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The v0.3.0 menu pass was merged into `main` at `afef647b114539c8e1a84f3e1df9933b74d7280e`. The v0.3.1 cockpit color fixes and v0.3.2 map correction are together on `feature/cockpit-color-fixes-v0.3.1`. Keep further edits on feature branches and review before merging. Do not treat a development checkpoint as a release or permission to merge.
+The approved cockpit color and map corrections are merged into `main` at `f23e0c16669c328e8d556f0c20fbe909a8f72efb`. This combat pass is on `feature/enemy-aircraft-v0.4.0` for review. Keep further edits on feature branches and review before merging. Do not treat a development checkpoint as a release or permission to merge.

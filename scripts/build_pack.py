@@ -29,7 +29,7 @@ d.text((512,866),'PRESS START',font=ImageFont.truetype(fontpath,25),anchor='mm',
 save_png(title_ui,P/'title_prompt.png')
 # Dynamic instrument glyphs remain tied to original CHR data.
 trans=Image.new('RGBA',(32,32));save_png(trans,P/'transparent.png')
-lines=['# Top Gun HD v0.3.2 - cockpit colors and map water fills','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
+lines=['# Top Gun HD v0.4.0 - enemy aircraft and combat effects','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
 def capture(n,s):return (R/f'captures/baseline/{n:05d}.{s}').read_bytes()
 def pat(n,i):return capture(n,'chr')[i*16:(i+1)*16].hex().upper()
 def tile_cond(name,n,x,y,i):lines.append(f'<condition>{name},tileAtPosition,{x},{y},{pat(n,i)},00000000,Y')
@@ -102,10 +102,17 @@ t=t.replace('[carrier]<background>carrier.png,1,0,0,30','[carrier]<background>ca
 subprocess.run(['python3',str(R/'scripts/build_panels.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_flight_ui.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_menus.py')],check=True)
+subprocess.run(['python3',str(R/'scripts/build_aircraft.py')],check=True)
+subprocess.run(['python3',str(R/'scripts/build_combat_effects.py')],check=True)
 meta=json.loads((R/'source/build_manifest.json').read_text())
-meta['version']='0.3.2'
+meta['version']='0.4.0'
 meta['features'].append('Neutral windshield coaming and consistent attitude-display tick colors')
 meta['features'].append('Correct inland-water fills within the original mission-one coastline')
+meta['features'].append('Painted enemy aircraft across native banks, inverted views and distance sizes')
+meta['features'].append('Native-timed missiles, ignition, explosions and smoke')
+meta['not_yet_redrawn']=[item for item in meta['not_yet_redrawn'] if item!='Enemy aircraft and projectiles']
+meta['assets'].update({'enemy_aircraft': 'source/enemy_aircraft_atlas.png', 'combat_effects': 'source/combat_effects_atlas.png'})
+meta['combat_coverage']={'aircraft_layouts':116,'aircraft_patterns':145,'effect_layouts':23,'effect_patterns':37,'scope':'Mapped mission-one layouts and observed sprite palettes; later missions need coverage'}
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

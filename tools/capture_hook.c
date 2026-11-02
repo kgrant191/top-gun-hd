@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#include <sys/stat.h>
 typedef struct {uint32_t codec;uint32_t compression;_Bool hud;_Bool input;} Options;
 static void touch(const char* p){FILE*f=fopen(p,"w");if(f){fputs("ok",f);fclose(f);}}
 /* AviStop releases a shared recorder; its last rendering reference can finish
@@ -17,6 +18,18 @@ static void wait_avi_header(const char* p){
   usleep(10000);
  }
  fprintf(stderr,"AVI finalization timeout: %s\n",p);
+}
+static void wait_wave_header(const char* p){
+ for(int i=0;i<200;i++){
+  unsigned char h[12]={0};struct stat st;FILE*f=fopen(p,"rb");
+  if(f){size_t n=fread(h,1,12,f);fclose(f);
+   uint32_t size=(uint32_t)h[4]|((uint32_t)h[5]<<8)|((uint32_t)h[6]<<16)|((uint32_t)h[7]<<24);
+   if(n==12&&!memcmp(h,"RIFF",4)&&!memcmp(h+8,"WAVE",4)&&size>36&&
+      !stat(p,&st)&&(uint64_t)size+8==(uint64_t)st.st_size)return;
+  }
+  usleep(10000);
+ }
+ fprintf(stderr,"WAV finalization timeout: %s\n",p);
 }
 static void* worker(void*x){
  const char* base=getenv("TOPGUN_CAPTURE_SYNC");if(!base)return NULL;
@@ -31,6 +44,6 @@ static void* worker(void*x){
  unlink(avi);unlink(wav);
  Options opts={2,1,0,0};start(avi,opts);wave(wav);touch(ack);
  for(int i=0;i<60000;i++){if(!access(done,F_OK))break;usleep(10000);}
- stop();stopwave();wait_avi_header(avi);touch(end);return NULL;
+ stop();stopwave();wait_avi_header(avi);wait_wave_header(wav);touch(end);return NULL;
 }
 __attribute__((constructor)) static void init(void){pthread_t t;pthread_create(&t,NULL,worker,NULL);pthread_detach(t);}

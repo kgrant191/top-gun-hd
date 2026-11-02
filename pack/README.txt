@@ -1,17 +1,15 @@
-TOP GUN HD - v0.3.2
-Cockpit color and mission-map water correction review build
+TOP GUN HD - v0.4.0
+Enemy aircraft and combat-effects review build
 
 TESTED WITH
 MesenCE 2.2.1, using the Linux emulator supplied for this project.
 Top Gun (USA).nes
-SHA1: A39376136CCCA0025063F3356B9EB41666AFF0BE
-SHA256: e7f3b03d59f8d8cfd4cda5ef301a59e3fa1af1533a9cc0f134d67091d7c2f94c
 HD pack format 109; 4x graphics (1024 x 960).
 
 INSTALL
 1. Open your Top Gun (USA).nes ROM in MesenCE.
 2. Enable NES HD packs in the emulator's NES/video settings.
-3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.3.2.zip.
+3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.4.0.zip.
 4. Reset/reload the ROM.
 
 Manual installation: extract this ZIP directly into:
@@ -22,6 +20,10 @@ Use the emulator's Open Mesen Folder command to locate its data folder.
 Do not place another ZIP inside the pack folder.
 
 IN THIS BUILD
+- Painted enemy aircraft: rear, approaching and overhead views, banks,
+  inverted views and native distance sizes (116 mapped layouts).
+- Native-timed missiles, tracers, ignition flashes, explosions and smoke
+  (23 mapped layouts), restricted to the windshield and sprite palettes.
 - New TOP GUN HD title artwork and blinking Start prompt.
 - Sunset carrier launch with eight exhaust states and two director poses,
   synchronized to the original flame and arm animation.
@@ -44,14 +46,23 @@ IN THIS BUILD
 
 SCOPE / STILL ORIGINAL
 This is an opening review build, not a finished whole-game HD remake.
-Enemy aircraft, projectiles, explosions, clouds and ocean/terrain still use
-original graphics. Later-mission briefing maps/menus, landing carrier/world
-art, refuelling and endings still need art passes.
+Clouds and ocean/terrain still use original graphics. Later-mission briefing
+maps/menus, landing carrier/world art, refuelling and endings need art passes.
+The combat pass covers mapped mission-one layouts and observed palettes;
+other missions and palette variants still need coverage.
 The small circular cockpit gauges are redrawn decorative scales, not new
 flight simulation instruments. Native fuel, altitude, speed, attitude and
 weapon values still update under game control.
 
 VERIFICATION
+The v0.4.0 combat pass checks 2,054 opening/flight frames against native
+output and 8,253 combat-to-landing frames against the approved HD baseline.
+Game-state traces, checkpoints and PCM audio match. Screenshot changes are
+confined to combat sprite cells; all 30 existing PNGs are preserved.
+A separate test fixture verifies all 116 aircraft and 23 effect layouts.
+The fixture is not part of this installable pack.
+See validation/combat_art_v0.4.0.json in the source repository.
+
 The v0.3.2 correction replays 777 input frames from the mission briefing,
 through missile selection and confirmation, to takeoff in MesenCE 2.2.1.
 Game-state traces, exported checkpoints and PCM audio match v0.3.1.

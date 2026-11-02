@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.4.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -10,10 +10,11 @@
     "Updated landing instructions and pitch-aircraft indicator",
     "Mission-one tactical briefing and native-driven missile selection",
     "Neutral windshield coaming and consistent attitude-display tick colors",
-    "Correct inland-water fills within the original mission-one coastline"
+    "Correct inland-water fills within the original mission-one coastline",
+    "Painted enemy aircraft across native banks, inverted views and distance sizes",
+    "Native-timed missiles, ignition, explosions and smoke"
   ],
   "not_yet_redrawn": [
-    "Enemy aircraft and projectiles",
     "Clouds, ocean and terrain",
     "Later-mission briefing maps and menus",
     "Later missions, landing and refuelling"
@@ -22,7 +23,16 @@
     "title": "source/title_master.png",
     "carrier": "source/carrier_master.png",
     "cockpit": "source/cockpit_master.png",
-    "briefing_console": "source/briefing_console_master.png"
+    "briefing_console": "source/briefing_console_master.png",
+    "enemy_aircraft": "source/enemy_aircraft_atlas.png",
+    "combat_effects": "source/combat_effects_atlas.png"
   },
-  "approved_intro_version": "0.1.1"
+  "approved_intro_version": "0.1.1",
+  "combat_coverage": {
+    "aircraft_layouts": 116,
+    "aircraft_patterns": 145,
+    "effect_layouts": 23,
+    "effect_patterns": 37,
+    "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
+  }
 }
