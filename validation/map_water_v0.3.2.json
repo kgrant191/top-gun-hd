@@ -1,0 +1,48 @@
+{
+  "version": "0.3.2",
+  "changed_pngs": [
+    "menu_map.png"
+  ],
+  "unchanged_png_count": 29,
+  "functional_hd_pack_rules_unchanged": true,
+  "enclosed_water_regions": 3,
+  "changed_land_to_water_pixels_per_region": [
+    1829,
+    2777,
+    798
+  ],
+  "total_changed_pixels": 5404,
+  "coastline_outline_pixels_unchanged": true,
+  "only_enclosed_water_fills_changed": true,
+  "emulator": "User-supplied MesenCE 2.2.1 Linux x64",
+  "briefing_to_takeoff": {
+    "input_and_identical_trace_frames": 777,
+    "identical_checkpoint_counts": {
+      "ram": 35,
+      "oam": 35,
+      "chr": 35,
+      "nt": 35,
+      "pal": 35,
+      "state": 35
+    },
+    "identical_pcm_audio": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 620316
+    },
+    "hd_video": {
+      "width": 1024,
+      "height": 960,
+      "nb_frames": "776"
+    },
+    "loader_or_capture_errors": 0
+  },
+  "visual_checkpoints": {
+    "changed_only_in_water_interiors": 27,
+    "unchanged_other_screens": 7
+  },
+  "valid_pack_png_count": 30,
+  "scope": "Mission-one briefing, missile selection, confirmation and takeoff; earlier cockpit checks are recorded separately.",
+  "isolated_build_identical_pack_files": 32
+}

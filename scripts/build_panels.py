@@ -1,6 +1,7 @@
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 import numpy as np, math
+from pack_io import save_png
 R=Path(__file__).resolve().parents[1];P=R/'pack'
 font_path=R/'source/fonts/DejaVuSansMono-Bold.ttf'
 if not font_path.exists():font_path=Path('/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf')
@@ -30,7 +31,7 @@ text(185,144,'MISSILE',14);text(185,151.5,'REMAIN',14);text(185,161.5,'TYPE',14)
 box((2,173.5,71,221),'#182832',1)
 bezel((5.5,173.5,18,220));bezel((21,173.5,67,219.5))
 text(10,173.8,'F',9);text(10,217.5,'E',9)
-base.save(P/'cockpit.png')
+save_png(base,P/'cockpit.png')
 # UI tile overrides precede the old atlas rules. Regions preserve shared CHR glyphs elsewhere.
 conditions=[
  '<condition>leftHudX0,positionCheckX,>=,0','<condition>leftHudX1,positionCheckX,<,72',
@@ -97,7 +98,7 @@ for i in [0x62,0x63,0x64,0x65,0x72,0x73,0x74,0x75,0x82,0x83,0x84,0x85]:
    elif v==1:col='#68462e'
    if col:dr.rectangle((x*4,y*4,x*4+3,y*4+3),fill=col)
  # Tick marks in the upper field and central pitch scale must remain clear.
- if i in [0x64,0x72,0x74,0x73]:
+ if i in [0x64,0x72,0x74,0x73,0x75]:
   target=1
   for y in range(8):
    for x in range(8):
@@ -115,7 +116,7 @@ for i in range(0x104,0x10a):
    v=int(a[y,x])
    if v:dr.rectangle((x*4,y*4,x*4+3,y*4+3),fill={1:'#eaf7df',2:'#09202b',3:'#09202b'}[v])
  add(i,im,'cockpit',True)
-atlas.save(P/'panel_details.png')
+save_png(atlas,P/'panel_details.png')
 # Insert all definitions before consumers and put all overrides before generic matching rules.
 lines=(P/'hires.txt').read_text().splitlines();idx=lines.index('<img>instruments.png')+1;lines.insert(idx,'<img>panel_details.png')
 idx=next(i for i,l in enumerate(lines) if l.startswith('<condition>'));lines[idx:idx]=conditions

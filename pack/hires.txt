@@ -1,4 +1,4 @@
-# Top Gun HD v0.3.0 - opening, mission menus and cockpit
+# Top Gun HD v0.3.2 - cockpit colors and map water fills
 <ver>109
 <scale>4
 <overscan>0,0,0,0
@@ -217,6 +217,9 @@
 [cockpit&cockpitBorder&impactLeft]<background>cockpit_left.png,1,0,0,10
 [cockpit&cockpitBorder&impactRight]<background>cockpit_right.png,1,0,0,10
 [cockpit&cockpitBorder&!impactLeft&!impactRight]<background>cockpit.png,1,0,0,10
+[cockpit&cockpitBorder&impactLeft]<background>windshield_cap_left.png,1,0,0,30
+[cockpit&cockpitBorder&impactRight]<background>windshield_cap_right.png,1,0,0,30
+[cockpit&cockpitBorder&!impactLeft&!impactRight]<background>windshield_cap.png,1,0,0,30
 [menuMissionM&menuMissionN&menuMissionOne&menuHeaderPresent&menuMapAnchor&menuMapX0&menuMapX1&menuMapY0&menuMapY1]<tile>4,0000000000000000FFFFFFFFFFFD00C0,0F2A0F0F,0,0,1,Y
 [menuMissionM&menuMissionN&menuMissionOne&menuHeaderPresent&menuMapAnchor&menuMapX0&menuMapX1&menuMapY0&menuMapY1]<tile>0,FF9F1F1F000010F00060E0E0FFFFEF0F,0F2A0F0F,0,0,1,Y
 [menuMissionM&menuMissionN&menuMissionOne&menuHeaderPresent&menuMapAnchor&menuMapX0&menuMapX1&menuMapY0&menuMapY1]<tile>0,0301C0C080800000FCFE3F3F7F7FFFFF,0F2A0F0F,0,0,1,Y

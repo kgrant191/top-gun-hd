@@ -1,11 +1,12 @@
 from pathlib import Path
 from PIL import Image
 import numpy as np, shutil, json
+from pack_io import save_png
 R=Path(__file__).resolve().parents[1];P=R/'pack';S=R/'source'
 masters={'carrier_clean_master.png':'exec-e8d5f3dc-3f5b-4f00-9fae-069007e081b9.png','director_sheet.png':'exec-470b0db3-ed82-42c2-8f61-f8292da9084b.png','flames_sheet.png':'exec-98af10b0-ebbc-40cb-bf29-e9dc8e87fbc1.png'}
 for dst,src in masters.items():
  if not (S/dst).exists():shutil.copy(R.parent/'generated_images'/src,S/dst)
-plate=Image.open(S/'carrier_clean_master.png').convert('RGBA').resize((1024,960),Image.Resampling.LANCZOS);plate.save(P/'carrier.pending.png');(P/'carrier.pending.png').replace(P/'carrier.png')
+plate=Image.open(S/'carrier_clean_master.png').convert('RGBA').resize((1024,960),Image.Resampling.LANCZOS);save_png(plate,P/'carrier.png')
 # Extract sprite cells and register them by their feet, not their changing arm bounds.
 sheet=Image.open(S/'director_sheet.png').convert('RGBA');w,h=sheet.size
 for pose in range(2):
@@ -14,7 +15,7 @@ for pose in range(2):
  footx=float(np.where(mask)[1].mean());scale=.092
  small=cell.resize((round(cell.width*scale),round(cell.height*scale)),Image.Resampling.LANCZOS)
  layer=Image.new('RGBA',(1024,960));layer.alpha_composite(small,(round(950-footx*scale),round(692-footy*scale)))
- layer.save(P/f'director_{pose}.png')
+ save_png(layer,P/f'director_{pose}.png')
 # Four imagegen VFX phases, registered to the white-hot emitter root in each cell.
 sheet=Image.open(S/'flames_sheet.png').convert('RGBA');w,h=sheet.size
 phases=[]
@@ -45,7 +46,7 @@ for t,(n,key) in states.items():
  small=cell.resize((max(1,round(cell.width*sx)),max(1,round(cell.height*sy))),Image.Resampling.LANCZOS)
  layer=Image.new('RGBA',(1024,960))
  for ex,ey in [(209,568),(452,576)]:layer.alpha_composite(small,(round(ex-rx*sx),round(ey-ry*sy)))
- fn=f'exhaust_{t:02X}.png';layer.save(P/fn)
+ fn=f'exhaust_{t:02X}.png';save_png(layer,P/fn)
  conditions.append(f'<condition>exhaust{t:02X},spriteAtPosition,48,145,{key},FF202615,Y')
  backgrounds.append(f'[carrier&exhaust{t:02X}]<background>{fn},1,0,0,31,0,0,Add')
 (R/'source/launch_mappings.json').write_text(json.dumps({'conditions':conditions,'backgrounds':backgrounds,'original_states':states},indent=2)+'\n')
