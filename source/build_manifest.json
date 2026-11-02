@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "rom_sha1": "A39376136CCCA0025063F3356B9EB41666AFF0BE",
+  "emulator": "MesenCE 2.2.1 (user supplied)",
+  "scale": 4,
+  "movie_frames": 8253,
+  "features": [
+    "Approved title and native-timed animated launch",
+    "Impact-safe HD cockpit with native shake registration",
+    "Fine targeting reticle and radar display",
+    "Native-driven smooth missile digits and fuel segments",
+    "Updated landing instructions and pitch-aircraft indicator"
+  ],
+  "not_yet_redrawn": [
+    "Enemy aircraft and projectiles",
+    "Clouds, ocean and terrain",
+    "Briefing map and weapon diagrams",
+    "Later missions, landing and refuelling"
+  ],
+  "assets": {
+    "title": "exec-1831de19-0970-4971-99de-f8caf4339149.png",
+    "carrier": "exec-9adb6e1f-1e9c-4ebe-8160-8562f40ae464.png",
+    "cockpit": "exec-cde4a96f-76a5-4845-bef2-a8ffbc15b25b.png"
+  },
+  "approved_intro_version": "0.1.1"
+}

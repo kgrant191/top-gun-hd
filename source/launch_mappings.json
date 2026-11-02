@@ -1,0 +1,59 @@
+{
+  "conditions": [
+    "<condition>directorRaised,ppuMemoryCheckConstant,229C,==,94",
+    "<condition>exhaust02,spriteAtPosition,48,145,00000000000000007C7C7C7C7C7C3800,FF202615,Y",
+    "<condition>exhaust08,spriteAtPosition,48,145,8282828282824438FEFEFEFEFEFE7C38,FF202615,Y",
+    "<condition>exhaust10,spriteAtPosition,48,145,0303030303030386FFFFFFFFFFFFFFFE,FF202615,Y",
+    "<condition>exhaust1B,spriteAtPosition,48,145,838383838383C7EEFFFFFFFFFFFFFFFE,FF202615,Y",
+    "<condition>exhaust28,spriteAtPosition,48,145,7DF9510103EFFFFE8307AFFFFFFFFFFE,FF202615,Y",
+    "<condition>exhaust3A,spriteAtPosition,48,145,FDFDF9B1018303D60303074FFFFFFFFE,FF202615,Y",
+    "<condition>exhaust50,spriteAtPosition,48,145,FDFDFDFDF1030306030303030FFFFFFE,FF202615,Y",
+    "<condition>exhaust68,spriteAtPosition,48,145,FDFDFDFDF95343020303030307AFBFFE,FF202615,Y"
+  ],
+  "backgrounds": [
+    "[carrier&directorRaised]<background>director_1.png,1,0,0,32",
+    "[carrier&!directorRaised]<background>director_0.png,1,0,0,32",
+    "[carrier&exhaust02]<background>exhaust_02.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust08]<background>exhaust_08.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust10]<background>exhaust_10.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust1B]<background>exhaust_1B.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust28]<background>exhaust_28.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust3A]<background>exhaust_3A.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust50]<background>exhaust_50.png,1,0,0,31,0,0,Add",
+    "[carrier&exhaust68]<background>exhaust_68.png,1,0,0,31,0,0,Add"
+  ],
+  "original_states": {
+    "2": [
+      642,
+      "00000000000000007C7C7C7C7C7C3800"
+    ],
+    "8": [
+      658,
+      "8282828282824438FEFEFEFEFEFE7C38"
+    ],
+    "16": [
+      674,
+      "0303030303030386FFFFFFFFFFFFFFFE"
+    ],
+    "27": [
+      690,
+      "838383838383C7EEFFFFFFFFFFFFFFFE"
+    ],
+    "40": [
+      694,
+      "7DF9510103EFFFFE8307AFFFFFFFFFFE"
+    ],
+    "58": [
+      698,
+      "FDFDF9B1018303D60303074FFFFFFFFE"
+    ],
+    "80": [
+      702,
+      "FDFDFDFDF1030306030303030FFFFFFE"
+    ],
+    "104": [
+      866,
+      "FDFDFDFDF95343020303030307AFBFFE"
+    ]
+  }
+}

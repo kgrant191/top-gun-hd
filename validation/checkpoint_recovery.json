@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "recovery_date_utc": "2026-11-02",
+  "base_commit": "135f6096ec4bf640b26288a6f797994b4c4b021d",
+  "source_zip_sha256": "fa32f4729d82f1fbce14621c5c5c6048dfb5a325145f764378a3f3deb0cac20b",
+  "install_zip_sha256": "e38753bd87936afa899d1cef7d09798c6907a6b59c186172ba0e82fe283b64a1",
+  "source_pack_matches_installer": 22,
+  "rebuilt_pack_matches_installer": 22,
+  "build_python": "3",
+  "build_pillow": "13.0.0",
+  "build_numpy": "2.3.5",
+  "new_emulator_replay_performed": false,
+  "scope": "Preserve existing work, no new artwork or gameplay changes."
+}

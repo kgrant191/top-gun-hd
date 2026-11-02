@@ -1,0 +1,61 @@
+{
+  "base_commit": "e6125b272b0bbb034ded3a06a4188b8abd37d801",
+  "revision": "dial-alignment-v0.2.1-review",
+  "checks": {
+    "build": "passed",
+    "unchanged_pack_files": [
+      "README.txt",
+      "carrier.png",
+      "director_0.png",
+      "director_1.png",
+      "exhaust_02.png",
+      "exhaust_08.png",
+      "exhaust_10.png",
+      "exhaust_1B.png",
+      "exhaust_28.png",
+      "exhaust_3A.png",
+      "exhaust_50.png",
+      "exhaust_68.png",
+      "flight_ui.png",
+      "hires.txt",
+      "instruments.png",
+      "panel_details.png",
+      "title.png",
+      "title_prompt.png",
+      "transparent.png"
+    ],
+    "changed_pack_files": [
+      "cockpit.png",
+      "cockpit_left.png",
+      "cockpit_right.png"
+    ],
+    "outside_dial_region_unchanged": true,
+    "lower_panel_matches_clean_master_from_y": 903,
+    "impact_variants_exact_4px_shift": true,
+    "live_emulator_replay": "not run; ROM and MesenCE executable are not available in this workspace"
+  },
+  "sha256": {
+    "README.txt": "20d3b5cc5c00930fd1716a536fff23d8b669b630a12841453ad15d1f0cc34a86",
+    "carrier.png": "16a881f1c1eb4fd8c29c0494489e74446623b670f311570f425602748313f581",
+    "cockpit.png": "253792e8354d206ed65652c41b39ddfb51d9e3b1ebc873b637fd43f780a005be",
+    "cockpit_left.png": "5b9d5d3a9c89f733181841d151a40ed2965b64a798e8657265b11e0ac5cee4e1",
+    "cockpit_right.png": "a3c8050a667317b0480785dbe88c9078ebb844111cc0146d4c92ba075cebf115",
+    "director_0.png": "3c6a3233d0977f38b3cb3b045ecafeb37963fbff4bfade87557d91ed58386a8f",
+    "director_1.png": "3f8a589a7a4b96655fbd80b221fdf89187293e4578d1048ddbf3fa9e5b91ec84",
+    "exhaust_02.png": "a54b77f35e4389cf5d3412f6287c01449d95a4ef18269bdac08f650dd43967c0",
+    "exhaust_08.png": "8bdf707d2030782e09733311e9d152a96a4a991dad03f991782dabd876486b21",
+    "exhaust_10.png": "7dc22a42bf11898355a0b462c1528f154ccb704a97ff9a54aeae63d89184bb0b",
+    "exhaust_1B.png": "5f985cd6de3b04a5be28ec5f378386d1fddf7bd4fd5f8a016a91571c5f6a4701",
+    "exhaust_28.png": "b2a19e32d2389d5f235f135984685149a09198967f1e4e60d37a25a330201289",
+    "exhaust_3A.png": "d54da2049b308619f21f76279467c8067cfa4b6190e602d0670cadfdab5e7192",
+    "exhaust_50.png": "f05959ee001508927c6b0ab8daee0f2ae83b26fb449e836f966b445dee6fe53d",
+    "exhaust_68.png": "82715219249dce8e60c8174187d54bff7a96876c99ee095e851e941a1c797685",
+    "flight_ui.png": "7825772dc52fada3e7af0bebecb3b0d399da17770617404e4fe73bd0853f40a7",
+    "hires.txt": "a344666d1acc210e48dd0a3584580e542aa4177d2bf70f8cc393a3dd54e88b1b",
+    "instruments.png": "d4f8d0d901316f4f300f92165c586435dfb742cc5d4722cdd2064e4b17935760",
+    "panel_details.png": "330b58a4e7766fb77a65fb04245f02cb9b8eb8a41042062f714a7ce09a9292a4",
+    "title.png": "d3d22136d4ab3baf8b57915c4e6894f5fe60a12b15cd7776cbbc29266dfcb606",
+    "title_prompt.png": "740899f28f224686738d5cdfee2e24d43280cedcafadd97525b05d9f2ad805cd",
+    "transparent.png": "b0775cba09eadf2fde241b35daa28cdcd03af6d23e99e0decd32b42f13f6d220"
+  }
+}
