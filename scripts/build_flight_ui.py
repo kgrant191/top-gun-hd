@@ -3,6 +3,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import numpy as np
 import math, json
+from pack_io import save_png
 
 R=Path(__file__).resolve().parents[1]; P=R/'pack'
 fontpath=R/'source/fonts/DejaVuSansMono-Bold.ttf'
@@ -22,12 +23,12 @@ yy,xx=np.mgrid[0:256,0:368];glow=np.exp(-(((xx-184)/230)**2+((yy-105)/190)**2))
 rgb=np.stack([3+3*glow,14+10*glow,15+8*glow],axis=-1).astype('uint8')
 rgb[::4]=np.clip(rgb[::4].astype(int)-1,0,255)
 base.paste(Image.fromarray(rgb),(80*4,144*4)); d=ImageDraw.Draw(base)
-label(128,134.2,'FIRE CONTROL',12,'#b5c5bd','mt')
+label(128,130.5,'FIRE CONTROL',12,'#b5c5bd','mt')
 label(11.5,222.6,'FUEL',11,'#a9bbb7','mt')
 label(44,222.6,'ATTITUDE',11,'#a9bbb7','mt')
 # Subtle monitor trim remains outside the native 96x64 information area.
 d.line((80*4,207.7*4,174*4,207.7*4),fill='#345a57',width=2)
-base.save(P/'cockpit.png')
+save_png(base,P/'cockpit.png')
 
 conditions=[
  f'<condition>cockpitBorder,tileAtPosition,180,148,{pat(0x5a)},00000000,Y',
@@ -202,7 +203,7 @@ for pose in json.loads((R/'source/landing_pose_mappings.json').read_text()):
   if attr&64:im=im.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
   if attr&128:im=im.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
   add(256+t,im,flight,True,landing_data[(256+t)*16:(257+t)*16].hex().upper(),strict=True)
-atlas.save(P/'flight_ui.png')
+save_png(atlas,P/'flight_ui.png')
 
 lines=(P/'hires.txt').read_text().splitlines()
 # The old anchor sat on the edge of the cockpit. The center stays valid during ±1px shake.
@@ -222,16 +223,28 @@ idx=lines.index('<img>panel_details.png')+1;lines.insert(idx,'<img>flight_ui.png
 idx=next(i for i,l in enumerate(lines) if l.startswith('<condition>'));lines[idx:idx]=conditions
 idx=next(i for i,l in enumerate(lines) if '<tile>' in l);lines[idx:idx]=rules
 # Shift the painted panel with the game's horizontal impact displacement.
+# The NES world continues through scanlines 128-129, overlapping the HD
+# coaming's top edge. A foreground cap covers only those two scanlines.
+# Instrument tiles and sprites remain above the normal background layer.
+def save_windshield_cap(image, name):
+ cap=Image.new('RGBA',image.size)
+ cap.paste(image.crop((0,128*4,1024,130*4)),(0,128*4))
+ save_png(cap,P/name)
+save_windshield_cap(base,'windshield_cap.png')
 for name,dx in [('left',-4),('right',4)]:
  shifted=Image.new('RGBA',base.size);shifted.paste(base,(dx,0))
  # Extend edge pixels to avoid an exposed black sliver at the screen boundary.
  edge=base.crop((0,0,1,960) if dx>0 else (1023,0,1024,960)).resize((4,960))
- shifted.paste(edge,(0 if dx>0 else 1020,0));shifted.save(P/f'cockpit_{name}.png')
+ shifted.paste(edge,(0 if dx>0 else 1020,0));save_png(shifted,P/f'cockpit_{name}.png')
+ save_windshield_cap(shifted,f'windshield_cap_{name}.png')
 idx=lines.index('[cockpit]<background>cockpit.png,1,0,0,10')
 lines[idx:idx+1]=[
  '[cockpit&impactLeft]<background>cockpit_left.png,1,0,0,10',
  '[cockpit&impactRight]<background>cockpit_right.png,1,0,0,10',
  '[cockpit&!impactLeft&!impactRight]<background>cockpit.png,1,0,0,10',
+ '[cockpit&impactLeft]<background>windshield_cap_left.png,1,0,0,30',
+ '[cockpit&impactRight]<background>windshield_cap_right.png,1,0,0,30',
+ '[cockpit&!impactLeft&!impactRight]<background>windshield_cap.png,1,0,0,30',
 ]
 lines=[l.replace('[cockpit', '[cockpit&cockpitBorder') for l in lines]
 (P/'hires.txt').write_text('\n'.join(lines)+'\n')

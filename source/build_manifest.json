@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "rom_sha1": "A39376136CCCA0025063F3356B9EB41666AFF0BE",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
@@ -10,7 +10,8 @@
     "Fine targeting reticle and radar display",
     "Native-driven smooth missile digits and fuel segments",
     "Updated landing instructions and pitch-aircraft indicator",
-    "Mission-one tactical briefing and native-driven missile selection"
+    "Mission-one tactical briefing and native-driven missile selection",
+    "Neutral windshield coaming and consistent attitude-display tick colors"
   ],
   "not_yet_redrawn": [
     "Enemy aircraft and projectiles",
@@ -24,11 +25,5 @@
     "cockpit": "exec-cde4a96f-76a5-4845-bef2-a8ffbc15b25b.png",
     "briefing_console": "source/briefing_console_master.png"
   },
-  "approved_intro_version": "0.1.1",
-  "menu_replay": {
-    "file": "reference/Top_Gun_HD_menus.mmo",
-    "frames": 777,
-    "sha256": "d73d95968b94738971617cb39fdacf246e1ef9be219c2c6900eff30c67b86ac0",
-    "scope": "Mission 1 briefing, all three missile options, selection confirmation, takeoff"
-  }
+  "approved_intro_version": "0.1.1"
 }

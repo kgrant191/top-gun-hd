@@ -9,6 +9,7 @@ from collections import defaultdict
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+from pack_io import save_png
 
 R = Path(__file__).resolve().parents[1]
 P = R / 'pack'
@@ -105,7 +106,7 @@ text(d, (128, 14), 'MISSION BRIEFING', 17, '#c1d4d2')
 panel(d, (11, 27, 245, 80), '#07151c', '#355360')
 d.line((16 * S, 23 * S, 240 * S, 23 * S), fill='#a27d48', width=2)
 text(d, (128, 233), 'F-14 / MISSION SYSTEMS', 12, '#719393')
-base.save(P / 'menu_console.png')
+save_png(base,P / 'menu_console.png')
 
 # Coastline geometry comes from the original map, not a newly invented map.
 map_image = Image.new('RGBA', base.size)
@@ -125,7 +126,7 @@ for x in range(0, 176 * S, 16 * S):
 for y in range(0, 128 * S, 16 * S):
     md.line((0, y, 176 * S, y), fill='#31505b70', width=1)
 map_image.alpha_composite(map_layer, (40 * S, 96 * S))
-map_image.save(P / 'menu_map.png')
+save_png(map_image,P / 'menu_map.png')
 
 
 def draw_missile(canvas, y, length, family):
@@ -167,13 +168,13 @@ for y, length, family in [(144, 77, 'hound'), (176, 93, 'wolf'), (208, 109, 'tig
     d.line((164 * S, (y - 15) * S, 164 * S, (y + 11) * S), fill='#324d57', width=1)
     d.line((211 * S, (y - 15) * S, 211 * S, (y + 11) * S), fill='#324d57', width=1)
     draw_missile(row, y, length, family)
-    row.save(P / f'menu_{family}.png')
+    save_png(row,P / f'menu_{family}.png')
 
 headers = Image.new('RGBA',base.size)
 hd = ImageDraw.Draw(headers)
 text(hd,(184,122),'POWER',20,'#8daeb4')
 text(hd,(223,122),'QTY',20,'#8daeb4')
-headers.save(P/'menu_weapon_headers.png')
+save_png(headers,P/'menu_weapon_headers.png')
 
 lines = (P / 'hires.txt').read_text().splitlines()
 atlas_index = sum(line.startswith('<img>') for line in lines)
@@ -283,7 +284,7 @@ for t in set(weapons['nt'][:960]):
     raw=weapons['chr'][t*16:(t+1)*16]
     if all(v==raw[0] for v in raw[:8]) and all(v==raw[8] for v in raw[8:]) and raw[0] in (0,255) and raw[8] in (0,255):
         blank(pattern(weapons,t),menu)
-atlas.save(P/'menu_ui.png')
+save_png(atlas,P/'menu_ui.png')
 backgrounds=[f'[{menu}]<background>menu_console.png,1,0,0,10',
              f'[{map_cond}]<background>menu_map.png,1,0,0,11',
              f'[{weapon_cond}&menuPowerAnchor]<background>menu_weapon_headers.png,1,0,0,14']
@@ -301,9 +302,6 @@ manifest['not_yet_redrawn']=[
     'Later-mission briefing maps and menus' if value=='Briefing map and weapon diagrams' else value
     for value in manifest['not_yet_redrawn']
 ]
-manifest['menu_replay']={'file':'reference/Top_Gun_HD_menus.mmo','frames':777,
-    'sha256':'d73d95968b94738971617cb39fdacf246e1ef9be219c2c6900eff30c67b86ac0',
-    'scope':'Mission 1 briefing, all three missile options, selection confirmation, takeoff'}
 manifest['assets']['briefing_console']='source/briefing_console_master.png'
 (R/'source/build_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('Mission menus:',slot,'native-driven glyphs; geography and selection preserved')

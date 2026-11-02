@@ -1,5 +1,5 @@
-TOP GUN HD - v0.3.0
-Mission-one briefing and missile-selection review build
+TOP GUN HD - v0.3.1
+Windshield and attitude-display color correction review build
 
 TESTED WITH
 MesenCE 2.2.1, using the Linux emulator supplied for this project.
@@ -11,7 +11,7 @@ HD pack format 109; 4x graphics (1024 x 960).
 INSTALL
 1. Open your Top Gun (USA).nes ROM in MesenCE.
 2. Enable NES HD packs in the emulator's NES/video settings.
-3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.3.0.zip.
+3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.3.1.zip.
 4. Reset/reload the ROM.
 
 Manual installation: extract this ZIP directly into:
@@ -26,6 +26,8 @@ IN THIS BUILD
 - Sunset carrier launch with eight exhaust states and two director poses,
   synchronized to the original flame and arm animation.
 - Detailed cockpit housing, instrument frames and centered decorative dial scales.
+- Neutral metal windshield edge across runway, flight and cloud transitions.
+- Matching pale attitude-display ticks, including the right-hand mark.
 - Mission-one tactical map with the original coastline and carrier marker.
 - Three distinct missile cards, clean typography and a native-controlled selector.
 - Selection confirmation preserves the chosen weapon and hides unselected cards.
@@ -50,14 +52,15 @@ flight simulation instruments. Native fuel, altitude, speed, attitude and
 weapon values still update under game control.
 
 VERIFICATION
-This revision replays the supplied 777-frame menu movie in MesenCE 2.2.1,
-with original and HD output compared. Input-only Select-button variants
-exercise the Wolf and Tiger choices; no game memory is altered by the tests.
-See the repository's validation/menu_validation_v0.3.0.json for exact results. Earlier reports
-remain historical records of their respective builds. The preview compares
-actual MesenCE output from the merged v0.2.1 baseline and this v0.3.0 menu pass.
-All previous pack images, including the title, launch animation and corrected
-cockpit backgrounds, are byte-identical to the merged baseline.
+This revision replays the supplied 2,054-frame runway/flight/cloud movie and
+180 frames of the earlier impact movie in MesenCE 2.2.1. Native game-state
+traces, exported checkpoints and PCM audio match the HD replay exactly.
+The windshield edge is checked in every frame of the new flight recording;
+damage shake retains its original one-pixel displacement.
+See the repository's validation/cockpit_colors_v0.3.1.json for exact results.
+The preview compares actual MesenCE output from v0.3.0 and v0.3.1.
+The title, launch animation and menu PNGs remain byte-identical to v0.3.0.
+Earlier reports remain historical records of their respective builds.
 
 ROM and emulator are not included. Fan-made visual enhancement.
 Original Top Gun game and associated marks belong to their respective owners.
