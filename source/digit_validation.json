@@ -1,0 +1,16 @@
+{
+  "all_ten_digits_both_positions_passed": true,
+  "method": "Isolated emulator rendering fixture; native nametable only, not the gameplay replay",
+  "mean_pixel_errors": [
+    0.030924479166666668,
+    0.014811197916666666,
+    0.0205078125,
+    0.025797526041666668,
+    0.018147786458333332,
+    0.017822265625,
+    0.028238932291666668,
+    0.012532552083333334,
+    0.029052734375,
+    0.0302734375
+  ]
+}

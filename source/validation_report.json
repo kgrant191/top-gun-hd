@@ -1,0 +1,128 @@
+{
+  "version": "0.2.0",
+  "movie_input_frames": 8253,
+  "reference_emulator": "User-supplied MesenCE 2.2.1 Linux",
+  "matched_samples": {
+    "ram": 95,
+    "oam": 95,
+    "chr": 95,
+    "nt": 95,
+    "pal": 95,
+    "state": 95
+  },
+  "differences": {
+    "ram": [],
+    "oam": [],
+    "chr": [],
+    "nt": [],
+    "pal": [],
+    "state": []
+  },
+  "every_frame_ram_nametable_oam_palette_identical": 8253,
+  "audio": [
+    {
+      "channels": 2,
+      "sample_rate": 48000,
+      "sample_frames": 6591282,
+      "pcm_sha256": "9a866ecea4ff65a2a62726d18d7749a12ef3226b45a8cb2960be4fd886802d03"
+    },
+    {
+      "channels": 2,
+      "sample_rate": 48000,
+      "sample_frames": 6591282,
+      "pcm_sha256": "9a866ecea4ff65a2a62726d18d7749a12ef3226b45a8cb2960be4fd886802d03"
+    }
+  ],
+  "audio_identical": true,
+  "hdpack_loader_errors": 0,
+  "state_comparison_note": "Every common emulation field compared. HD-only hdAudioDevice metadata excluded; no replacement tracks.",
+  "tile_rules": 485,
+  "rom_audio_patches": false,
+  "impact": {
+    "checked_frames": [
+      75,
+      94
+    ],
+    "hd_cockpit_present_every_frame": true,
+    "native_one_pixel_shake_matched": true,
+    "hd_pixel_offsets": [
+      0,
+      0,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      -4,
+      4,
+      0,
+      0
+    ]
+  },
+  "approved_intro_assets_unchanged": {
+    "title.png": "d3d22136d4ab3baf8b57915c4e6894f5fe60a12b15cd7776cbbc29266dfcb606",
+    "title_prompt.png": "740899f28f224686738d5cdfee2e24d43280cedcafadd97525b05d9f2ad805cd",
+    "carrier.png": "16a881f1c1eb4fd8c29c0494489e74446623b670f311570f425602748313f581",
+    "director_0.png": "3c6a3233d0977f38b3cb3b045ecafeb37963fbff4bfade87557d91ed58386a8f",
+    "director_1.png": "3f8a589a7a4b96655fbd80b221fdf89187293e4578d1048ddbf3fa9e5b91ec84",
+    "exhaust_02.png": "a54b77f35e4389cf5d3412f6287c01449d95a4ef18269bdac08f650dd43967c0",
+    "exhaust_08.png": "8bdf707d2030782e09733311e9d152a96a4a991dad03f991782dabd876486b21",
+    "exhaust_10.png": "7dc22a42bf11898355a0b462c1528f154ccb704a97ff9a54aeae63d89184bb0b",
+    "exhaust_1B.png": "5f985cd6de3b04a5be28ec5f378386d1fddf7bd4fd5f8a016a91571c5f6a4701",
+    "exhaust_28.png": "b2a19e32d2389d5f235f135984685149a09198967f1e4e60d37a25a330201289",
+    "exhaust_3A.png": "d54da2049b308619f21f76279467c8067cfa4b6190e602d0670cadfdab5e7192",
+    "exhaust_50.png": "f05959ee001508927c6b0ab8daee0f2ae83b26fb449e836f966b445dee6fe53d",
+    "exhaust_68.png": "82715219249dce8e60c8174187d54bff7a96876c99ee095e851e941a1c797685"
+  },
+  "approved_opening_render_checkpoints_identical": [
+    180,
+    360,
+    540,
+    720,
+    900,
+    1080,
+    1260,
+    1440,
+    1620,
+    1800,
+    1980,
+    2160,
+    2340
+  ],
+  "missile_digits": {
+    "all_ten_digits_both_positions_passed": true,
+    "method": "Isolated emulator rendering fixture; native nametable only, not the gameplay replay",
+    "mean_pixel_errors": [
+      0.030924479166666668,
+      0.014811197916666666,
+      0.0205078125,
+      0.025797526041666668,
+      0.018147786458333332,
+      0.017822265625,
+      0.028238932291666668,
+      0.012532552083333334,
+      0.029052734375,
+      0.0302734375
+    ]
+  },
+  "coverage": [
+    "Combat radar and enemy contacts",
+    "Damage shake",
+    "Changing fuel and attitude",
+    "Landing transition and directions",
+    "Landing through mission accomplished"
+  ],
+  "limitations": [
+    "Enemy/world/projectile art remains original",
+    "Later missions and refuelling need capture/art/testing"
+  ]
+}
