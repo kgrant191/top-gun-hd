@@ -8,6 +8,16 @@
 #include <string.h>
 typedef struct {uint32_t codec;uint32_t compression;_Bool hud;_Bool input;} Options;
 static void touch(const char* p){FILE*f=fopen(p,"w");if(f){fputs("ok",f);fclose(f);}}
+/* AviStop releases a shared recorder; its last rendering reference can finish
+   asynchronously. Let its destructor finalize the RIFF header before Lua exits. */
+static void wait_avi_header(const char* p){
+ for(int i=0;i<200;i++){
+  char h[4]={0};FILE*f=fopen(p,"rb");
+  if(f){size_t n=fread(h,1,4,f);fclose(f);if(n==4&&!memcmp(h,"RIFF",4))return;}
+  usleep(10000);
+ }
+ fprintf(stderr,"AVI finalization timeout: %s\n",p);
+}
 static void* worker(void*x){
  const char* base=getenv("TOPGUN_CAPTURE_SYNC");if(!base)return NULL;
  char go[1024],ack[1024],done[1024],end[1024],avi[1024],wav[1024];
@@ -16,8 +26,11 @@ static void* worker(void*x){
  void*c=dlopen(getenv("MESEN_CORE_PATH"),RTLD_LAZY|RTLD_NOLOAD);if(!c)return NULL;
  void(*start)(const char*,Options)=dlsym(c,"AviRecord");void(*stop)(void)=dlsym(c,"AviStop");void(*wave)(const char*)=dlsym(c,"WaveRecord");void(*stopwave)(void)=dlsym(c,"WaveStop");
  if(!start||!stop||!wave||!stopwave)return NULL;
+ /* A repeated run must not mistake the previous AVI's RIFF header for the
+    new recorder's completion. These are the outputs this run replaces. */
+ unlink(avi);unlink(wav);
  Options opts={2,1,0,0};start(avi,opts);wave(wav);touch(ack);
  for(int i=0;i<60000;i++){if(!access(done,F_OK))break;usleep(10000);}
- stop();stopwave();touch(end);return NULL;
+ stop();stopwave();wait_avi_header(avi);touch(end);return NULL;
 }
 __attribute__((constructor)) static void init(void){pthread_t t;pthread_create(&t,NULL,worker,NULL);pthread_detach(t);}

@@ -1,5 +1,5 @@
-TOP GUN HD - v0.2.0
-Opening sequence, combat HUD and landing guidance review build
+TOP GUN HD - v0.3.0
+Mission-one briefing and missile-selection review build
 
 TESTED WITH
 MesenCE 2.2.1, using the Linux emulator supplied for this project.
@@ -11,7 +11,7 @@ HD pack format 109; 4x graphics (1024 x 960).
 INSTALL
 1. Open your Top Gun (USA).nes ROM in MesenCE.
 2. Enable NES HD packs in the emulator's NES/video settings.
-3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.2.0.zip.
+3. Use Tools > Install HD Pack and select Top_Gun_HD_v0.3.0.zip.
 4. Reset/reload the ROM.
 
 Manual installation: extract this ZIP directly into:
@@ -25,7 +25,10 @@ IN THIS BUILD
 - New TOP GUN HD title artwork and blinking Start prompt.
 - Sunset carrier launch with eight exhaust states and two director poses,
   synchronized to the original flame and arm animation.
-- Detailed cockpit housing, instrument frames and decorative dial scales.
+- Detailed cockpit housing, instrument frames and centered decorative dial scales.
+- Mission-one tactical map with the original coastline and carrier marker.
+- Three distinct missile cards, clean typography and a native-controlled selector.
+- Selection confirmation preserves the chosen weapon and hides unselected cards.
 - Fitted missile and weapon labels; clean altitude/speed readouts.
 - Visible filled/empty fuel segments and a blue/brown attitude display.
 - HD cockpit stays active during damage; its artwork follows native impact shake.
@@ -39,19 +42,22 @@ IN THIS BUILD
 
 SCOPE / STILL ORIGINAL
 This is an opening review build, not a finished whole-game HD remake.
-Enemy aircraft, projectiles, explosions, clouds, ocean/terrain, briefing map
-and missile diagrams still use original graphics. Landing guidance is covered by the new supplied gameplay movie. Landing
-carrier/world art, later missions, refuelling and endings still need art passes.
+Enemy aircraft, projectiles, explosions, clouds and ocean/terrain still use
+original graphics. Later-mission briefing maps/menus, landing carrier/world
+art, refuelling and endings still need art passes.
 The small circular cockpit gauges are redrawn decorative scales, not new
 flight simulation instruments. Native fuel, altitude, speed, attitude and
 weapon values still update under game control.
 
 VERIFICATION
-The supplied 8,253-frame gameplay movie was replayed from its embedded save state
-and controller input sequence with the pack enabled and disabled.
-See the source package's validation report for exact results.
-The comparison video shows actual emulator output from v0.1.1 and v0.2.0.
-The approved title and animated launch assets are unchanged from v0.1.1.
+This revision replays the supplied 777-frame menu movie in MesenCE 2.2.1,
+with original and HD output compared. Input-only Select-button variants
+exercise the Wolf and Tiger choices; no game memory is altered by the tests.
+See the repository's validation/menu_validation_v0.3.0.json for exact results. Earlier reports
+remain historical records of their respective builds. The preview compares
+actual MesenCE output from the merged v0.2.1 baseline and this v0.3.0 menu pass.
+All previous pack images, including the title, launch animation and corrected
+cockpit backgrounds, are byte-identical to the merged baseline.
 
 ROM and emulator are not included. Fan-made visual enhancement.
 Original Top Gun game and associated marks belong to their respective owners.
