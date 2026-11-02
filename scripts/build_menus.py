@@ -99,6 +99,12 @@ def contours(mask):
         yield simplify(poly)
 
 
+def signed_area(poly):
+    """Positive for outer land, negative for water holes in screen coordinates."""
+    return sum(x0 * y1 - x1 * y0
+               for (x0, y0), (x1, y1) in zip(poly, poly[1:] + poly[:1])) / 2
+
+
 base = Image.open(R / 'source/briefing_console_master.png').convert('RGBA')
 base = base.resize((1024, 960), Image.Resampling.LANCZOS)
 d = ImageDraw.Draw(base)
@@ -116,11 +122,16 @@ native_map = colors(brief, 40, 96, 176, 128)
 land = native_map == 0x17
 map_layer = Image.new('RGBA', (176 * S, 128 * S), '#092332')
 md = ImageDraw.Draw(map_layer)
-for poly in contours(land):
+map_contours = [poly for poly in contours(land) if len(poly) > 3]
+# Fill enclosing regions first, then their holes (and any islands inside holes).
+# The traced winding distinguishes land from enclosed water without changing
+# the original coastline geometry.
+for poly in sorted(map_contours, key=lambda p: abs(signed_area(p)), reverse=True):
     pts = [(round(x * S), round(y * S)) for x, y in poly]
-    if len(pts) > 3:
-        md.polygon(pts, fill='#21494b')
-        md.line(pts, fill='#83aaa3', width=2, joint='curve')
+    md.polygon(pts, fill='#21494b' if signed_area(poly) > 0 else '#092332')
+for poly in map_contours:
+    pts = [(round(x * S), round(y * S)) for x, y in poly]
+    md.line(pts, fill='#83aaa3', width=2, joint='curve')
 for x in range(0, 176 * S, 16 * S):
     md.line((x, 0, x, 128 * S), fill='#31505b70', width=1)
 for y in range(0, 128 * S, 16 * S):

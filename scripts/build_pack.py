@@ -1,16 +1,15 @@
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
-import numpy as np, json, shutil, math
+import numpy as np, json, math
 from build_dials import draw_dials
 from pack_io import save_png
 R=Path(__file__).resolve().parents[1]; P=R/'pack';P.mkdir(exist_ok=True)
 S=4
 # Original imagegen artwork; build script only sizes, masks and assembles pack assets.
-assets={'title':'exec-1831de19-0970-4971-99de-f8caf4339149.png','carrier':'exec-9adb6e1f-1e9c-4ebe-8160-8562f40ae464.png','cockpit':'exec-cde4a96f-76a5-4845-bef2-a8ffbc15b25b.png'}
+assets={name: f'source/{name}_master.png' for name in ('title','carrier','cockpit')}
 for k,v in assets.items():
  if k=='carrier':continue # clean animated launch plate is built once, below
- src=R/'source'/f'{k}_master.png'
- if not src.exists():shutil.copy(R.parent/'generated_images'/v,src)
+ src=R/v
  im=Image.open(src).convert('RGBA').resize((1024,960),Image.Resampling.LANCZOS)
  if k=='cockpit':
   # Align the painted monitor/frame edges with fixed native instrument rows.
@@ -30,7 +29,7 @@ d.text((512,866),'PRESS START',font=ImageFont.truetype(fontpath,25),anchor='mm',
 save_png(title_ui,P/'title_prompt.png')
 # Dynamic instrument glyphs remain tied to original CHR data.
 trans=Image.new('RGBA',(32,32));save_png(trans,P/'transparent.png')
-lines=['# Top Gun HD v0.3.1 - cockpit color corrections','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
+lines=['# Top Gun HD v0.3.2 - cockpit colors and map water fills','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
 def capture(n,s):return (R/f'captures/baseline/{n:05d}.{s}').read_bytes()
 def pat(n,i):return capture(n,'chr')[i*16:(i+1)*16].hex().upper()
 def tile_cond(name,n,x,y,i):lines.append(f'<condition>{name},tileAtPosition,{x},{y},{pat(n,i)},00000000,Y')
@@ -92,7 +91,7 @@ for i,x,y in sprite_records:lines.append(f'[cockpit]<tile>1,{pat(3240,i)},FF2A10
 for i,x,y in records:
  if i in chars:lines.append(f'<tile>1,{pat(3240,i)},0F2A0F0F,{x},{y},1,N')
 (P/'hires.txt').write_text('\n'.join(lines)+'\n')
-meta={'version': '0.2.0', 'rom_sha1': 'A39376136CCCA0025063F3356B9EB41666AFF0BE', 'emulator': 'MesenCE 2.2.1 (user supplied)', 'scale': 4, 'movie_frames': 8253, 'features': ['Approved title and native-timed animated launch', 'Impact-safe HD cockpit with native shake registration', 'Fine targeting reticle and radar display', 'Native-driven smooth missile digits and fuel segments', 'Updated landing instructions and pitch-aircraft indicator'], 'not_yet_redrawn': ['Enemy aircraft and projectiles', 'Clouds, ocean and terrain', 'Briefing map and weapon diagrams', 'Later missions, landing and refuelling'], 'assets': {'title': 'exec-1831de19-0970-4971-99de-f8caf4339149.png', 'carrier': 'exec-9adb6e1f-1e9c-4ebe-8160-8562f40ae464.png', 'cockpit': 'exec-cde4a96f-76a5-4845-bef2-a8ffbc15b25b.png'}, 'approved_intro_version': '0.1.1'}
+meta={'version': '0.2.0', 'emulator': 'MesenCE 2.2.1 (user supplied)', 'scale': 4, 'features': ['Approved title and native-timed animated launch', 'Impact-safe HD cockpit with native shake registration', 'Fine targeting reticle and radar display', 'Native-driven smooth missile digits and fuel segments', 'Updated landing instructions and pitch-aircraft indicator'], 'not_yet_redrawn': ['Enemy aircraft and projectiles', 'Clouds, ocean and terrain', 'Briefing map and weapon diagrams', 'Later missions, landing and refuelling'], 'assets': {'title': 'source/title_master.png', 'carrier': 'source/carrier_master.png', 'cockpit': 'source/cockpit_master.png'}, 'approved_intro_version': '0.1.1'}
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 import subprocess
 subprocess.run(['python3',str(R/'scripts/build_launch.py')],check=True)
@@ -104,8 +103,9 @@ subprocess.run(['python3',str(R/'scripts/build_panels.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_flight_ui.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_menus.py')],check=True)
 meta=json.loads((R/'source/build_manifest.json').read_text())
-meta['version']='0.3.1'
+meta['version']='0.3.2'
 meta['features'].append('Neutral windshield coaming and consistent attitude-display tick colors')
+meta['features'].append('Correct inland-water fills within the original mission-one coastline')
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

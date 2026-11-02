@@ -1,4 +1,4 @@
-# Top Gun HD v0.3.1 - cockpit color corrections
+# Top Gun HD v0.3.2 - cockpit colors and map water fills
 <ver>109
 <scale>4
 <overscan>0,0,0,0
