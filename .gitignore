@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.nes
+*.NES
+output/
+handoff/
+transfer_helpers/
+captures/*
+!captures/baseline/
+tools/Mesen
+tools/Mesen.exe
