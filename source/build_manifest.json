@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -23,7 +23,8 @@
     "Painted side-on touchdown and animated water with native jet movement",
     "Clean deck rollout without foreground mask blocks",
     "Mission debrief with native score and lives",
-    "Cannon projectiles distinct from true missile artwork"
+    "Cannon projectiles distinct from true missile artwork",
+    "Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages"
   ],
   "not_yet_redrawn": [
     "Later-mission briefing maps and menus",
@@ -45,7 +46,8 @@
     "impact_burst": "source/impact_burst_master.png",
     "approach": "source/landing_approach_master.png",
     "broadside": "source/landing_broadside_master.png",
-    "jet": "source/landing_jet_master.png"
+    "jet": "source/landing_jet_master.png",
+    "landing_crash": "source/landing_crash_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -58,5 +60,5 @@
     "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
   },
   "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
-  "landing_coverage": "Supplied successful mission-one landing, touchdown, rollout and debrief; failure outcomes and later missions are not newly covered"
+  "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage"
 }

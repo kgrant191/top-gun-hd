@@ -1,6 +1,8 @@
-TOP GUN HD v0.7.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.7.1 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Failed water landing keeps the HD scenery through impact and its aftermath.
+- Six native-timed crash stages show fuel fire, seawater spray and mist.
 - Opaque carrier deck and hull throughout the recorded approach.
 - Painted touchdown carrier, gear-down jet, animated water and soft shadow.
 - Clean deck rollout, native blank transitions and a readable mission debrief.
@@ -15,5 +17,5 @@ that folder. Enable HD packs and reopen the ROM in MesenCE.
 
 Tested with the user-supplied MesenCE 2.2.1 Linux build. No ROM or emulator
 is included. Native gameplay, damage rules, timing and audio are unchanged.
-Successful mission-one landing coverage. Failure outcomes, later missions
-and refuelling need additional recordings and work.
+Successful mission-one landing and recorded failed water landing coverage.
+Other failure outcomes, later missions and refuelling need additional work.

@@ -130,6 +130,11 @@ meta['features'].extend(['Opaque carrier approach across 21 native distance stag
 meta['assets'].update({name:'source/landing_'+name+'_master.png' for name in ['approach','broadside','jet']})
 meta['landing_coverage']='Supplied successful mission-one landing, touchdown, rollout and debrief; failure outcomes and later missions are not newly covered'
 meta['not_yet_redrawn']=[x for x in meta['not_yet_redrawn'] if x!='Later missions, landing and refuelling']
+subprocess.run(['python3',str(R/'scripts/build_landing_failure.py')],check=True)
+meta['version']='0.7.1'
+meta['features'].append('Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages')
+meta['assets']['landing_crash']='source/landing_crash_master.png'
+meta['landing_coverage']='Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

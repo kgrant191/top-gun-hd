@@ -1,6 +1,6 @@
 # Top Gun HD
 
-Development review build **v0.7.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.7.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
@@ -19,6 +19,12 @@ Copy the contents of `pack/` (not the surrounding source tree) into the emulator
 
 All 102 v0.6.0 PNGs are preserved. See `source/LANDING_NOTES.md` and
 `validation/landing_v0.7.0.json` for scope, implementation and replay checks.
+
+The v0.7.1 follow-up covers the recorded failed water landing: the painted
+carrier and sea remain visible through impact and the pause afterward, and
+six native-timed fire/spray stages replace the original crash sprites. It keeps
+all 130 v0.7.0 PNGs. See `source/LANDING_FAILURE_NOTES.md` and
+`validation/landing_failure_v0.7.1.json` for the focused replay checks.
 
 ## Damage and danger display
 
@@ -60,7 +66,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-Landing failure outcomes, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+Other landing failure outcomes, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
