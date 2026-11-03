@@ -8,6 +8,7 @@ import json, re
 from PIL import Image, ImageOps
 import numpy as np
 from pack_io import save_png
+from build_horizon import build_horizon
 
 ROOT=Path(__file__).resolve().parents[1]
 P=ROOT/'pack'; S=ROOT/'source'
@@ -60,9 +61,8 @@ for line in source_rules:
  p[0]=str(idx);p[3:5]=map(str,xy)
  rules.append(line.split('<tile>')[0]+'<tile>'+','.join(p))
 
-# Continuous material planes sit behind native silhouettes. The first fully
-# water/gray tile at the left edge selects each plane's vertical crop once per
-# frame. This avoids hundreds of position tests for every ocean pixel.
+# Flight materials follow native bank and PPU scroll. The takeoff runway
+# retains its tile-anchored planes because it uses a different world layout.
 sky=Image.open(S/'environment_sky_master.png').convert('RGBA').resize((1024,512),Image.Resampling.LANCZOS)
 plate=Image.new('RGBA',(1024,960));plate.paste(sky,(0,0));save_png(plate,P/'environment_sky.png')
 water=Image.open(S/'environment_water_master.png').convert('RGBA').resize((1024,512),Image.Resampling.LANCZOS)
@@ -70,30 +70,28 @@ runway=Image.open(S/'environment_runway_master.png').convert('RGBA').resize((102
 # Atmospheric haze at the waterline makes distant ripples less prominent.
 a=np.array(water).astype(float);fade=np.exp(-np.arange(512)/32)[:,None,None]*0.75
 fog=np.array([115,153,174,255]);a=a*(1-fade)+fog*fade;water=Image.fromarray(np.uint8(a))
-cloudtop=Image.new('RGBA',(1024,512),(227,239,247,255))
-cloudtop.alpha_composite(cloud.resize((1024,600),Image.Resampling.LANCZOS),(0,-80))
-cloudtop=Image.blend(Image.new('RGBA',(1024,512),(230,240,248,255)),cloudtop,0.65)
-for name,material in [('ocean',water),('cloudtop',cloudtop),('runway',runway)]:
+for name,material in [('ocean',water),('runway',runway)]:
  im=Image.new('RGBA',(1024,1024));im.paste(material,(0,512));save_png(im,P/('environment_'+name+'_plane.png'))
 shield=Image.new('RGBA',(1024,960));shield.paste((0,0,0,255),(0,512,1024,960));save_png(shield,P/'environment_lower_mask.png')
-backgrounds=['[cockpit&cockpitBorder]<background>environment_sky.png,1,0,0,6',
- '[cockpit&cockpitBorder]<background>environment_lower_mask.png,1,0,0,9']
+backgrounds=['[cockpit&cockpitBorder]<background>environment_lower_mask.png,1,0,0,9']
 solid={}
 for items in M['backgrounds'].values():
  for entry in items:
   a=decode(entry['pattern'])
   if len(set(a.ravel().tolist()))==1:solid[int(a[0,0])]=entry['pattern']
+bank_conditions,bank_backgrounds=build_horizon(ROOT,sky,water,solid)
+conditions.extend(bank_conditions);backgrounds.extend(bank_backgrounds)
 for y in range(128):
- for suffix,palette,material in [('Sea','0F301131','ocean'),('Cloud','0F203031','cloudtop'),('Sea2','0F001131','ocean')]:
+ for suffix,palette,material in [('Sea','0F301131','ocean'),('Sea2','0F001131','ocean')]:
   name=f'env{suffix}{y}'
   conditions.append(f'<condition>{name},tileAtPosition,8,{y},{solid[2]},{palette},N')
-  backgrounds.append(f'[cockpit&cockpitBorder&{name}]<background>environment_{material}_plane.png,1,0,0,7,0,{128-y}')
+  backgrounds.append(f'[cockpit&cockpitBorder&envRunwayPresent&{name}]<background>environment_{material}_plane.png,1,0,0,7,0,{128-y}')
  name=f'envDeck{y}'
  conditions.append(f'<condition>{name},tileAtPosition,8,{y},{solid[1]},0F001131,N')
  backgrounds.append(f'[cockpit&cockpitBorder&{name}]<background>environment_runway_plane.png,1,0,0,8,0,{128-y}')
 
-# Masks preserve partial horizon tiles, moving dashes and carrier silhouettes.
-# Only edge/detail tiles need artwork; full fields expose the selected plane.
+# Native flight dither is transparent; the painted layers supply the horizon.
+# Preserve moving runway dashes and the landing carrier silhouettes.
 atlas=Image.new('RGBA',(1024,1024));entries=[];newkeys=set();counts={};slot=0
 for bank,pal,mode in [(1,'0F301131','ocean'),(1,'0F203031','cloudtop'),(2,'0F001131','runway')]:
  patterns={e['pattern']:e for e in M['backgrounds'][str(bank)] if not (e.get('carrier') and mode=='cloudtop')}
@@ -113,11 +111,7 @@ for bank,pal,mode in [(1,'0F301131','ocean'),(1,'0F203031','cloudtop'),(2,'0F001
     im.paste(color,(0,0,32,32),masks[value])
   else:
    if bank==1:
-    im.paste((228,239,247,255),(0,0,32,32),masks[1])
-    # Partial tiles immediately above the first solid field bridge the
-    # native dithered water/cloud boundary with a quiet atmospheric color.
-    if 3 in colors:
-     im.paste((228,239,247,255) if mode=='cloudtop' else (100,140,163,255),(0,0,32,32),masks[2])
+    pass # World silhouettes are supplied by the native-scrolled, banked layer.
    else:
     im.paste((222,220,201,255),(0,0,32,32),masks[0])
     for ry in np.where(np.all(a==0,axis=1))[0]:
@@ -151,5 +145,5 @@ lines[i:i]=images+conditions
 idx=next(i for i,l in enumerate(lines) if '<tile>' in l)
 lines[idx:idx]=backgrounds+rules+fallbacks
 (P/'hires.txt').write_text('\n'.join(lines)+'\n')
-(S/'environment_build.json').write_text(json.dumps({'version':'0.5.0','materials':counts,'cloud_patterns':len(cloud_keys),'new_rules':len(rules),'preserved_default_alternatives':len(fallbacks),'field_rendering':'Per-frame native tile anchors select continuous material planes'},indent=2)+'\n')
+(S/'environment_build.json').write_text(json.dumps({'version':'0.5.1','materials':counts,'cloud_patterns':len(cloud_keys),'new_rules':len(rules),'preserved_default_alternatives':len(fallbacks),'field_rendering':'Native signed bank stages and PPU vertical scroll drive painted fields'},indent=2)+'\n')
 print('Built environment:',counts,'cloud family',len(cloud_keys))

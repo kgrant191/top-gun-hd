@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -13,7 +13,8 @@
     "Correct inland-water fills within the original mission-one coastline",
     "Painted enemy aircraft across native banks, inverted views and distance sizes",
     "Native-timed missiles, ignition, explosions and smoke",
-    "Correct white cloud distance sizes, painted sky, ocean and runway surfaces"
+    "Correct white cloud distance sizes, painted sky, ocean and runway surfaces",
+    "Native-banked sky, ocean and feathered cloud deck without blue/white horizon dither"
   ],
   "not_yet_redrawn": [
     "Later-mission briefing maps and menus",
@@ -30,7 +31,8 @@
     "sky": "source/environment_sky_master.png",
     "water": "source/environment_water_master.png",
     "runway": "source/environment_runway_master.png",
-    "cloud": "source/environment_cloud_master.png"
+    "cloud": "source/environment_cloud_master.png",
+    "clouddeck": "source/environment_clouddeck_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -42,5 +44,5 @@
     "cloud_patterns": 10,
     "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
   },
-  "environment_coverage": "Mission-one native background masks and palette transitions; cloud patterns separated from orange combat explosions"
+  "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays"
 }

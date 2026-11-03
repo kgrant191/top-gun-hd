@@ -1,7 +1,8 @@
-TOP GUN HD v0.5.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.5.1 — DEVELOPMENT REVIEW
 
-New: corrected white cloud distance artwork, painted sky, textured ocean,
-weathered takeoff runway and ivory native-moving runway dashes.
+New: sky, ocean and a continuous cloud deck follow native turning.
+The cloud horizon blends into the sky without blue/white dither artifacts.
+Includes corrected white cloud sizes, textured ocean and weathered runway.
 The landing carrier retains its native art, with textured water around it.
 Native gameplay, horizon/deck geometry, timing and audio remain unchanged.
 

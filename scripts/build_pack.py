@@ -29,7 +29,7 @@ d.text((512,866),'PRESS START',font=ImageFont.truetype(fontpath,25),anchor='mm',
 save_png(title_ui,P/'title_prompt.png')
 # Dynamic instrument glyphs remain tied to original CHR data.
 trans=Image.new('RGBA',(32,32));save_png(trans,P/'transparent.png')
-lines=['# Top Gun HD v0.5.0 - scenery and cloud correction','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
+lines=['# Top Gun HD v0.5.1 - banked horizon and cloud deck','<ver>109','<scale>4','<overscan>0,0,0,0','<img>transparent.png','<img>instruments.png']
 def capture(n,s):return (R/f'captures/baseline/{n:05d}.{s}').read_bytes()
 def pat(n,i):return capture(n,'chr')[i*16:(i+1)*16].hex().upper()
 def tile_cond(name,n,x,y,i):lines.append(f'<condition>{name},tileAtPosition,{x},{y},{pat(n,i)},00000000,Y')
@@ -106,7 +106,7 @@ subprocess.run(['python3',str(R/'scripts/build_aircraft.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_combat_effects.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_environment.py')],check=True)
 meta=json.loads((R/'source/build_manifest.json').read_text())
-meta['version']='0.5.0'
+meta['version']='0.5.1'
 meta['features'].append('Neutral windshield coaming and consistent attitude-display tick colors')
 meta['features'].append('Correct inland-water fills within the original mission-one coastline')
 meta['features'].append('Painted enemy aircraft across native banks, inverted views and distance sizes')
@@ -115,10 +115,11 @@ meta['not_yet_redrawn']=[item for item in meta['not_yet_redrawn'] if item!='Enem
 meta['assets'].update({'enemy_aircraft': 'source/enemy_aircraft_atlas.png', 'combat_effects': 'source/combat_effects_atlas.png'})
 meta['combat_coverage']={'aircraft_layouts':116,'aircraft_patterns':145,'effect_layouts':19,'effect_patterns':27,'cloud_layouts':4,'cloud_patterns':10,'scope':'Mapped mission-one layouts and observed sprite palettes; later missions need coverage'}
 meta['features'].append('Correct white cloud distance sizes, painted sky, ocean and runway surfaces')
-meta['assets'].update({name:'source/environment_'+name+'_master.png' for name in ['sky','water','runway','cloud']})
+meta['assets'].update({name:'source/environment_'+name+'_master.png' for name in ['sky','water','runway','cloud','clouddeck']})
 meta['not_yet_redrawn']=[item for item in meta['not_yet_redrawn'] if item!='Clouds, ocean and terrain']
 meta['not_yet_redrawn'].append('Terrain, later-mission scenery and refuelling')
-meta['environment_coverage']='Mission-one native background masks and palette transitions; cloud patterns separated from orange combat explosions'
+meta['features'].append('Native-banked sky, ocean and feathered cloud deck without blue/white horizon dither')
+meta['environment_coverage']='Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

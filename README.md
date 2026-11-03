@@ -1,19 +1,20 @@
 # Top Gun HD
 
-Development review build **v0.5.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.5.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
-## New scenery and cloud correction
+## Turning and cloud-horizon correction
 
 - Native white clouds keep their own painted cloud artwork at every mapped distance size. They no longer become smoke or fireballs as they approach.
 - A painted maritime sky, detailed ocean surface, weathered runway and ivory runway dashes replace the flat scenery colors.
-- Native masks retain the moving horizon, deck boundary and runway markings. Ocean texture also reaches the water surrounding the landing carrier; the carrier retains its native geometry and markings.
+- Sky, ocean and the new continuous cloud deck follow the native bank stages. The flight horizon follows vertical scroll, with a soft cloud/sky blend and no native blue/white dither strip.
+- Takeoff deck boundaries and runway markings retain native motion. Ocean texture reaches the landing carrier; the carrier retains its native geometry and markings.
 - All 32 previously approved PNGs are unchanged, including the cockpit, aircraft, missiles and orange explosion artwork.
 
-See `source/ENVIRONMENT_NOTES.md` and `validation/environment_v0.5.0.json` for implementation, replay checks and limitations.
+See `source/HORIZON_NOTES.md` and `validation/horizon_v0.5.1.json` for the turning correction and replay checks. `source/ENVIRONMENT_NOTES.md` records the initial scenery pass.
 
 ## Preserved combat artwork
 
