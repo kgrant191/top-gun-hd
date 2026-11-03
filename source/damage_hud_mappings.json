@@ -1,0 +1,458 @@
+{
+  "missile": {
+    "63": "1010387CFF7C38101010385CFF7C3810",
+    "59": "000001010103070F000001010103050B",
+    "60": "000000000080C0E0000000000080C0E0",
+    "57": "7F0F0703010101007F0F070301010100",
+    "58": "FCE0C08000000000FCE0C08000000000",
+    "61": "00000003070F1FFF0000000307091BFF",
+    "62": "808080C0E0F0F8F8808080C0E0F0F8F8",
+    "47": "FFF8F0E0C0000000FFF8F0E0C0000000"
+  },
+  "danger_background": {
+    "158": "00000000FF000000FFFFFFFF00FFFFFF",
+    "159": "00010608F0000000FFFEF9F70FFFFFFF",
+    "160": "868584888890A0C0797A7B77776F5F3F",
+    "161": "008060101F103060FF7F9FEFE0EFCF9F",
+    "162": "0000000FF0103F00FFFFFFF00FEFC0FF",
+    "163": "000000F00F08FC00FFFFFF0FF0F703FF",
+    "164": "00010608F0080C06FFFEF9F70FF7F3F9",
+    "165": "61A12111110905039E5EDEEEEEF6FAFC",
+    "166": "008060100F000000FF7F9FEFF0FFFFFF",
+    "167": "0101000000000000FEFEFFFFFFFFFFFF",
+    "168": "0808848484848484F7F77B7B7B7B7B7B",
+    "169": "1010212121212121EFEFDEDEDEDEDEDE",
+    "170": "80800000000000007F7FFFFFFFFFFFFF",
+    "171": "0808080808080808F7F7F7F7F7F7F7F7",
+    "172": "1010101010101010EFEFEFEFEFEFEFEF",
+    "173": "0101010101010101FEFEFEFEFEFEFEFE",
+    "174": "80404040202020107FBFBFBFDFDFDFEF",
+    "175": "0102020204040408FEFDFDFDFBFBFBF7",
+    "176": "80808080808080807F7F7F7F7F7F7F7F"
+  },
+  "danger_target": {
+    "42": "00000000080808080000000000000000",
+    "43": "0000003F400100000000000000000000",
+    "44": "081C7FFF3EDD00000000000000000000",
+    "45": "000000FE01C000000000000000000000"
+  },
+  "danger_text": {
+    "19": "7C66660066667C00839999FF999983FF",
+    "16": "3C66663C66666600C39999C3999999FF",
+    "29": "466676006E666200B99989FF91999DFF",
+    "22": "3C60600C66663C00C39F9FF39999C3FF",
+    "20": "7C60603C60607C00839F9FC39F9F83FF",
+    "33": "7C66663C66666600839999C3999999FF",
+    "14": "1818181808001800E7E7E7E7F7FFE7FF"
+  },
+  "impact_burst": [
+    {
+      "x": 0,
+      "y": 0,
+      "attr": 131,
+      "pattern": "2733131170151C081F0F0F0F0F0A0000"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "attr": 195,
+      "pattern": "7C8EF053DF1F1E04FFFF0F0C00000000"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "attr": 3,
+      "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "attr": 195,
+      "pattern": "2733131170151C081F0F0F0F0F0A0000"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "attr": 195,
+      "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "attr": 67,
+      "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "attr": 3,
+      "pattern": "3FFFFDFBFFFFFDFBFFFEFEFCFFFFFFFC"
+    },
+    {
+      "x": 24,
+      "y": 8,
+      "attr": 195,
+      "pattern": "E13C1C7F87637F181F03030000000007"
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "attr": 3,
+      "pattern": "E13C1C7F87637F181F03030000000007"
+    },
+    {
+      "x": 8,
+      "y": 16,
+      "attr": 195,
+      "pattern": "3FFFFDFBFFFFFDFBFFFEFEFCFFFFFFFC"
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "attr": 3,
+      "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+    },
+    {
+      "x": 24,
+      "y": 16,
+      "attr": 3,
+      "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+    },
+    {
+      "x": 0,
+      "y": 24,
+      "attr": 131,
+      "pattern": "00C814C64A64277F00000000041F1F0F"
+    },
+    {
+      "x": 8,
+      "y": 24,
+      "attr": 3,
+      "pattern": "7C8EF053DF1F1E04FFFF0F0C00000000"
+    },
+    {
+      "x": 16,
+      "y": 24,
+      "attr": 195,
+      "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+    },
+    {
+      "x": 24,
+      "y": 24,
+      "attr": 3,
+      "pattern": "F4CEEC8824DC0202F8F0F0F0D8000000"
+    }
+  ],
+  "impact_center": [
+    "071F3F7F7FFFFFFF071F316167FBDFFF",
+    "E0F8FCFEFEFFFFFFE0F8FCFEFEFFFFFF"
+  ],
+  "explosion_layouts": [
+    {
+      "width": 8,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 3,
+          "pattern": "430C30187F7C7A1010317C7EBC1E8E20"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 8,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 3,
+          "pattern": "92E53879FD3EBC460000463E3E1F4E00"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 16,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 3,
+          "pattern": "00C814C64A64277F00000000041F1F0F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 195,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 67,
+          "pattern": "00001019083831130000000003070F0F"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 67,
+          "pattern": "000004EC3810C8E800000000C0E0F0F0"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 16,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 3,
+          "pattern": "00001019083831130000000003070F0F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 3,
+          "pattern": "000004EC3810C8E800000000C0E0F0F0"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 3,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 3,
+          "pattern": "F4CEEC8824DC0202F8F0F0F0D8000000"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 24,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 3,
+          "pattern": "00001019083831130000000003070F0F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 195,
+          "pattern": "7C8EF053DF1F1E04FFFF0F0C00000000"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "attr": 195,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 195,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 195,
+          "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "attr": 3,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "attr": 195,
+          "pattern": "000004EC3810C8E800000000C0E0F0F0"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "attr": 195,
+          "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "attr": 67,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 24,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 195,
+          "pattern": "F4CEEC8824DC0202F8F0F0F0D8000000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 67,
+          "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "attr": 195,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 195,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 195,
+          "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "attr": 131,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "attr": 195,
+          "pattern": "000004EC3810C8E800000000C0E0F0F0"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "attr": 195,
+          "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "attr": 195,
+          "pattern": "00001019083831130000000003070F0F"
+        }
+      ],
+      "palette": "FF162630"
+    },
+    {
+      "width": 32,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 131,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 195,
+          "pattern": "7C8EF053DF1F1E04FFFF0F0C00000000"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "attr": 3,
+          "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "attr": 195,
+          "pattern": "2733131170151C081F0F0F0F0F0A0000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 195,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 67,
+          "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "attr": 3,
+          "pattern": "3FFFFDFBFFFFFDFBFFFEFEFCFFFFFFFC"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "attr": 195,
+          "pattern": "E13C1C7F87637F181F03030000000007"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "attr": 3,
+          "pattern": "E13C1C7F87637F181F03030000000007"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "attr": 195,
+          "pattern": "3FFFFDFBFFFFFDFBFFFEFEFCFFFFFFFC"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "attr": 3,
+          "pattern": "C7F1F8FBF9E375FFFFFFFFFCFEFCFFFF"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "attr": 3,
+          "pattern": "C8C83E7BC0700CE4F0F0C0800080F0F8"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "attr": 131,
+          "pattern": "00C814C64A64277F00000000041F1F0F"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "attr": 3,
+          "pattern": "7C8EF053DF1F1E04FFFF0F0C00000000"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "attr": 195,
+          "pattern": "0002437B1E0A04C000000080E1F5FBFF"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "attr": 3,
+          "pattern": "F4CEEC8824DC0202F8F0F0F0D8000000"
+        }
+      ],
+      "palette": "FF162630"
+    }
+  ]
+}

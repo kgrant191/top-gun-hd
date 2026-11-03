@@ -1,15 +1,17 @@
-TOP GUN HD v0.5.1 — DEVELOPMENT REVIEW
+TOP GUN HD v0.6.0 — DEVELOPMENT REVIEW
 
-New: sky, ocean and a continuous cloud deck follow native turning.
-The cloud horizon blends into the sky without blue/white dither artifacts.
-Includes corrected white cloud sizes, textured ocean and weathered runway.
-The landing carrier retains its native art, with textured water around it.
-Native gameplay, horizon/deck geometry, timing and audio remain unchanged.
+NEW IN THIS BUILD
+- Live HULL health bar and percentage, driven by the original game.
+- Clean rear-threat instrument, with native danger flashing and target motion.
+- Clear silver/red incoming missiles at all sizes in the supplied recording.
+- Complete HD impact burst and a warm damage flash over the HD scenery.
 
-INSTALL: copy the contents of this folder into the HD pack directory
-associated with your own Top Gun (USA) ROM in MesenCE; enable HD packs
-and reopen the ROM. No ROM or emulator is included.
+INSTALL
+Extract this ZIP directly into the HD pack folder for your Top Gun (USA) ROM.
+The folder must match the ROM filename without .nes (for example,
+Top_Gun_HD.nes uses HdPacks/Top_Gun_HD/). hires.txt must be directly inside
+that folder. Enable HD packs and reopen the ROM in MesenCE.
 
-Earlier approved cockpit, screens, map, aircraft, missiles and orange
-explosions are preserved. Mission-one review coverage only; terrain,
-later missions, the carrier redraw and refuelling remain future work.
+Tested with the user-supplied MesenCE 2.2.1 Linux build. No ROM or emulator
+is included. Native gameplay, damage rules, timing and audio are unchanged.
+Mission-one development coverage; later missions and refuelling need work.

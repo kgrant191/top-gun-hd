@@ -1,5 +1,5 @@
 {
-  "version": "0.5.1",
+  "version": "0.6.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -14,7 +14,11 @@
     "Painted enemy aircraft across native banks, inverted views and distance sizes",
     "Native-timed missiles, ignition, explosions and smoke",
     "Correct white cloud distance sizes, painted sky, ocean and runway surfaces",
-    "Native-banked sky, ocean and feathered cloud deck without blue/white horizon dither"
+    "Native-banked sky, ocean and feathered cloud deck without blue/white horizon dither",
+    "Live hull-health bar and percentage from native damage state",
+    "Rear-threat instrument redraw with native warning timing and moving target",
+    "Readable incoming missile growth stages and complete impact burst",
+    "HD scenery preserved during the native red damage flash"
   ],
   "not_yet_redrawn": [
     "Later-mission briefing maps and menus",
@@ -32,7 +36,9 @@
     "water": "source/environment_water_master.png",
     "runway": "source/environment_runway_master.png",
     "cloud": "source/environment_cloud_master.png",
-    "clouddeck": "source/environment_clouddeck_master.png"
+    "clouddeck": "source/environment_clouddeck_master.png",
+    "incoming_missile": "source/incoming_missile_master.png",
+    "impact_burst": "source/impact_burst_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
