@@ -124,6 +124,12 @@ meta['environment_coverage']='Mission-one native bank stages, vertical scroll an
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 meta['features'].extend(['Live hull-health bar and percentage from native damage state','Rear-threat instrument redraw with native warning timing and moving target','Readable incoming missile growth stages and complete impact burst','HD scenery preserved during the native red damage flash'])
 meta['assets'].update({'incoming_missile':'source/incoming_missile_master.png','impact_burst':'source/impact_burst_master.png'})
+subprocess.run(['python3',str(R/'scripts/build_landing.py')],check=True)
+meta['version']='0.7.0'
+meta['features'].extend(['Opaque carrier approach across 21 native distance stages','Painted side-on touchdown and animated water with native jet movement','Clean deck rollout without foreground mask blocks','Mission debrief with native score and lives','Cannon projectiles distinct from true missile artwork'])
+meta['assets'].update({name:'source/landing_'+name+'_master.png' for name in ['approach','broadside','jet']})
+meta['landing_coverage']='Supplied successful mission-one landing, touchdown, rollout and debrief; failure outcomes and later missions are not newly covered'
+meta['not_yet_redrawn']=[x for x in meta['not_yet_redrawn'] if x!='Later missions, landing and refuelling']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

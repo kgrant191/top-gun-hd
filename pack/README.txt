@@ -1,10 +1,11 @@
-TOP GUN HD v0.6.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.7.0 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
-- Live HULL health bar and percentage, driven by the original game.
-- Clean rear-threat instrument, with native danger flashing and target motion.
-- Clear silver/red incoming missiles at all sizes in the supplied recording.
-- Complete HD impact burst and a warm damage flash over the HD scenery.
+- Opaque carrier deck and hull throughout the recorded approach.
+- Painted touchdown carrier, gear-down jet, animated water and soft shadow.
+- Clean deck rollout, native blank transitions and a readable mission debrief.
+- Compact cannon tracers for player and enemy rounds; real missiles preserved.
+- Includes the previously approved cockpit, HULL health and danger displays.
 
 INSTALL
 Extract this ZIP directly into the HD pack folder for your Top Gun (USA) ROM.
@@ -14,4 +15,5 @@ that folder. Enable HD packs and reopen the ROM in MesenCE.
 
 Tested with the user-supplied MesenCE 2.2.1 Linux build. No ROM or emulator
 is included. Native gameplay, damage rules, timing and audio are unchanged.
-Mission-one development coverage; later missions and refuelling need work.
+Successful mission-one landing coverage. Failure outcomes, later missions
+and refuelling need additional recordings and work.

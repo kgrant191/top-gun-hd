@@ -1,10 +1,24 @@
 # Top Gun HD
 
-Development review build **v0.6.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.7.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Carrier landing and gunfire
+
+- An opaque carrier deck and hull follow all 21 observed approach sizes.
+- The side-on touchdown uses a painted carrier, gear-down aircraft, moving
+  water and a soft aircraft shadow. Wheel contact follows the native deck.
+- Rollout retains the moving deck edge and runway markings, without the gray
+  foreground block or exposed blue strip. Native blank transitions stay blank.
+- The mission debrief keeps the original live score, lives and bonus values.
+- Player and enemy cannon rounds use compact glowing tracers. Actual missiles
+  keep the approved v0.6.0 artwork; distant aircraft remain aircraft.
+
+All 102 v0.6.0 PNGs are preserved. See `source/LANDING_NOTES.md` and
+`validation/landing_v0.7.0.json` for scope, implementation and replay checks.
 
 ## Damage and danger display
 
@@ -24,7 +38,7 @@ All 58 v0.5.1 PNGs are preserved. See `source/DAMAGE_HUD_NOTES.md` and
 - Native white clouds keep their own painted cloud artwork at every mapped distance size. They no longer become smoke or fireballs as they approach.
 - A painted maritime sky, detailed ocean surface, weathered runway and ivory runway dashes replace the flat scenery colors.
 - Sky, ocean and the new continuous cloud deck follow the native bank stages. The flight horizon follows vertical scroll, with a soft cloud/sky blend and no native blue/white dither strip.
-- Takeoff deck boundaries and runway markings retain native motion. Ocean texture reaches the landing carrier; the carrier retains its native geometry and markings.
+- Takeoff deck boundaries and runway markings retain native motion. Ocean texture reaches the landing carrier; v0.7.0 adds the carrier and landing artwork described above.
 - All 32 previously approved PNGs are unchanged, including the cockpit, aircraft, missiles and orange explosion artwork.
 
 See `source/HORIZON_NOTES.md` and `validation/horizon_v0.5.1.json` for the turning correction and replay checks. `source/ENVIRONMENT_NOTES.md` records the initial scenery pass.
@@ -46,7 +60,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-The landing carrier, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+Landing failure outcomes, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
@@ -66,7 +80,7 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.5.1 work is merged into `main` at
-`c373a9e665690780c72ecb3613c97cd304c83c20`. This development review is on
-`feature/damage-hud-v0.6.0`. Keep edits on feature branches and review before
+The approved v0.6.0 work is merged into `main` at
+`b8c0ea52fe609bbdcb103f5cc4004187cb77ddb0`. This development review is on
+`feature/landing-polish-v0.7.0`. Keep edits on feature branches and review before
 merging. A review build is not a public release or permission to merge.
