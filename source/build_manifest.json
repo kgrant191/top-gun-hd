@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.2",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -18,11 +18,17 @@
     "Live hull-health bar and percentage from native damage state",
     "Rear-threat instrument redraw with native warning timing and moving target",
     "Readable incoming missile growth stages and complete impact burst",
-    "HD scenery preserved during the native red damage flash"
+    "HD scenery preserved during the native red damage flash",
+    "Opaque carrier approach across 21 native distance stages",
+    "Painted side-on touchdown and animated water with native jet movement",
+    "Clean deck rollout without foreground mask blocks",
+    "Mission debrief with native score and lives",
+    "Cannon projectiles distinct from true missile artwork",
+    "Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages",
+    "No original-art flash when entering debrief or leaving it for the next briefing"
   ],
   "not_yet_redrawn": [
     "Later-mission briefing maps and menus",
-    "Later missions, landing and refuelling",
     "Terrain, later-mission scenery and refuelling"
   ],
   "assets": {
@@ -38,7 +44,11 @@
     "cloud": "source/environment_cloud_master.png",
     "clouddeck": "source/environment_clouddeck_master.png",
     "incoming_missile": "source/incoming_missile_master.png",
-    "impact_burst": "source/impact_burst_master.png"
+    "impact_burst": "source/impact_burst_master.png",
+    "approach": "source/landing_approach_master.png",
+    "broadside": "source/landing_broadside_master.png",
+    "jet": "source/landing_jet_master.png",
+    "landing_crash": "source/landing_crash_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -50,5 +60,6 @@
     "cloud_patterns": 10,
     "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
   },
-  "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays"
+  "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
+  "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage"
 }
