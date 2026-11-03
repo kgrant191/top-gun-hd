@@ -135,6 +135,9 @@ meta['version']='0.7.1'
 meta['features'].append('Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages')
 meta['assets']['landing_crash']='source/landing_crash_master.png'
 meta['landing_coverage']='Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage'
+subprocess.run(['python3',str(R/'scripts/build_landing_transition.py')],check=True)
+meta['version']='0.7.2'
+meta['features'].append('No original-art flash when entering debrief or leaving it for the next briefing')
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

@@ -1,6 +1,6 @@
 # Top Gun HD
 
-Development review build **v0.7.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.7.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
@@ -25,6 +25,11 @@ carrier and sea remain visible through impact and the pause afterward, and
 six native-timed fire/spray stages replace the original crash sprites. It keeps
 all 130 v0.7.0 PNGs. See `source/LANDING_FAILURE_NOTES.md` and
 `validation/landing_failure_v0.7.1.json` for the focused replay checks.
+
+v0.7.2 removes the one-frame original-art flashes when entering the debrief and
+leaving it for the following briefing. It changes scene conditions only and
+preserves all 131 PNGs. See `source/LANDING_TRANSITION_NOTES.md` and
+`validation/landing_transition_v0.7.2.json`.
 
 ## Damage and danger display
 

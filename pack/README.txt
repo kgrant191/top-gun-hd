@@ -1,6 +1,7 @@
-TOP GUN HD v0.7.1 — DEVELOPMENT REVIEW
+TOP GUN HD v0.7.2 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Removes original-art flashes when entering and leaving the landing debrief.
 - Failed water landing keeps the HD scenery through impact and its aftermath.
 - Six native-timed crash stages show fuel fire, seawater spray and mist.
 - Opaque carrier deck and hull throughout the recorded approach.
