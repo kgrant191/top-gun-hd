@@ -106,7 +106,8 @@ subprocess.run(['python3',str(R/'scripts/build_aircraft.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_combat_effects.py')],check=True)
 subprocess.run(['python3',str(R/'scripts/build_environment.py')],check=True)
 meta=json.loads((R/'source/build_manifest.json').read_text())
-meta['version']='0.5.1'
+subprocess.run(['python3',str(R/'scripts/build_damage_hud.py')],check=True)
+meta['version']='0.6.0'
 meta['features'].append('Neutral windshield coaming and consistent attitude-display tick colors')
 meta['features'].append('Correct inland-water fills within the original mission-one coastline')
 meta['features'].append('Painted enemy aircraft across native banks, inverted views and distance sizes')
@@ -120,6 +121,9 @@ meta['not_yet_redrawn']=[item for item in meta['not_yet_redrawn'] if item!='Clou
 meta['not_yet_redrawn'].append('Terrain, later-mission scenery and refuelling')
 meta['features'].append('Native-banked sky, ocean and feathered cloud deck without blue/white horizon dither')
 meta['environment_coverage']='Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays'
+(R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
+meta['features'].extend(['Live hull-health bar and percentage from native damage state','Rear-threat instrument redraw with native warning timing and moving target','Readable incoming missile growth stages and complete impact burst','HD scenery preserved during the native red damage flash'])
+meta['assets'].update({'incoming_missile':'source/incoming_missile_master.png','impact_burst':'source/impact_burst_master.png'})
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

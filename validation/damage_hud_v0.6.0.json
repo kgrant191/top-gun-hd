@@ -1,0 +1,185 @@
+{
+  "version": "0.6.0",
+  "base_commit": "c373a9e665690780c72ecb3613c97cd304c83c20",
+  "incoming_missile": {
+    "identical_trace_frames": 1406,
+    "identical_common_checkpoints": {
+      "chr": 166,
+      "nt": 166,
+      "pal": 166,
+      "ram": 166,
+      "oam": 166,
+      "state": 0
+    },
+    "identical_pcm_frames": 1122689,
+    "pcm_sample_rate": 48000,
+    "loader_or_script_errors": 0
+  },
+  "bullet_damage_and_danger": {
+    "identical_trace_frames": 547,
+    "identical_common_checkpoints": {
+      "chr": 32,
+      "nt": 32,
+      "pal": 32,
+      "ram": 32,
+      "oam": 32,
+      "state": 32
+    },
+    "identical_pcm_frames": 436619,
+    "pcm_sample_rate": 48000,
+    "loader_or_script_errors": 0
+  },
+  "opening_takeoff": {
+    "identical_trace_frames": 3017,
+    "identical_common_checkpoints": {
+      "chr": 63,
+      "nt": 63,
+      "pal": 63,
+      "ram": 63,
+      "oam": 63,
+      "state": 63
+    },
+    "identical_pcm_frames": 2409370,
+    "pcm_sample_rate": 48000,
+    "loader_or_script_errors": 0
+  },
+  "combat_to_landing": {
+    "identical_trace_frames": 8253,
+    "identical_common_checkpoints": {
+      "chr": 120,
+      "nt": 120,
+      "pal": 120,
+      "ram": 120,
+      "oam": 120,
+      "state": 120
+    },
+    "identical_pcm_frames": 6591282,
+    "pcm_sample_rate": 48000,
+    "loader_or_script_errors": 0
+  },
+  "total_native_parity_frames": 13223,
+  "unchanged_v0_5_1_pngs": [
+    "carrier.png",
+    "cockpit.png",
+    "cockpit_left.png",
+    "cockpit_right.png",
+    "combat_effects.png",
+    "director_0.png",
+    "director_1.png",
+    "enemy_aircraft.png",
+    "environment_clouds.png",
+    "environment_cloudtop_flight_left1.png",
+    "environment_cloudtop_flight_left2.png",
+    "environment_cloudtop_flight_left3.png",
+    "environment_cloudtop_flight_right1.png",
+    "environment_cloudtop_flight_right2.png",
+    "environment_cloudtop_flight_right3.png",
+    "environment_cloudtop_flight_zero.png",
+    "environment_details.png",
+    "environment_lower_mask.png",
+    "environment_ocean_flight_left1.png",
+    "environment_ocean_flight_left2.png",
+    "environment_ocean_flight_left3.png",
+    "environment_ocean_flight_right1.png",
+    "environment_ocean_flight_right2.png",
+    "environment_ocean_flight_right3.png",
+    "environment_ocean_flight_zero.png",
+    "environment_ocean_plane.png",
+    "environment_runway_plane.png",
+    "environment_sky.png",
+    "environment_sky_left1.png",
+    "environment_sky_left2.png",
+    "environment_sky_left3.png",
+    "environment_sky_right1.png",
+    "environment_sky_right2.png",
+    "environment_sky_right3.png",
+    "exhaust_02.png",
+    "exhaust_08.png",
+    "exhaust_10.png",
+    "exhaust_1B.png",
+    "exhaust_28.png",
+    "exhaust_3A.png",
+    "exhaust_50.png",
+    "exhaust_68.png",
+    "flight_ui.png",
+    "instruments.png",
+    "menu_console.png",
+    "menu_hound.png",
+    "menu_map.png",
+    "menu_tiger.png",
+    "menu_ui.png",
+    "menu_weapon_headers.png",
+    "menu_wolf.png",
+    "panel_details.png",
+    "title.png",
+    "title_prompt.png",
+    "transparent.png",
+    "windshield_cap.png",
+    "windshield_cap_left.png",
+    "windshield_cap_right.png"
+  ],
+  "health_fixture": {
+    "12": {
+      "percent": 100,
+      "lit_segments": 12
+    },
+    "9": {
+      "percent": 75,
+      "lit_segments": 9
+    },
+    "6": {
+      "percent": 50,
+      "lit_segments": 6
+    },
+    "3": {
+      "percent": 25,
+      "lit_segments": 3
+    },
+    "0": {
+      "percent": 0,
+      "lit_segments": 0
+    }
+  },
+  "natural_health_transitions": {
+    "danger": [
+      {
+        "frame": 1,
+        "health": 9
+      },
+      {
+        "frame": 51,
+        "health": 6
+      }
+    ],
+    "missle": [
+      {
+        "frame": 1,
+        "health": 12
+      },
+      {
+        "frame": 196,
+        "health": 0
+      },
+      {
+        "frame": 263,
+        "health": 12
+      }
+    ]
+  },
+  "decoded_pngs": 102,
+  "rom_or_audio_replacements": false,
+  "tested_artwork_matches_final_pack": true,
+  "final_rule_difference": "Comment/version and stable ordering of disjoint warning-outline keys only",
+  "visual_review": [
+    "Bullet health 75% to 50%; warning on/off and moving rear target.",
+    "Incoming missile at each growth stage, including overlap with its flame.",
+    "Complete impact burst, preserved cloud scenery and warm damage tint.",
+    "Health reset to 100% after death; 100/75/50/25/0% fixture.",
+    "Opening/takeoff and combat/landing replay checkpoints inspected."
+  ],
+  "limitations": [
+    "Mission-one coverage only; later missions/refuelling not newly tested.",
+    "Health-level fixture writes test RAM; it is excluded from the pack.",
+    "HD audio metadata excluded from state comparison; PCM compared separately."
+  ]
+}

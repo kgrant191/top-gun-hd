@@ -1,10 +1,23 @@
 # Top Gun HD
 
-Development review build **v0.5.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.6.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Damage and danger display
+
+- A live HULL bar and percentage show native health, including bullet damage,
+  lethal missile hits and the reset after losing a plane.
+- A clean amber rear-threat display preserves the original warning timing and
+  moving enemy-aircraft symbol.
+- Incoming missiles have a bright silver/red silhouette at every observed size.
+- The impact burst is complete, and the HD sky/cloud scenery stays visible
+  beneath the native-timed warm damage flash.
+
+All 58 v0.5.1 PNGs are preserved. See `source/DAMAGE_HUD_NOTES.md` and
+`validation/damage_hud_v0.6.0.json` for scope and replay checks.
 
 ## Turning and cloud-horizon correction
 
@@ -53,4 +66,7 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved combat pass is merged into `main` at `e3bb36e83e7dba56426dadb9ab5c202191159957`. This scenery pass is on `feature/environment-v0.5.0` for review. Keep further edits on feature branches and review before merging. Do not treat a development checkpoint as a release or permission to merge.
+The approved v0.5.1 work is merged into `main` at
+`c373a9e665690780c72ecb3613c97cd304c83c20`. This development review is on
+`feature/damage-hud-v0.6.0`. Keep edits on feature branches and review before
+merging. A review build is not a public release or permission to merge.
