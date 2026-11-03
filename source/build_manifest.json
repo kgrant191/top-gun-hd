@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -12,12 +12,13 @@
     "Neutral windshield coaming and consistent attitude-display tick colors",
     "Correct inland-water fills within the original mission-one coastline",
     "Painted enemy aircraft across native banks, inverted views and distance sizes",
-    "Native-timed missiles, ignition, explosions and smoke"
+    "Native-timed missiles, ignition, explosions and smoke",
+    "Correct white cloud distance sizes, painted sky, ocean and runway surfaces"
   ],
   "not_yet_redrawn": [
-    "Clouds, ocean and terrain",
     "Later-mission briefing maps and menus",
-    "Later missions, landing and refuelling"
+    "Later missions, landing and refuelling",
+    "Terrain, later-mission scenery and refuelling"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -25,14 +26,21 @@
     "cockpit": "source/cockpit_master.png",
     "briefing_console": "source/briefing_console_master.png",
     "enemy_aircraft": "source/enemy_aircraft_atlas.png",
-    "combat_effects": "source/combat_effects_atlas.png"
+    "combat_effects": "source/combat_effects_atlas.png",
+    "sky": "source/environment_sky_master.png",
+    "water": "source/environment_water_master.png",
+    "runway": "source/environment_runway_master.png",
+    "cloud": "source/environment_cloud_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
     "aircraft_layouts": 116,
     "aircraft_patterns": 145,
-    "effect_layouts": 23,
-    "effect_patterns": 37,
+    "effect_layouts": 19,
+    "effect_patterns": 27,
+    "cloud_layouts": 4,
+    "cloud_patterns": 10,
     "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
-  }
+  },
+  "environment_coverage": "Mission-one native background masks and palette transitions; cloud patterns separated from orange combat explosions"
 }

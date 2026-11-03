@@ -1,0 +1,21 @@
+{
+  "version": "0.5.0",
+  "materials": {
+    "ocean": {
+      "patterns": 313,
+      "detail_tiles": 311
+    },
+    "cloudtop": {
+      "patterns": 10,
+      "detail_tiles": 8
+    },
+    "runway": {
+      "patterns": 52,
+      "detail_tiles": 49
+    }
+  },
+  "cloud_patterns": 10,
+  "new_rules": 500,
+  "preserved_default_alternatives": 42,
+  "field_rendering": "Per-frame native tile anchors select continuous material planes"
+}
