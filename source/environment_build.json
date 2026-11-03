@@ -1,0 +1,21 @@
+{
+  "version": "0.5.1",
+  "materials": {
+    "ocean": {
+      "patterns": 313,
+      "detail_tiles": 303
+    },
+    "cloudtop": {
+      "patterns": 10,
+      "detail_tiles": 0
+    },
+    "runway": {
+      "patterns": 52,
+      "detail_tiles": 49
+    }
+  },
+  "cloud_patterns": 10,
+  "new_rules": 500,
+  "preserved_default_alternatives": 42,
+  "field_rendering": "Native signed bank stages and PPU vertical scroll drive painted fields"
+}

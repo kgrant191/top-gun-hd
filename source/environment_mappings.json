@@ -1,0 +1,1460 @@
+{
+  "backgrounds": {
+    "1": [
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFFF"
+      },
+      {
+        "pattern": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+      },
+      {
+        "pattern": "FFFFFFFFFFBFFD56FFFFFFFFFFFBF7AD"
+      },
+      {
+        "pattern": "FFFFFFFFFFFF2CD6FFFFFFFFFFEAFB3B"
+      },
+      {
+        "pattern": "FFFFFFFFFF54AA04FFFFFFFFFFFFFFFF"
+      },
+      {
+        "pattern": "FFFFFFF7AA542E0AFFFFFFFFF7FFF3FD"
+      },
+      {
+        "pattern": "FFFFFFAE572A4CB0FFFFFFFFFDDFF34F"
+      },
+      {
+        "pattern": "FFFF995408590420FFFFFFFFFFE7FFDF"
+      },
+      {
+        "pattern": "FFEB5AA512220000FF3FFFFFFFDDFFFF"
+      },
+      {
+        "pattern": "75AE044004100000FFFBFFFFFFEFFFFF"
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFEFD",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000121FFFFFFFFFFFF01DF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000080FFFFFFE09F7FFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000300FFFFFF01FDFDFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000800000E000FFFFFF7F7F7FFF0F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFEFDF3EF9F",
+        "carrier": true
+      },
+      {
+        "pattern": "0008180020200000F3EF8F7FDFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0120200020202020FFDFFFFFDFFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0040000020200000FFBFFFFFDFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000030303030303FFFFFCFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000C000000000006F0F0F8F8F978787",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFCF8",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFCFBE79F7FFF01",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000010100007FFFFFFFFEFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4000800000000000BFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0020200020202020FFFFFFFFDFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "1000080004040002EFFFFFFFFBFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0300000000000000FFFCFFFFFFFFFFF8",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000009737F7FBFBFBFB03",
+        "carrier": true
+      },
+      {
+        "pattern": "0700000000000000F0F0F8FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FC0001030010040301010000C0D0F4FB",
+        "carrier": true
+      },
+      {
+        "pattern": "0004FFFF00000000FFFB000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000FFFF00000000FFFF000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0001FFFF00000000FFFE000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0300F0F000000000F8F0000000000306",
+        "carrier": true
+      },
+      {
+        "pattern": "F80000000000000003030303033FE77F",
+        "carrier": true
+      },
+      {
+        "pattern": "C0E0301C06012069C0E030DCC6ADFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000000000000052A0A7E",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000F34546140D43013",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000905742003FAF02F8",
+        "carrier": true
+      },
+      {
+        "pattern": "1053000000000000D2FFF7FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0A80B400000000000AFFFEFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000040A0FFFFFFFFFFFFC0DF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFF0CF3FFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000007000207FFFFFCFF03FEFEF8",
+        "carrier": true
+      },
+      {
+        "pattern": "80800000C00080C07FFF1F7FDF7FDF07",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFEF9E79F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0608702020004080FFFFFF5FFFFFBFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "2060202020002020DFDFFFDFFFFFDFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0040402020001008FFBFFFDFFFFFEFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0606060606060000FFFFFFFFFFFFF8FF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000009797979B9B8301FD",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFEF9E7EFE0",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000F9E79F7FFFFFFF00",
+        "carrier": true
+      },
+      {
+        "pattern": "0000010202040408FFFFFEFFFFFFFFF7",
+        "carrier": true
+      },
+      {
+        "pattern": "2020202020202020FFDFFFFFFFFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0800040202010100FFFFFBFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000080FFFFFFFFFFFFFE7E",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000007EFDFDFEFEFEF80000",
+        "carrier": true
+      },
+      {
+        "pattern": "0F07000000000003E0E7F0FFFFFFFFF7",
+        "carrier": true
+      },
+      {
+        "pattern": "FEF00707170403C100F000C0D7F4FBFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000FFFFFF000000FFFF0000FF000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0040FCFCE0000000FEFC0000E003060F",
+        "carrier": true
+      },
+      {
+        "pattern": "7800000000000000780103033FE77F90",
+        "carrier": true
+      },
+      {
+        "pattern": "0C00130000326000FFFEFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "E0301C0601207140E030DCC62DFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000801000000000000080D0",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000A000000052A0A7E0A",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000008034546140D43013FF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFE7E7C3C3E3FFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000380000E3EBC3C181B9C3CD",
+        "carrier": true
+      },
+      {
+        "pattern": "0030002000047800E7B3832303077A02",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000081C3F7DFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFEFEFCFCFE",
+        "carrier": true
+      },
+      {
+        "pattern": "00600060000044F8C7230363030345F9",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000281E1AFFBDCFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFEFEFDFDFBFB",
+        "carrier": true
+      },
+      {
+        "pattern": "0000C000C0000084C79773FBFBFBFBF7",
+        "carrier": true
+      },
+      {
+        "pattern": "0003000800003000F7FBFCFEF9FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00F0000000000000F3F402031EF7B9FF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000600000A00FFFFF8FDF7F7EFEF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000840080008FAF77F3F3F3FBFB",
+        "carrier": true
+      },
+      {
+        "pattern": "0032000F00000000DFFFCFCFC0C0F0F9",
+        "carrier": true
+      },
+      {
+        "pattern": "008C00F000000000FBFFF3F7070B0F27",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFED6FFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFC797",
+        "carrier": true
+      },
+      {
+        "pattern": "0000020602020A00FFF8F5F5EFDDDFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000808084008000B73179F9F1FBF9F9",
+        "carrier": true
+      },
+      {
+        "pattern": "02C200023F0000007DDF1F9FBFC0F0F9",
+        "carrier": true
+      },
+      {
+        "pattern": "000C0000F0000000F9FDF1F3F3030F27",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000EDFCFFF67FFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000002060202FFFFFFF8F5F5EFDD",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000080808400E3DDBD3C7FFFF9FA",
+        "carrier": true
+      },
+      {
+        "pattern": "0A000212C012123FDFBF7D7FFF3F2DBF",
+        "carrier": true
+      },
+      {
+        "pattern": "800040004E0040F0F8F8FEFEFEF8B1F0",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFF7F7F7F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000408020000020C070F8ED6EBFF5FF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000000020164CFF67FD5",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000020000000BFFFEF9FFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000020A02FFFFFFFFF8F5F5ED",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000808081FBE0CE9E3E7F7FFE",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFF7F9FDFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFEFDFD",
+        "carrier": true
+      },
+      {
+        "pattern": "000A000212001212DFD5BF7F7DFFFFED",
+        "carrier": true
+      },
+      {
+        "pattern": "0083024000400040FC7FFEFCFFFFFFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000005FDF1F3FBFBFBFB7",
+        "carrier": true
+      },
+      {
+        "pattern": "4000800000000080FCFCFFFFFFF7FFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "C0003F00000008123F7F0080C0E0FEBB",
+        "carrier": true
+      },
+      {
+        "pattern": "0100F00000004000FEFC080000004302",
+        "carrier": true
+      },
+      {
+        "pattern": "8000000000000000171B3F2B7EBDCFAB",
+        "carrier": true
+      },
+      {
+        "pattern": "3400080000000000FFEFBFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000020AFFFFFFFFFFF8F5F5",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000008080FFFBF0EFDF3F7F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000080FF7F7F7F3F8FEF6F",
+        "carrier": true
+      },
+      {
+        "pattern": "0202001212001212EDDDDFAD7F7FEDFF",
+        "carrier": true
+      },
+      {
+        "pattern": "8000414140400000FEFFFEBFFEFEFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00008000000000002F6FAF0F1F5FDFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0043008000000000FDF8F8FEFEFFF7FF",
+        "carrier": true
+      },
+      {
+        "pattern": "021220007D000000FF6D7F7F028080C0",
+        "carrier": true
+      },
+      {
+        "pattern": "00402040F8000000FFBFFEFE04000000",
+        "carrier": true
+      },
+      {
+        "pattern": "00C0000000000000DB0F0B250F240507",
+        "carrier": true
+      },
+      {
+        "pattern": "0000806000584010A0F894F8FAFEFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000080400000000D0A7E9BFCF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000030A1F5F9FBFFFEF",
+        "carrier": true
+      },
+      {
+        "pattern": "200A022000000000FFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000002FFFFFFFFFFFFF8F5",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000080FFFFFBF0EFDF3F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFF7F7F7F3F8FF7",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFFE",
+        "carrier": true
+      },
+      {
+        "pattern": "0A02020012120012F5EDDDDFAD7F7FED",
+        "carrier": true
+      },
+      {
+        "pattern": "80800040404040007FFFFFFFBFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0040000000E00000F7B717B7B7670F0F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000400300000000FDFDFBF8F8FEFEF7",
+        "carrier": true
+      },
+      {
+        "pattern": "12020032320200FFFFFFFFEDFFFF0000",
+        "carrier": true
+      },
+      {
+        "pattern": "00000060600000F8FFFFFFBFFEFC0000",
+        "carrier": true
+      },
+      {
+        "pattern": "000000C000000000C9CAC30003030004",
+        "carrier": true
+      },
+      {
+        "pattern": "C080102020020000FFFFFFFFFFFFFBFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000080602058470080C090E0F8FEFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000804000000000001E8B5",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000001000000503031E0597BF5F",
+        "carrier": true
+      },
+      {
+        "pattern": "4250500040000A10CFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000C0FFFFFDF0EFDF3F3F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFF7F3FBFBF8FF3",
+        "carrier": true
+      },
+      {
+        "pattern": "0200121002020022F5EFCDCFBD7F7FDD",
+        "carrier": true
+      },
+      {
+        "pattern": "4000004000000020FFFFFFBFFFFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0020000060600000FBDB8BDBFBD78787",
+        "carrier": true
+      },
+      {
+        "pattern": "0000004007800000FDFDFBF7F0F0F0FC",
+        "carrier": true
+      },
+      {
+        "pattern": "2202020022220200FFFFFFFFDDFFFF00",
+        "carrier": true
+      },
+      {
+        "pattern": "2020000020200000FFFFFFFFDFFFFE00",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000E000000097F1E2E300030300",
+        "carrier": true
+      },
+      {
+        "pattern": "00C0001020204200F6FFFFFEFFFFFFFB",
+        "carrier": true
+      },
+      {
+        "pattern": "FF00000080602058000080C090E0F8FE",
+        "carrier": true
+      },
+      {
+        "pattern": "FC0000000000000800000000000001E8",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000004050300060182A2",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000BFFF9FCFFFDFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "5717008040404000EFFFEFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0442515000400000B5CFF9FFFFFFFF7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFF8",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFDF0EFDF3F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFF7F3FDFDFCF",
+        "carrier": true
+      },
+      {
+        "pattern": "0202000210020200F5F5EFDDAFBD7FFF",
+        "carrier": true
+      },
+      {
+        "pattern": "C0400000400000003FFFFFFFBFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000200000706040F1FDDD8DDDE9CBC3",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000040008C00FDFDFBF7EFE3E0E0",
+        "carrier": true
+      },
+      {
+        "pattern": "2222020200220202DDFFFFFFFFDDFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "2020200000200000DFFFFFFFFFDFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4000000000007000C3C3F9F3F2F18000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000408010202002FCF6FFFFFEFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF00000080602000000080C090E0F8",
+        "carrier": true
+      },
+      {
+        "pattern": "00FC0000000000000000000000000001",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000004050300060182",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000007FBF7F9FFFEFAFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "5847170080000000FEFFFFEFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0804425150004100E8B5CFF9FFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000080000000AA576FCFFFEFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFDF0EFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFF7F7F9FDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0002020002100202F8F5F5EFDDAFBD7F",
+        "carrier": true
+      },
+      {
+        "pattern": "00404000006000003FBFFFFFFFDFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000200000407860DFE3DCDE86CEE5C5",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000404080FEFDFDFBF7EFEFC3",
+        "carrier": true
+      },
+      {
+        "pattern": "0022220202002202FFDDFFFFFFFFDDFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0020202000001010FFDFFFFFFFFFEFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4040400000000000C5C1C1FDF8F8F8C0",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFBFFFBFFFFF3F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "180000C380102020C3C3FBF8F8FEFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "020214FF00008060FFFFFF00000080E0",
+        "carrier": true
+      },
+      {
+        "pattern": "100018FC00000000FFFFFE0000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "18000000000000008000040503000601",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000007F3F3F7FDFFFEFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "0240020080000000FFFBFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "2058471700804040F8FEFFFFEFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000804425150000001E8B5CFF9FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000080008082A2556FDFFBEFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFAE5DF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFF3FDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000040400042004FFF0EBEBDFBB5F7B",
+        "carrier": true
+      },
+      {
+        "pattern": "000080800000C000BF7F7FFFFFFFBFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000080000001CDFC7F8F6F6C2F6F2",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000008080FEFDFBFBF7EFDFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0400444404040044FFFFBBFFFFFFFFBB",
+        "carrier": true
+      },
+      {
+        "pattern": "0000404040000020FFFFBFFFFFFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "3824242000000000E2E6E4E0FEFCFCFC",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFDFFFDF7F7F1F",
+        "carrier": true
+      },
+      {
+        "pattern": "0100000001010200FBFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "007000008700204187878787E0F0FCFF",
+        "carrier": true
+      },
+      {
+        "pattern": "04040428FF000000FFFFFFFF00000000",
+        "carrier": true
+      },
+      {
+        "pattern": "20200030FE000000FFFFFFFF00000000",
+        "carrier": true
+      },
+      {
+        "pattern": "000C000000000000E0C0800202010003",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000003F3F1F3FFFAF7F77",
+        "carrier": true
+      },
+      {
+        "pattern": "4084800402020100FFFFB7FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "C040B0AE2E000006C0F0FDDFFFDFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000100885A0A0000000D06A9DF2FFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000029224000ACF5BABBFFFFFFD",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFF7C8",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFF7F9F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000109000800FFFFE0EED7BF77FF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000008080BF7FFFFFFFFF7FFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000400000008DFDFC7F8FBE1FBF3",
+        "carrier": true
+      },
+      {
+        "pattern": "0000010000000000FDFBF7EFDFBF7FFF",
+        "carrier": true
+      },
+      {
+        "pattern": "880800880808080077FFFF77FFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000004040400000FFFFFFBFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "1E00001010000000E1E1E1F0F3FFFEFE",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000007F7F7F6F7F6F3F3F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000030000000000FDFCFCFCFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0100C000001F0000FE1F1F1F1FC0E0F8",
+        "carrier": true
+      },
+      {
+        "pattern": "0808080850FF0000F7FFFFFFFF000000",
+        "carrier": true
+      },
+      {
+        "pattern": "2020200020FF0000DFFFFFFFFF000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000060000000000FEF0E0C0A0408000",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000003F5FBF1FAFFFB76F",
+        "carrier": true
+      },
+      {
+        "pattern": "0201000200001000FEFFFFEFFFFFFFEF",
+        "carrier": true
+      },
+      {
+        "pattern": "0080001006200680008090FCF7FEBFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000400040020000000071AEF7FB",
+        "carrier": true
+      },
+      {
+        "pattern": "00000020005000000100602815DC03ED",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000CF3BEFBF5FBFFB7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFF7",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFF7F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000001110010FFFFFFC0BE6FFFEF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000080C8BF7FFFFFFFFF7F",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000020000059FEFEFE0FDF8FDF8",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFEFDFB",
+        "carrier": true
+      },
+      {
+        "pattern": "0002000402000000FBF5CFBF7DFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0010101010101000FFEFFFFFEFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "8000000040404000FFFFFFFFBFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0F00080800000000F0F0F8F8F1FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000007F7F7F3F3F2F1F6F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000001F00000000F7EFC0C0C0FCFEFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0004000000007F00FFFB7F7F7F7F0000",
+        "carrier": true
+      },
+      {
+        "pattern": "001800000050FF00FFEFFFFFFFFF0000",
+        "carrier": true
+      },
+      {
+        "pattern": "002020200020FF00FFDFFFFFFFFF0000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000700000000FFFFF0E0C0A00000",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000005F2F3F0F3F0F0F17",
+        "carrier": true
+      },
+      {
+        "pattern": "00180F030300000080D8FFFBBFFEFFFE",
+        "carrier": true
+      },
+      {
+        "pattern": "00000080800004000000008080B0DCB8",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000680000000000011F68",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000001006008159000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000572BBB3F9FBF773F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000C44600FFFFFFFE813BB9FF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000F3887FFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000002000000050F3F9FEDEDE1FCF8F0",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFF3FBFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFEFDFBF7CF",
+        "carrier": true
+      },
+      {
+        "pattern": "0800080010100000E7DFB77FFFEFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4203414141404040BDFFBEFFFFBFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000808080FFFFFFFFFF7FFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0008080800000000F0FEFEFEF0FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000BFBFBF3F1FDFDFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000001000000FFFFFEFCF8F8F8FF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000F8000003BF7FFF03030303F8",
+        "carrier": true
+      },
+      {
+        "pattern": "20002000400000FFFFFFDFFFFFFFFF00",
+        "carrier": true
+      },
+      {
+        "pattern": "00404000000000FFFFFFBFFFFFFFFF00",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000007000000FFFFFFF0E0C0A040",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000C0000000CFCFCF0F0F1F2F1F",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000F8FEFFFEFFF6FFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FF0060380C070001000060F8ECF7F8FB",
+        "carrier": true
+      },
+      {
+        "pattern": "FF000000000000000000000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000000010060081590",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFFC",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000042FFFFFFFFFFFFC0BD",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFBC0BF7FFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000103FFFFBF0FF7F7F3FF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000800060C0FFFFFFFF7F7F7FDF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFCFBF7",
+        "carrier": true
+      },
+      {
+        "pattern": "0000100010002020FBF7CFBF6FFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "43004101C0404040BCFFBEFFBFFFFFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000008080808040FFFFFFFF7FFFFFBF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000030303030301FFFFFEFEFFFFFFFD",
+        "carrier": true
+      },
+      {
+        "pattern": "00004080000000005F5F1F5FCFCF8F8F",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000FFFFFFFFEFDFBE0E0",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000F8EF9F7FFFFFFF0707",
+        "carrier": true
+      },
+      {
+        "pattern": "0000400040008000FFFFFFFFBFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4040404040000000FFFFFFFFBFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "4040402020002000FFFFFFFFDFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000007FEFFFFFFFFFFF8E0",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000F02FEFEFEFE7E70707",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000E0F0FFFFFFFDFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000070700000000070780C0F0FCFBEC",
+        "carrier": true
+      },
+      {
+        "pattern": "4000FFFF00000000FFFF000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0080808000000000D0204000021A3004",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000071F0F075A914353",
+        "carrier": true
+      },
+      {
+        "pattern": "0400320001043800FFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "3F204500600100C03026CF79FFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FB0C2500000180D628803724EFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FB10043003000016C93884F3078347FF",
+        "carrier": true
+      },
+      {
+        "pattern": "001F0100C55420F2FFFFFFFFFEFFDFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00007C006039C300FFFF9FFFFFFF3DFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000C1800FFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0000003002000016FFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00007C006009C300FFFF9FFFFF0F3DFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00007C000039C200CFFFBFFF9FFF3CFF",
+        "carrier": true
+      },
+      {
+        "pattern": "001F0100455400C2FFFFFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "006030000B07007FFFFFFF80FFFF00DF",
+        "carrier": true
+      },
+      {
+        "pattern": "006030000B07007FFFFFFF1FFBFF1FFF",
+        "carrier": true
+      }
+    ],
+    "2": [
+      {
+        "pattern": "0000000000000000FFFFFFFFFFFFFFFF"
+      },
+      {
+        "pattern": "00FFFFFFFFFFFFFF0000000000000000"
+      },
+      {
+        "pattern": "FFFFFFFFFFFFFFFF0000000000000000"
+      },
+      {
+        "pattern": "00FFFFF9FFFFF9F90000000000000000"
+      },
+      {
+        "pattern": "FFFFFFFFFFFFF0F00000000000000000"
+      },
+      {
+        "pattern": "00FDFFFFF9FFFFFF0000000000000000"
+      },
+      {
+        "pattern": "F9F9FFFFFFFFFFFF0000000000000000"
+      },
+      {
+        "pattern": "00FFFDFFFFF9FFFF0000000000000000"
+      },
+      {
+        "pattern": "FFFFFFF0F0FFFFFF0000000000000000"
+      },
+      {
+        "pattern": "75AE044004100000FFFBFFFFFFEFFFFF"
+      },
+      {
+        "pattern": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+        "carrier": false
+      },
+      {
+        "pattern": "1000080004040002EFFFFFFFFBFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0300000000000000FFFCFFFFFFFFFFF8",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000009737F7FBFBFBFB03",
+        "carrier": true
+      },
+      {
+        "pattern": "0700000000000000F0F0F8FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FC0001030010040301010000C0D0F4FB",
+        "carrier": true
+      },
+      {
+        "pattern": "0004FFFF00000000FFFB000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0000FFFF00000000FFFF000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0001FFFF00000000FFFE000000000000",
+        "carrier": true
+      },
+      {
+        "pattern": "0300F0F000000000F8F0000000000306",
+        "carrier": true
+      },
+      {
+        "pattern": "F80000000000000003030303033FE77F",
+        "carrier": true
+      },
+      {
+        "pattern": "C0E0301C06012069C0E030DCC6ADFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000000000000052A0A7E",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000F34546140D43013",
+        "carrier": true
+      },
+      {
+        "pattern": "0000000000000000905742003FAF02F8",
+        "carrier": true
+      },
+      {
+        "pattern": "1053000000000000D2FFF7FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0A80B400000000000AFFFEFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0C00130000326000FFFEFFFFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "E0301C0601207140E030DCC62DFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000801000000000000080D0",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000000A000000052A0A7E0A",
+        "carrier": true
+      },
+      {
+        "pattern": "000000000000008034546140D43013FF",
+        "carrier": true
+      },
+      {
+        "pattern": "5300E00000000000FFF7E0FFFFFFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FF7F7F5F07DFDF07FFBFDFDFF7DFDFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "FFFFFFFFFFFFBFEFFFFFFFFFFFFF7F13",
+        "carrier": true
+      },
+      {
+        "pattern": "FFFFFFFFFFDBDBDBFFFFFFFFFFFFFFDF",
+        "carrier": true
+      },
+      {
+        "pattern": "FFFFFF8181E7E7FFFFFFFFFF81E7FFE7",
+        "carrier": true
+      },
+      {
+        "pattern": "FEFEFEFEF8FFD8D8FFFEFEF8F8F8F8DB",
+        "carrier": true
+      },
+      {
+        "pattern": "DF879FF601F40151DFDFDF0001020DAD",
+        "carrier": true
+      },
+      {
+        "pattern": "FFFBFBFBFBFBDBDBFFFFFFFFFFFFDFDB",
+        "carrier": true
+      },
+      {
+        "pattern": "002F80800A0080C000C080BEB13F9FC7",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF0000000000000000000000FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF000000000000000000000005FFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF0000000000000000000000FF00C0",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF00000000000000000000000000FF",
+        "carrier": true
+      },
+      {
+        "pattern": "00FE00F8000000000000000001071F3F",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF00000800000000000000E3FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "00FF00603000000000000000C3FFFFFF",
+        "carrier": true
+      },
+      {
+        "pattern": "0FF7000F1F3F7F7F0F00010F9F3F7F7F",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000FFFFFFFFFFFFFF0000",
+        "carrier": true
+      },
+      {
+        "pattern": "00000000000000000000000000000000",
+        "carrier": false
+      },
+      {
+        "pattern": "000000FFFFFFFFFFFFFF000000000000",
+        "carrier": true
+      }
+    ]
+  },
+  "cloud_patterns": [
+    "00063F3F7F7F3C0A00063F3F7F7F3C0A",
+    "00E8F4F8F8FD7EFF00E8F4F8F8FD7EFF",
+    "0008627C3FFEFEFE0008627C3FFEFEFE",
+    "0F5F1F3F7F3F3F3F0F5F1F3F7F3F3F3F",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "FFFFFEFEFEFCFCF8FFFFFEFEFEFCFCF8",
+    "7F7F7F3F3F1F26007F7F7F3F3F1F2600",
+    "FFFFFFFFFFBF1F1EFFFFFFFFFFBF1F1E",
+    "70FCFEFE7FFF7E3C70FCFEFE7FFF7E3C",
+    "20F8F4F8F8F0F86020F8F4F8F8F0F860"
+  ]
+}

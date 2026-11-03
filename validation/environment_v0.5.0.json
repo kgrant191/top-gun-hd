@@ -1,0 +1,107 @@
+{
+  "version": "0.5.0",
+  "base_commit": "e3bb36e83e7dba56426dadb9ab5c202191159957",
+  "opening_takeoff_clouds": {
+    "identical_trace_frames": 3017,
+    "identical_checkpoints": {
+      "chr": 63,
+      "nt": 63,
+      "pal": 63,
+      "ram": 63,
+      "oam": 63,
+      "state": 63
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 2409370
+    },
+    "loader_or_script_errors": 0
+  },
+  "combat_to_landing": {
+    "identical_trace_frames": 8253,
+    "identical_checkpoints": {
+      "chr": 120,
+      "nt": 120,
+      "pal": 120,
+      "ram": 120,
+      "oam": 120,
+      "state": 120
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 6591282
+    },
+    "loader_or_script_errors": 0
+  },
+  "unchanged_cockpit_checkpoints": 62,
+  "unchanged_intro_menu_checkpoints": 43,
+  "preserved_existing_pngs": [
+    "carrier.png",
+    "cockpit.png",
+    "cockpit_left.png",
+    "cockpit_right.png",
+    "combat_effects.png",
+    "director_0.png",
+    "director_1.png",
+    "enemy_aircraft.png",
+    "exhaust_02.png",
+    "exhaust_08.png",
+    "exhaust_10.png",
+    "exhaust_1B.png",
+    "exhaust_28.png",
+    "exhaust_3A.png",
+    "exhaust_50.png",
+    "exhaust_68.png",
+    "flight_ui.png",
+    "instruments.png",
+    "menu_console.png",
+    "menu_hound.png",
+    "menu_map.png",
+    "menu_tiger.png",
+    "menu_ui.png",
+    "menu_weapon_headers.png",
+    "menu_wolf.png",
+    "panel_details.png",
+    "title.png",
+    "title_prompt.png",
+    "transparent.png",
+    "windshield_cap.png",
+    "windshield_cap_left.png",
+    "windshield_cap_right.png"
+  ],
+  "all_preexisting_functional_rules_preserved": true,
+  "decoded_pngs": 39,
+  "rom_or_audio_replacements": false,
+  "naturally_observed_cloud_patterns": 10,
+  "cloud_and_orange_explosion_patterns_disjoint": true,
+  "cloud_distance_layouts": 4,
+  "review_recordings": {
+    "opening": {
+      "recorded_frames": 2999,
+      "complete_trace_frames": 3017,
+      "container_rebuilt_from_complete_chunks": true,
+      "all_recorded_video_chunks_decoded": true
+    },
+    "combat": {
+      "recorded_frames": 8252,
+      "complete_trace_frames": 8253,
+      "container_rebuilt_from_complete_chunks": false
+    }
+  },
+  "limitations": [
+    "Mission-one coverage; no full-game, later-mission or refuelling claim.",
+    "Landing carrier geometry and markings remain native; dedicated carrier redraw is future work.",
+    "HD audio-device metadata excluded from state comparison; PCM compared independently."
+  ],
+  "reproducible_build_files": 41,
+  "installable_zip_byte_parity": true,
+  "recorded_render_performance": {
+    "ocean_fps": 73.6,
+    "carrier_approach_fps": 81.2,
+    "scope": "This validation host, including native recording overhead; not a hardware-independent benchmark"
+  }
+}

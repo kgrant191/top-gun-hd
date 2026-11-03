@@ -1,15 +1,25 @@
 # Top Gun HD
 
-Development review build **v0.4.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.5.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
-## New combat artwork
+## Turning and cloud-horizon correction
+
+- Native white clouds keep their own painted cloud artwork at every mapped distance size. They no longer become smoke or fireballs as they approach.
+- A painted maritime sky, detailed ocean surface, weathered runway and ivory runway dashes replace the flat scenery colors.
+- Sky, ocean and the new continuous cloud deck follow the native bank stages. The flight horizon follows vertical scroll, with a soft cloud/sky blend and no native blue/white dither strip.
+- Takeoff deck boundaries and runway markings retain native motion. Ocean texture reaches the landing carrier; the carrier retains its native geometry and markings.
+- All 32 previously approved PNGs are unchanged, including the cockpit, aircraft, missiles and orange explosion artwork.
+
+See `source/HORIZON_NOTES.md` and `validation/horizon_v0.5.1.json` for the turning correction and replay checks. `source/ENVIRONMENT_NOTES.md` records the initial scenery pass.
+
+## Preserved combat artwork
 
 - Painted enemy jets in rear, approaching and overhead views, with native banks, inverted views and distance sizes: 116 mapped layouts using 145 tile patterns.
-- Missiles, tracers, ignition flashes, fireballs and smoke: 23 mapped layouts using 37 tile patterns.
+- Missiles, tracers, ignition flashes, fireballs and smoke: 19 mapped combat layouts using 27 tile patterns, plus four cloud distance layouts corrected in v0.5.0.
 - Native positions, animation timing, hit detection and audio remain under game control.
 
 The new artwork is limited to the windshield and exact sprite palettes. All 30 existing pack PNGs are preserved, including the approved cockpit and map fixes. See `source/COMBAT_ART_NOTES.md` and `validation/combat_art_v0.4.0.json` for integration details and tested coverage.
@@ -23,7 +33,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-Clouds, ocean, terrain, later missions and refuelling still need further artwork and coverage. The combat pass covers the recovered mission-one layouts and observed palettes; it is not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+The landing carrier, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
@@ -43,4 +53,4 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved cockpit color and map corrections are merged into `main` at `f23e0c16669c328e8d556f0c20fbe909a8f72efb`. This combat pass is on `feature/enemy-aircraft-v0.4.0` for review. Keep further edits on feature branches and review before merging. Do not treat a development checkpoint as a release or permission to merge.
+The approved combat pass is merged into `main` at `e3bb36e83e7dba56426dadb9ab5c202191159957`. This scenery pass is on `feature/environment-v0.5.0` for review. Keep further edits on feature branches and review before merging. Do not treat a development checkpoint as a release or permission to merge.

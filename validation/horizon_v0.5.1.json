@@ -1,0 +1,185 @@
+{
+  "version": "0.5.1",
+  "base_commit": "9da7d3df6267525d13f228328d614bc6dbf12cac",
+  "cloud_turns_and_pitch": {
+    "identical_trace_frames": 1020,
+    "identical_checkpoints": {
+      "chr": 93,
+      "nt": 93,
+      "pal": 93,
+      "ram": 93,
+      "oam": 93,
+      "state": 93
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 814396
+    },
+    "loader_or_script_errors": 0
+  },
+  "landing_controller_inputs": {
+    "identical_trace_frames": 4520,
+    "identical_checkpoints": {
+      "chr": 327,
+      "nt": 327,
+      "pal": 327,
+      "ram": 327,
+      "oam": 327,
+      "state": 327
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 3609792
+    },
+    "loader_or_script_errors": 0
+  },
+  "opening_takeoff_clouds": {
+    "identical_trace_frames": 3017,
+    "identical_checkpoints": {
+      "chr": 63,
+      "nt": 63,
+      "pal": 63,
+      "ram": 63,
+      "oam": 63,
+      "state": 63
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 2409370
+    },
+    "loader_or_script_errors": 0
+  },
+  "combat_to_landing": {
+    "identical_trace_frames": 8253,
+    "identical_checkpoints": {
+      "chr": 120,
+      "nt": 120,
+      "pal": 120,
+      "ram": 120,
+      "oam": 120,
+      "state": 120
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "sample_rate": 48000,
+      "sample_frames": 6591282
+    },
+    "loader_or_script_errors": 0
+  },
+  "cloud_turn_viewports": {
+    "unchanged_cockpit_checkpoints": 92,
+    "unchanged_intro_checkpoints": 0
+  },
+  "opening_viewports": {
+    "unchanged_cockpit_checkpoints": 62,
+    "unchanged_intro_checkpoints": 43
+  },
+  "combat_viewports": {
+    "unchanged_cockpit_checkpoints": 119,
+    "unchanged_intro_checkpoints": 0
+  },
+  "controller_driven_turn_coverage": {
+    "bank_native": {
+      "native_bank_stages": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "vertical_scroll_range": [
+        76,
+        134
+      ],
+      "world_palette_values": [
+        48
+      ]
+    },
+    "ocean_native": {
+      "native_bank_stages": [
+        0
+      ],
+      "vertical_scroll_range": [
+        140,
+        160
+      ],
+      "world_palette_values": [
+        17
+      ]
+    }
+  },
+  "preserved_pre_environment_pngs": [
+    "carrier.png",
+    "cockpit.png",
+    "cockpit_left.png",
+    "cockpit_right.png",
+    "combat_effects.png",
+    "director_0.png",
+    "director_1.png",
+    "enemy_aircraft.png",
+    "exhaust_02.png",
+    "exhaust_08.png",
+    "exhaust_10.png",
+    "exhaust_1B.png",
+    "exhaust_28.png",
+    "exhaust_3A.png",
+    "exhaust_50.png",
+    "exhaust_68.png",
+    "flight_ui.png",
+    "instruments.png",
+    "menu_console.png",
+    "menu_hound.png",
+    "menu_map.png",
+    "menu_tiger.png",
+    "menu_ui.png",
+    "menu_weapon_headers.png",
+    "menu_wolf.png",
+    "panel_details.png",
+    "title.png",
+    "title_prompt.png",
+    "transparent.png",
+    "windshield_cap.png",
+    "windshield_cap_left.png",
+    "windshield_cap_right.png"
+  ],
+  "v0_5_0_cloud_sprite_atlas_unchanged": true,
+  "decoded_pack_pngs": 58,
+  "rom_or_audio_replacements": false,
+  "visual_review": [
+    "Matched cloud-bank frames reviewed in both directions and after pitch input.",
+    "Landing input fixture stays level in native game; no ocean free-turn coverage claimed.",
+    "Native blue/white dither masks removed from the painted flight horizon.",
+    "Cloud deck extends across the field and fades into sky; no isolated enlarged cloud.",
+    "Banked sky uses padded original pixels without a bank-entry scale change."
+  ],
+  "limitations": [
+    "Mission-one coverage; no full-game, later-mission or refuelling claim.",
+    "Native seven-stage bank drives painted shears; this is not a 3D world renderer.",
+    "Landing carrier geometry and markings remain native.",
+    "HD audio-device metadata excluded from state comparison; PCM compared independently."
+  ],
+  "review_recordings": {
+    "bank_before": {
+      "container_rebuilt": true,
+      "frames": 1019,
+      "complete_frame_chunks_verified": true,
+      "complete_trace_frames": 1020
+    },
+    "bank_final": {
+      "container_rebuilt": false,
+      "frames": 1019,
+      "complete_trace_frames": 1020
+    }
+  },
+  "rebuild_matches_tested_artwork": true,
+  "functional_rules_unchanged_after_version_bump": true
+}
