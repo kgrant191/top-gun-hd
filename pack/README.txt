@@ -1,8 +1,11 @@
-TOP GUN HD v0.8.2 — DEVELOPMENT REVIEW
+TOP GUN HD v0.9.0 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
-- One tanker enters from the right during refueling, without an extra pass.
-- Preserves all 138 v0.8.1 PNGs and the fixes below.
+- One tanker departs after refueling, with no extra copy or reappearance.
+- Clean blue horizon edges throughout the recorded carrier boss fight.
+- Painted enemy carrier, damaged state and destruction effect.
+- Amber carrier-health meter preserves the game's live damage updates.
+- Preserves all 139 v0.8.2 PNGs, the single tanker entrance and the fixes below.
 
 RETAINED MISSION 2 FIXES
 - Clean horizon through Mission 2 takeoff and the transition into flight.
@@ -22,5 +25,6 @@ that folder. Enable HD packs and reopen the ROM in MesenCE.
 
 Tested with the user-supplied MesenCE 2.2.1 Linux build. No ROM or emulator
 is included. Native gameplay, damage rules, timing and audio are unchanged.
-This build covers the supplied Mission 2 recording through refueling controls.
-Refueling completion, later encounters and unrecorded failures need more work.
+This build covers the supplied Mission 2 movies through refueling completion,
+the carrier boss, successful landing and debrief. Unrecorded target sizes,
+other outcomes and later missions still need coverage.

@@ -154,6 +154,14 @@ meta['assets']['submarine_bright']='source/mission2_submarine_bright_master.png'
 subprocess.run(['python3',str(R/'scripts/build_refuel_entry.py')],check=True)
 meta['version']='0.8.2'
 meta['features'].append('One tanker entrance from the right, matching native refueling arrival')
+subprocess.run(['python3',str(R/'scripts/build_mission2_completion.py')],check=True)
+meta['version']='0.9.0'
+meta['features'].extend(['Single tanker departure with no duplicate after the scroll reset',
+ 'Clean banked horizon during the Mission 2 boss route',
+ 'Painted carrier boss, damaged pose and destruction with native-driven amber health meter'])
+meta['assets']['mission2_boss_damaged']='source/mission2_boss_damaged_master.png'
+meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat, refueling entry and completion, carrier boss fight, successful landing and debrief'
+meta['not_yet_redrawn']=['Unrecorded target sizes, later missions, terrain, remaining outcomes and ending']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

@@ -1,12 +1,21 @@
 # Top Gun HD
 
-Development review build **v0.8.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.9.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 2 naval combat and refueling
+
+v0.9.0 completes the recorded refueling departure and carrier boss encounter.
+The tanker exits once and stays gone when the scroll resets. Boss-route
+horizon tiles are masked correctly during turns. The carrier has painted
+intact, damaged and destruction states, with an amber health meter driven
+by the original six meter cells. All 139 v0.8.2 PNGs remain unchanged.
+The two supplied movies also cover the return to combat, retry, successful
+Mission 2 landing and debrief. See `source/MISSION2_COMPLETION_NOTES.md`
+and `validation/mission2_completion_v0.9.0.json`.
 
 v0.8.2 removes the duplicate tanker during refueling entry. One aircraft
 enters from the right and reaches the center before the original boom and
@@ -31,9 +40,10 @@ The refueling blackout came from landing and refueling sharing mode/state
 numbers. The pack now checks the route as well, keeping the cockpit and sky
 visible during refueling. All 132 approved v0.7.3 PNGs remain byte-identical.
 
-Coverage follows the supplied 14,475-frame Mission 2 recording through the
-refueling controls. Refueling completion, later Mission 2 encounters and later
-missions need additional recordings. See `source/MISSION2_NOTES.md` and
+The original v0.8.0 coverage follows the supplied 14,475-frame Mission 2
+recording through the refueling controls; v0.9.0 adds the completion and boss
+recordings described above. Unrecorded target sizes, other outcomes and later
+missions still need additional coverage. See `source/MISSION2_NOTES.md` and
 `validation/mission2_v0.8.0.json` for implementation and replay checks.
 
 ## Carrier landing and gunfire
