@@ -141,6 +141,12 @@ meta['features'].append('No original-art flash when entering debrief or leaving 
 subprocess.run(['python3',str(R/'scripts/build_transition_flashes.py')],check=True)
 meta['version']='0.7.3'
 meta['features'].extend(['Styled danger-to-radar clearing and lethal HUD palette','Additional carrier-rollout edge and moving light phases without original-art flashes'])
+subprocess.run(['python3',str(R/'scripts/build_mission2.py')],check=True)
+meta['version']='0.8.0'
+meta['features'].extend(['Mission 2 briefing and loadout using the approved console style','Mission 2 sea, sky and banked horizon palette coverage','Painted patrol boats and submarines at native distance sizes','Additional Mission 2 aircraft reuse approved combat art','Visible tanker, extending refuelling boom and native control instructions'])
+meta['assets'].update({name:'source/mission2_'+name+'_master.png' for name in ['boat','submarine','tanker','boom']})
+meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat and refuelling entry through the end of the recording; refuelling completion and later Mission 2 sections remain unrecorded'
+meta['not_yet_redrawn']=['Unrecorded Mission 2 sections after the supplied refuelling clip','Later missions, terrain, remaining outcomes and ending']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

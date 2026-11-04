@@ -1,10 +1,26 @@
 # Top Gun HD
 
-Development review build **v0.7.3** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.8.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Mission 2 naval combat and refueling
+
+v0.8.0 extends the approved scenery, cockpit, aircraft and effects to the
+Mission 2 palettes. It adds painted boats and submarines, the second tactical
+map, a scrolling tanker, and a growing refueling boom. The live guidance
+monitor preserves the game's instructions and coupling movement.
+
+The refueling blackout came from landing and refueling sharing mode/state
+numbers. The pack now checks the route as well, keeping the cockpit and sky
+visible during refueling. All 132 approved v0.7.3 PNGs remain byte-identical.
+
+Coverage follows the supplied 14,475-frame Mission 2 recording through the
+refueling controls. Refueling completion, later Mission 2 encounters and later
+missions need additional recordings. See `source/MISSION2_NOTES.md` and
+`validation/mission2_v0.8.0.json` for implementation and replay checks.
 
 ## Carrier landing and gunfire
 
@@ -77,7 +93,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-Other landing failure outcomes, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+Other landing failure outcomes, unrecorded Mission 2 encounters, refueling completion and later missions still need further artwork and coverage. This is recording-based coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
@@ -97,7 +113,7 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.7.2 work is merged into `main` at
-`918a176408d2ecdf31933851813d1abab01c9421`. This development review is on
-`feature/transition-flashes-v0.7.3`. Keep edits on feature branches and review before
+The approved v0.7.3 work is merged into `main` at
+`9c05e3d0c25c468791894377cc250fd4086e9af4`. This development review is on
+`feature/mission2-v0.8.0`. Keep edits on feature branches and review before
 merging. A review build is not a public release or permission to merge.

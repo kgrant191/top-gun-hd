@@ -1,5 +1,5 @@
 {
-  "version": "0.7.3",
+  "version": "0.8.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -27,11 +27,16 @@
     "Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages",
     "No original-art flash when entering debrief or leaving it for the next briefing",
     "Styled danger-to-radar clearing and lethal HUD palette",
-    "Additional carrier-rollout edge and moving light phases without original-art flashes"
+    "Additional carrier-rollout edge and moving light phases without original-art flashes",
+    "Mission 2 briefing and loadout using the approved console style",
+    "Mission 2 sea, sky and banked horizon palette coverage",
+    "Painted patrol boats and submarines at native distance sizes",
+    "Additional Mission 2 aircraft reuse approved combat art",
+    "Visible tanker, extending refuelling boom and native control instructions"
   ],
   "not_yet_redrawn": [
-    "Later-mission briefing maps and menus",
-    "Terrain, later-mission scenery and refuelling"
+    "Unrecorded Mission 2 sections after the supplied refuelling clip",
+    "Later missions, terrain, remaining outcomes and ending"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -50,7 +55,11 @@
     "approach": "source/landing_approach_master.png",
     "broadside": "source/landing_broadside_master.png",
     "jet": "source/landing_jet_master.png",
-    "landing_crash": "source/landing_crash_master.png"
+    "landing_crash": "source/landing_crash_master.png",
+    "boat": "source/mission2_boat_master.png",
+    "submarine": "source/mission2_submarine_master.png",
+    "tanker": "source/mission2_tanker_master.png",
+    "boom": "source/mission2_boom_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -63,5 +72,6 @@
     "scope": "Mapped mission-one layouts and observed sprite palettes; later missions need coverage"
   },
   "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
-  "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage"
+  "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
+  "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat and refuelling entry through the end of the recording; refuelling completion and later Mission 2 sections remain unrecorded"
 }
