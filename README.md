@@ -1,6 +1,6 @@
 # Top Gun HD
 
-Development review build **v0.9.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.9.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
@@ -8,11 +8,21 @@ Copy the contents of `pack/` (not the surrounding source tree) into the emulator
 
 ## Mission 2 naval combat and refueling
 
+v0.9.1 corrects the carrier's close approach. Two views previously interpreted
+as damage/destruction were healthy distance stages. Twelve captured sizes now
+use an opaque HD deck, with separate bridge and gun sprites that follow their
+native movement and lifetime. Three missing banked fighter layouts reuse the
+approved aircraft art, and the ordinal reads **1ST TARGET!** with a numeral 1.
+All 141 v0.9.0 PNGs remain unchanged; new mappings supersede the mistaken
+carrier substitutions. See `source/MISSION2_APPROACH_NOTES.md` and
+`validation/mission2_approach_v0.9.1.json`.
+
 v0.9.0 completes the recorded refueling departure and carrier boss encounter.
 The tanker exits once and stays gone when the scroll resets. Boss-route
-horizon tiles are masked correctly during turns. The carrier has painted
-intact, damaged and destruction states, with an amber health meter driven
-by the original six meter cells. All 139 v0.8.2 PNGs remain unchanged.
+horizon tiles are masked correctly during turns. It introduced carrier art
+and an amber health meter driven by the original six meter cells. The
+damage/destruction interpretation is corrected by v0.9.1 above.
+All 139 v0.8.2 PNGs remain unchanged.
 The two supplied movies also cover the return to combat, retry, successful
 Mission 2 landing and debrief. See `source/MISSION2_COMPLETION_NOTES.md`
 and `validation/mission2_completion_v0.9.0.json`.

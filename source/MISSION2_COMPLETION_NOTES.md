@@ -1,5 +1,10 @@
 # Mission 2 completion and carrier boss — v0.9.0
 
+**Corrected in v0.9.1:** the longer close-approach recording shows that the
+E0/E1 and C2/C3 layouts below are healthy distance stages, not damaged or
+destroyed ships. `MISSION2_APPROACH_NOTES.md` documents the replacement
+mapping. This file retains the historical v0.9.0 implementation details.
+
 Base: v0.8.2, `960018bdd237ed4ce7516e2a885065b0dcaccb44`.
 Continue the unmerged `feature/mission2-v0.8.0` branch.
 

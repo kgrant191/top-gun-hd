@@ -162,6 +162,17 @@ meta['features'].extend(['Single tanker departure with no duplicate after the sc
 meta['assets']['mission2_boss_damaged']='source/mission2_boss_damaged_master.png'
 meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat, refueling entry and completion, carrier boss fight, successful landing and debrief'
 meta['not_yet_redrawn']=['Unrecorded target sizes, later missions, terrain, remaining outcomes and ending']
+subprocess.run(['python3',str(R/'scripts/build_mission2_approach.py')],check=True)
+meta['version']='0.9.1'
+meta['features']=[('Painted carrier approach, independent bridge/guns and native amber health meter'
+ if item=='Painted carrier boss, damaged pose and destruction with native-driven amber health meter' else item) for item in meta['features']]
+meta['features'].extend(['Twelve carrier distance sizes with opaque deck and native-timed bridge/gun sprites',
+ 'Three additional banked fighter poses reuse approved aviation artwork',
+ 'Correct numeral in the native 1ST TARGET message'])
+meta['assets'].pop('mission2_boss_damaged',None)
+meta['assets'].update({'mission2_boss_approach':'source/mission2_boss_approach_master.png',
+ 'mission2_boss_components':'source/mission2_boss_components_master.png'})
+meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')
