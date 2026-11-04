@@ -1,0 +1,157 @@
+{
+  "rear_cells": [
+    {
+      "x": 96,
+      "y": 168,
+      "pattern": "0101010101010101FEFEFEFEFEFEFEFE"
+    },
+    {
+      "x": 104,
+      "y": 168,
+      "pattern": "80404040202020107FBFBFBFDFDFDFEF"
+    },
+    {
+      "x": 144,
+      "y": 168,
+      "pattern": "0102020204040408FEFDFDFDFBFBFBF7"
+    },
+    {
+      "x": 152,
+      "y": 168,
+      "pattern": "80808080808080807F7F7F7F7F7F7F7F"
+    },
+    {
+      "x": 96,
+      "y": 176,
+      "pattern": "0101010101010101FEFEFEFEFEFEFEFE"
+    },
+    {
+      "x": 104,
+      "y": 176,
+      "pattern": "1010101010101010EFEFEFEFEFEFEFEF"
+    },
+    {
+      "x": 144,
+      "y": 176,
+      "pattern": "0808080808080808F7F7F7F7F7F7F7F7"
+    },
+    {
+      "x": 152,
+      "y": 176,
+      "pattern": "80808080808080807F7F7F7F7F7F7F7F"
+    },
+    {
+      "x": 96,
+      "y": 184,
+      "pattern": "0101010101010101FEFEFEFEFEFEFEFE"
+    },
+    {
+      "x": 104,
+      "y": 184,
+      "pattern": "0808080808080808F7F7F7F7F7F7F7F7"
+    },
+    {
+      "x": 144,
+      "y": 184,
+      "pattern": "1010101010101010EFEFEFEFEFEFEFEF"
+    },
+    {
+      "x": 152,
+      "y": 184,
+      "pattern": "80808080808080807F7F7F7F7F7F7F7F"
+    },
+    {
+      "x": 96,
+      "y": 192,
+      "pattern": "0101000000000000FEFEFFFFFFFFFFFF"
+    },
+    {
+      "x": 104,
+      "y": 192,
+      "pattern": "0808848484848484F7F77B7B7B7B7B7B"
+    },
+    {
+      "x": 144,
+      "y": 192,
+      "pattern": "1010212121212121EFEFDEDEDEDEDEDE"
+    },
+    {
+      "x": 152,
+      "y": 192,
+      "pattern": "80800000000000007F7FFFFFFFFFFFFF"
+    },
+    {
+      "x": 80,
+      "y": 200,
+      "pattern": "00000000FF000000FFFFFFFF00FFFFFF"
+    },
+    {
+      "x": 88,
+      "y": 200,
+      "pattern": "00000000FF000000FFFFFFFF00FFFFFF"
+    },
+    {
+      "x": 96,
+      "y": 200,
+      "pattern": "00010608F0000000FFFEF9F70FFFFFFF"
+    },
+    {
+      "x": 104,
+      "y": 200,
+      "pattern": "868584888890A0C0797A7B77776F5F3F"
+    },
+    {
+      "x": 112,
+      "y": 200,
+      "pattern": "008060101F103060FF7F9FEFE0EFCF9F"
+    },
+    {
+      "x": 120,
+      "y": 200,
+      "pattern": "0000000FF0103F00FFFFFFF00FEFC0FF"
+    },
+    {
+      "x": 128,
+      "y": 200,
+      "pattern": "000000F00F08FC00FFFFFF0FF0F703FF"
+    },
+    {
+      "x": 136,
+      "y": 200,
+      "pattern": "00010608F0080C06FFFEF9F70FF7F3F9"
+    },
+    {
+      "x": 144,
+      "y": 200,
+      "pattern": "61A12111110905039E5EDEEEEEF6FAFC"
+    },
+    {
+      "x": 152,
+      "y": 200,
+      "pattern": "008060100F000000FF7F9FEFF0FFFFFF"
+    },
+    {
+      "x": 160,
+      "y": 200,
+      "pattern": "00000000FF000000FFFFFFFF00FFFFFF"
+    },
+    {
+      "x": 168,
+      "y": 200,
+      "pattern": "00000000FF000000FFFFFFFF00FFFFFF"
+    }
+  ],
+  "rollout_backgrounds": [
+    "00000000000000FFFFFFFFFFFFFF0000",
+    "000000000000FFFFFFFFFFFFFF000000"
+  ],
+  "rollout_marks": [
+    "18000000000000180000000000000000",
+    "80402010000400000000000000000000",
+    "00000008080800080000000000000000",
+    "00080008000008000000000000000000",
+    "00080000001800000000000000000000",
+    "00000000C03000030000000000000000",
+    "00300003000000000000000000000000"
+  ]
+}

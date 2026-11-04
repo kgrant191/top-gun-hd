@@ -1,5 +1,5 @@
 {
-  "version": "0.7.2",
+  "version": "0.7.3",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -25,7 +25,9 @@
     "Mission debrief with native score and lives",
     "Cannon projectiles distinct from true missile artwork",
     "Painted carrier scenery throughout failed landing, with six native-timed fire and water-spray stages",
-    "No original-art flash when entering debrief or leaving it for the next briefing"
+    "No original-art flash when entering debrief or leaving it for the next briefing",
+    "Styled danger-to-radar clearing and lethal HUD palette",
+    "Additional carrier-rollout edge and moving light phases without original-art flashes"
   ],
   "not_yet_redrawn": [
     "Later-mission briefing maps and menus",
