@@ -1,5 +1,5 @@
 {
-  "version": "0.8.1",
+  "version": "0.8.2",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -37,7 +37,8 @@
     "Mapped distant enemy and correct small boat artwork",
     "Brighter submarine hull and wake",
     "Amber danger target throughout HUD transitions",
-    "Styled vertical radar lines during refuelling entry"
+    "Styled vertical radar lines during refuelling entry",
+    "One tanker entrance from the right, matching native refueling arrival"
   ],
   "not_yet_redrawn": [
     "Unrecorded Mission 2 sections after the supplied refuelling clip",

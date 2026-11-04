@@ -1,4 +1,4 @@
-# Top Gun HD v0.8.1 - Mission 2 horizon, naval targets and HUD corrections
+# Top Gun HD v0.8.2 - Single tanker entrance during refueling
 <ver>109
 <scale>4
 <overscan>0,0,0,0
@@ -3256,6 +3256,8 @@
 <condition>cockpit,tileAtPosition,120,132,FFFFFFFFFFFFFFFF0000000000000000,00000000,Y
 <condition>prompt,frameRange,64,20
 <condition>panel,positionCheckY,>=,128
+<condition>refuelArrival,memoryCheckConstant,009F,==,01
+[cockpit&cockpitBorder&missionTwo&mission2Flight&refuelRoute&refuelArrival]<background>mission2_tanker_entry.png,1,1,1,31
 [cockpit&cockpitBorder&missionTwo&mission2Takeoff&environmentWorld]<tile>0,0000000000000000FFFFFFFFFFFFFFFF,0F301121,0,0,1,N
 [cockpit&cockpitBorder&missionTwo&mission2Takeoff&environmentWorld]<tile>0,FF00000000000000FFFFFFFFFFFFFFFF,0F301121,0,0,1,N
 [cockpit&cockpitBorder&missionTwo&mission2Takeoff&environmentWorld]<tile>0,FFFF000000000000FFFFFFFFFFFFFFFF,0F301121,0,0,1,N

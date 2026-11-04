@@ -1,6 +1,10 @@
-TOP GUN HD v0.8.1 — DEVELOPMENT REVIEW
+TOP GUN HD v0.8.2 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- One tanker enters from the right during refueling, without an extra pass.
+- Preserves all 138 v0.8.1 PNGs and the fixes below.
+
+RETAINED MISSION 2 FIXES
 - Clean horizon through Mission 2 takeoff and the transition into flight.
 - Replaces the distant enemy's black native pixels with readable HD artwork.
 - Small approaching boats use boat artwork instead of an explosion.

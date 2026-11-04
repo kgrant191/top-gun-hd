@@ -1,12 +1,17 @@
 # Top Gun HD
 
-Development review build **v0.8.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.8.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 2 naval combat and refueling
+
+v0.8.2 removes the duplicate tanker during refueling entry. One aircraft
+enters from the right and reaches the center before the original boom and
+guidance sequence continues. All 138 v0.8.1 PNGs remain unchanged.
+See `source/TANKER_ENTRY_NOTES.md` and `validation/refuel_entry_v0.8.2.json`.
 
 v0.8.1 fixes the five issues reported in the first Mission 2 review: blue
 horizon strips during the takeoff-to-flight transition, an unmapped distant

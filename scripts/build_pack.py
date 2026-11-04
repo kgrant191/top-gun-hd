@@ -151,6 +151,9 @@ subprocess.run(['python3',str(R/'scripts/build_mission2_fixes.py')],check=True)
 meta['version']='0.8.1'
 meta['features'].extend(['Clean Mission 2 takeoff-to-flight horizon','Mapped distant enemy and correct small boat artwork','Brighter submarine hull and wake','Amber danger target throughout HUD transitions','Styled vertical radar lines during refuelling entry'])
 meta['assets']['submarine_bright']='source/mission2_submarine_bright_master.png'
+subprocess.run(['python3',str(R/'scripts/build_refuel_entry.py')],check=True)
+meta['version']='0.8.2'
+meta['features'].append('One tanker entrance from the right, matching native refueling arrival')
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')
