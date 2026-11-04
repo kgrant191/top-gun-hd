@@ -1,6 +1,9 @@
-TOP GUN HD v0.7.2 — DEVELOPMENT REVIEW
+TOP GUN HD v0.7.3 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Danger-to-radar clearing keeps HD artwork through the last outgoing row.
+- Lethal damage keeps the HD warning display during its alternate palette.
+- Additional rollout deck edges and moving lights no longer flash blue/green.
 - Removes original-art flashes when entering and leaving the landing debrief.
 - Failed water landing keeps the HD scenery through impact and its aftermath.
 - Six native-timed crash stages show fuel fire, seawater spray and mist.

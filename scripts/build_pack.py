@@ -138,6 +138,9 @@ meta['landing_coverage']='Supplied successful mission-one landing and failed wat
 subprocess.run(['python3',str(R/'scripts/build_landing_transition.py')],check=True)
 meta['version']='0.7.2'
 meta['features'].append('No original-art flash when entering debrief or leaving it for the next briefing')
+subprocess.run(['python3',str(R/'scripts/build_transition_flashes.py')],check=True)
+meta['version']='0.7.3'
+meta['features'].extend(['Styled danger-to-radar clearing and lethal HUD palette','Additional carrier-rollout edge and moving light phases without original-art flashes'])
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

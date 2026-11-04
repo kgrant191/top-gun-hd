@@ -1,12 +1,18 @@
 # Top Gun HD
 
-Development review build **v0.7.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.7.3** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Carrier landing and gunfire
+
+v0.7.3 fixes the flashes in the supplied `danger.mmo`, `danger2.mmo` and
+`landing.mmo`: the danger display keeps its HD styling as radar rows replace
+it, lethal damage retains the warning artwork, and additional deck-edge and
+runway-light phases remain HD during rollout. All 131 v0.7.2 PNGs are unchanged.
+See `source/TRANSITION_FLASH_NOTES.md` and `validation/transition_flashes_v0.7.3.json`.
 
 - An opaque carrier deck and hull follow all 21 observed approach sizes.
 - The side-on touchdown uses a painted carrier, gear-down aircraft, moving
@@ -91,7 +97,7 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.6.0 work is merged into `main` at
-`b8c0ea52fe609bbdcb103f5cc4004187cb77ddb0`. This development review is on
-`feature/landing-polish-v0.7.0`. Keep edits on feature branches and review before
+The approved v0.7.2 work is merged into `main` at
+`918a176408d2ecdf31933851813d1abab01c9421`. This development review is on
+`feature/transition-flashes-v0.7.3`. Keep edits on feature branches and review before
 merging. A review build is not a public release or permission to merge.
