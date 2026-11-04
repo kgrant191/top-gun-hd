@@ -1,0 +1,43 @@
+{
+  "version": "0.8.1",
+  "horizon_keys": [
+    "0000000000000000FFFFFFFFFFFFFFFF",
+    "FF00000000000000FFFFFFFFFFFFFFFF",
+    "FFFF000000000000FFFFFFFFFFFFFFFF",
+    "FFFFFF0000000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFF00000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFF000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFF0000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFF00FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  ],
+  "distant_enemy": "0000000014081C000000000014081C00",
+  "small_boat": "0000303000447EBD0000007C7C7C7C38",
+  "radar_vertical": "0808080808080808F7F7F7F7F7F7F7F7",
+  "evidence_frames": {
+    "horizon": [
+      2074,
+      2129
+    ],
+    "distant_enemy": [
+      3400,
+      3467
+    ],
+    "danger_entry": [
+      3840,
+      3880
+    ],
+    "small_boat": [
+      4808,
+      4977
+    ],
+    "refueling_radar": [
+      12833,
+      13343
+    ],
+    "refueling_top_wrap": [
+      12961,
+      12961
+    ]
+  }
+}

@@ -1,12 +1,21 @@
 # Top Gun HD
 
-Development review build **v0.8.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.8.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 2 naval combat and refueling
+
+v0.8.1 fixes the five issues reported in the first Mission 2 review: blue
+horizon strips during the takeoff-to-flight transition, an unmapped distant
+enemy silhouette, the small boat incorrectly using impact artwork, the green
+native danger target during HUD transitions, and green radar blocks at the
+start of refueling. Submarines also have a brighter steel hull and white wake.
+All 136 v0.8.0 PNGs remain unchanged; corrections add an atlas and a small sky-edge strip.
+See `source/MISSION2_FIX_NOTES.md` and `validation/mission2_fixes_v0.8.1.json`.
+
 
 v0.8.0 extends the approved scenery, cockpit, aircraft and effects to the
 Mission 2 palettes. It adds painted boats and submarines, the second tactical

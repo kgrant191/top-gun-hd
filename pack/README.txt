@@ -1,12 +1,14 @@
-TOP GUN HD v0.8.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.8.1 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
-- Mission 2 reuses the approved ocean, sky, runway, cockpit and combat artwork.
-- Painted boats and submarines follow native positions and distance sizes.
-- Updated Mission 2 tactical map and briefing/weapon panels.
-- Painted refueling tanker and native-timed extending boom.
-- Refueling sky, cockpit and live guidance remain visible instead of black.
-- Preserves all 132 approved v0.7.3 PNGs, including danger and landing fixes.
+- Clean horizon through Mission 2 takeoff and the transition into flight.
+- Replaces the distant enemy's black native pixels with readable HD artwork.
+- Small approaching boats use boat artwork instead of an explosion.
+- Brighter submarine hull and white wake against the ocean.
+- Danger targets stay amber HD throughout the HUD transition.
+- Clean radar lines during the start of refueling; no green native blocks.
+- Preserves the Mission 2 briefing, tanker, boom and live guidance.
+- All 136 v0.8.0 PNGs are preserved; corrections add an atlas and sky-edge strip.
 
 INSTALL
 Extract this ZIP directly into the HD pack folder for your Top Gun (USA) ROM.

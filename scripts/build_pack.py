@@ -147,6 +147,10 @@ meta['features'].extend(['Mission 2 briefing and loadout using the approved cons
 meta['assets'].update({name:'source/mission2_'+name+'_master.png' for name in ['boat','submarine','tanker','boom']})
 meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat and refuelling entry through the end of the recording; refuelling completion and later Mission 2 sections remain unrecorded'
 meta['not_yet_redrawn']=['Unrecorded Mission 2 sections after the supplied refuelling clip','Later missions, terrain, remaining outcomes and ending']
+subprocess.run(['python3',str(R/'scripts/build_mission2_fixes.py')],check=True)
+meta['version']='0.8.1'
+meta['features'].extend(['Clean Mission 2 takeoff-to-flight horizon','Mapped distant enemy and correct small boat artwork','Brighter submarine hull and wake','Amber danger target throughout HUD transitions','Styled vertical radar lines during refuelling entry'])
+meta['assets']['submarine_bright']='source/mission2_submarine_bright_master.png'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')
