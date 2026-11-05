@@ -230,6 +230,14 @@ meta['assets'].update({'mission4_helicopter':'source/mission4_helicopter_master.
  'mission4_shuttle':'source/mission4_shuttle_master.png'})
 meta['mission4_coverage']+='; 8,420 more inputs cover helicopters, danger display transitions, seven shuttle target approach sizes, damage, retry and game over'
 meta['not_yet_redrawn']=['Closer unrecorded shuttle sizes, target defeat, launch and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_ending.py')],check=True)
+meta['version']='0.15.0'
+meta['features'].extend(['Close shuttle and upper tower through native distance stage 12',
+ 'Gold-and-navy award, game-over and mission-accomplished screens with live scores',
+ 'Painted carrier celebration with native canopy, pilot wave, exhaust, flypast and start prompt'])
+meta['assets'].update({f'ending_{name}':f'source/ending_{name}_master.png' for name in ['award','carrier_closed','carrier_half','carrier_open','figures']})
+meta['mission4_coverage']+='; two further movies totaling 6,960 inputs cover close shuttle flyover, retry, award ending, successful summary, carrier celebration and next-game launch'
+meta['not_yet_redrawn']=['Unrecorded outcomes including Mission 3 boss defeat and landing; continuous shuttle defeat-to-success transition is absent from supplied clips']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.

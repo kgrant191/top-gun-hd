@@ -3,14 +3,14 @@ from pathlib import Path
 import argparse,json,subprocess
 import numpy as np
 
-ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('qa',type=Path);ap.add_argument('run');args=ap.parse_args()
-q=args.qa;name='m4boss_'+args.run
-trace=np.fromfile(q/'m4boss_native/trace.bin',np.uint8).reshape(-1,4384)
+ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('qa',type=Path);ap.add_argument('run');ap.add_argument('--clip',default='m4boss');args=ap.parse_args()
+q=args.qa;name=args.clip+'_'+args.run
+trace=np.fromfile(q/(args.clip+'_native/trace.bin'),np.uint8).reshape(-1,4384)
 def stream(path,scale=None):
  command=['ffmpeg','-v','error','-threads','1','-i',str(path)]
  if scale:command+=['-vf',scale]
  return subprocess.Popen(command+['-f','rawvideo','-pix_fmt','rgb24','-'],stdout=subprocess.PIPE)
-n=stream(q/'m4boss_native_replay.avi');h=stream(q/(name+'_replay.avi'),'scale=256:240:flags=neighbor')
+n=stream(q/(args.clip+'_native_replay.avi'));h=stream(q/(name+'_replay.avi'),'scale=256:240:flags=neighbor')
 size=256*240*3;count=0;bad=[];hudbad=[];active=0
 while True:
  nb=n.stdout.read(size);hb=h.stdout.read(size)

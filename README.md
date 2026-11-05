@@ -1,10 +1,23 @@
 # Top Gun HD
 
-Development review build **v0.14.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.15.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Close shuttle and both endings
+
+v0.15.0 completes the recorded shuttle approach through stage 12, including
+its upper tower and the close flyover. The award, game-over and successful
+mission summary have new navy-and-gold artwork with the original live scores.
+The carrier celebration has a painted sunset, F-14 and deck crew; the canopy,
+pilot wave, exhaust, passing aircraft and start prompt follow native events.
+
+Both new movies (6,960 inputs) are covered, including the return to the next
+launch. All 240 v0.14.0 PNGs remain unchanged. See `source/ENDING_NOTES.md`
+and `validation/ending_v0.15.0.json`. The continuous transition from defeating
+the shuttle to the successful summary is not present in these recordings.
 
 ## Mission 4 helicopters and shuttle target
 
@@ -15,7 +28,7 @@ The shuttle and launch tower follow all seven recorded approach sizes,
 native scrolling and damage. Its six native health cells now say SHUTTLE.
 
 The additional movie contains 8,420 inputs through damage, retry and game
-over. Closer sizes, target defeat/launch and the ending remain unrecorded.
+over. The v0.15.0 recordings above add close sizes and both endings.
 All 232 v0.13.0 PNGs are unchanged. See
 `source/MISSION4_FINAL_TARGET_NOTES.md` and
 `validation/mission4_final_target_v0.14.0.json`.
@@ -40,8 +53,8 @@ cloud deck, dark ocean, additional aircraft and boats. The first movie
 covers 10,352 inputs from the preceding debrief through Mission 4 cloud-top
 and ocean combat, damage, retries and game over. The five new movies add
 8,672 inputs covering more enemy views, ground combat, complete refueling,
-and the later rocky terrain. The final target, ending and other unrecorded
-outcomes still need footage and testing.
+and the later rocky terrain. The subsequent builds above add the final target and recorded endings;
+other unrecorded outcomes still need footage and testing.
 
 ## Mission 3 desert combat
 
