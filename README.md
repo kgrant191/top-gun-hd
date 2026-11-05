@@ -1,12 +1,17 @@
 # Top Gun HD
 
-Development review build **v0.11.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.11.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 3 desert combat
+
+v0.11.1 fills the missing left edges of radar dishes in both radar recordings.
+Render-only sprite additions complete the painted silhouette where the native
+radar omits a tile. Existing dish size, orientation and artwork are retained;
+all 179 v0.11.0 PNGs remain unchanged. See `source/MISSION3_RADAR_EDGE_NOTES.md`.
 
 v0.11.0 fixes missing mirrored aircraft, close radar views and the large
 barricade tiles shown in six additional recordings. Seven recorded base
@@ -177,8 +182,8 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.9.1 work is merged into `main` at
-`e2af94b7e37740616eb3abfb881a801f5a914f45` (approved source commit `74167a8`).
-This development review is on `feature/mission3-v0.10.0`.
+The approved v0.10.1 work is merged into `main` at
+`dce71e720f4fb98dd39f030dabccb6590636db23` (approved source commit `2950abb`).
+This development review is on `feature/mission3-completion-v0.11.0`.
 Keep edits on feature branches and review before merging. A review build
 is not a public release or permission to merge.

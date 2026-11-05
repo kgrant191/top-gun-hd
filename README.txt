@@ -1,12 +1,15 @@
-TOP GUN HD v0.11.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.11.1 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Missing left edges of radar dishes are filled at recorded distance sizes.
+- Preserves all 179 v0.11.0 PNGs; existing radar artwork is unchanged.
+
+ALSO INCLUDED FROM v0.11.0
 - Missing mirrored aircraft and additional banked poses remain HD.
 - Close radar views and large barricade tiles remain HD.
 - Seven recorded base approach sizes replace incorrect explosion pieces.
 - BASE health meter follows native full, half and empty segments.
 - Desert and base artwork stay HD through recorded damage and retry.
-- Preserves all 171 approved v0.10.1 PNGs.
 
 INSTALL
 Copy all files from this ZIP into your existing Top Gun HD pack folder,

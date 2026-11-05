@@ -1,0 +1,137 @@
+{
+  "atlas_cells": 13,
+  "additions": 26,
+  "conditions": 52,
+  "coverage": [
+    {
+      "source": "mission3_mappings.json",
+      "layout": 42,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "00000000F0A8E060000000E0A0F0F87C",
+      "key": "B931A4ADC52A28AB14ADE844E485332A"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 43,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "00000000E0B0E068000000E0A0E0F070",
+      "key": "290668474D4005D186980C6A4963069D"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 45,
+      "cell": [
+        8,
+        8
+      ],
+      "anchor": "0876793E0F07C78F70587E3F0F7F3FFF",
+      "key": "8D6FAA09C136BE417A2FF314648C439A"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 46,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "000706040707070B070F0F0F0F0F0F0F",
+      "key": "3EA2F132F60CD1F898DCECBE3E8EBD51"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 47,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "061F3F696D39331E183E73F7FF7F7F3F",
+      "key": "769F18CE861532BA0BA1CECE8E9517CC"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 97,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "000000202A4A16410000307C7CFC787E",
+      "key": "B601ABC001D285FF4C64430DD14331B0"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 98,
+      "cell": [
+        8,
+        0
+      ],
+      "anchor": "000000385452510400000040F8FCFE7F",
+      "key": "FD9BC54BA7531C9032AFB76E87126CC5"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 102,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "000001080B0906020307070F07070F0F",
+      "key": "4E1A0A2FFD4C16753CA5A434E4D02190"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 108,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "00000010152509F30000383E7E7E3E3C",
+      "key": "1AB7156ADBC8677E2C09952CEA63E3B7"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 109,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "0000000000010400000000000000033F",
+      "key": "F0E0E6368370A008AD1F9C1E08972305"
+    },
+    {
+      "source": "mission3_mappings.json",
+      "layout": 109,
+      "cell": [
+        0,
+        8
+      ],
+      "anchor": "0000000000010400000000000000033F",
+      "key": "66496E10BF050519F6748DCCD0635A6D"
+    },
+    {
+      "source": "mission3_completion_mappings.json",
+      "layout": 71,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "000303020707070B070707070F0F0F0F",
+      "key": "808E8C74DE54F815071993EDD148EA0F"
+    },
+    {
+      "source": "mission3_completion_mappings.json",
+      "layout": 89,
+      "cell": [
+        0,
+        0
+      ],
+      "anchor": "00060400060410160F1F1F1F1F1F0F1F",
+      "key": "822DABC2571BBE8B28867F2E7B185AC8"
+    }
+  ]
+}

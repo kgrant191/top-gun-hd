@@ -195,6 +195,9 @@ meta['features'].extend(['Missing mirrored aircraft, close radar and large wall 
 meta['assets']['mission3_base']='source/mission3_base_master.png'
 meta['mission3_coverage']+='; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry'
 meta['not_yet_redrawn']=['Unrecorded Mission 3 base sizes, defeat and landing; Mission 4, ending and other unrecorded outcomes']
+subprocess.run(['python3',str(R/'scripts/build_mission3_radar_edges.py')],check=True)
+meta['version']='0.11.1'
+meta['features'].append('Complete radar silhouettes across native gaps in both recorded palette families')
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
