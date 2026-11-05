@@ -186,6 +186,24 @@ meta['not_yet_redrawn']=['Mission 3 enemy base/boss and landing, unrecorded targ
 subprocess.run(['python3',str(R/'scripts/build_mission3_tanks.py')],check=True)
 meta['version']='0.10.1'
 meta['features'].append('Both close tank orientations stay HD in Mission 3, with unchanged artwork')
+subprocess.run(['python3',str(R/'scripts/build_mission3_completion.py')],check=True)
+meta['version']='0.11.0'
+meta['features'].extend(['Missing mirrored aircraft, close radar and large wall tiles remain HD',
+ 'Seven recorded desert-base approach sizes with independent gun sprites',
+ 'Native full, half and empty boss-health segments in a matching BASE display',
+ 'Desert and base artwork remain HD through the recorded damage and retry transition'])
+meta['assets']['mission3_base']='source/mission3_base_master.png'
+meta['mission3_coverage']+='; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry'
+meta['not_yet_redrawn']=['Unrecorded Mission 3 base sizes, defeat and landing; Mission 4, ending and other unrecorded outcomes']
+subprocess.run(['python3',str(R/'scripts/build_mission3_radar_edges.py')],check=True)
+meta['version']='0.11.1'
+meta['features'].append('Complete radar silhouettes across native gaps in both recorded palette families')
+subprocess.run(['python3',str(R/'scripts/build_mission3_base_close.py')],check=True)
+meta['version']='0.11.2'
+meta['features'].extend(['Complete recorded Mission 3 base flyover and close ground-gun sizes',
+ 'Base artwork remains HD through the missile-hit palette and reset'])
+meta['mission3_coverage']+='; full recorded base flyover through distance stage 12 and missile-hit retry'
+meta['not_yet_redrawn']=['Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.

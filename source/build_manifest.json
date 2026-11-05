@@ -1,5 +1,5 @@
 {
-  "version": "0.10.1",
+  "version": "0.11.2",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -50,10 +50,17 @@
     "Native-sized radar dishes, armored ground targets and modular barricades",
     "Additional banked fighter poses and ground-palette projectile coverage",
     "Mission 3 refueling arrival, boom, guidance and departure reuse the approved artwork",
-    "Both close tank orientations stay HD in Mission 3, with unchanged artwork"
+    "Both close tank orientations stay HD in Mission 3, with unchanged artwork",
+    "Missing mirrored aircraft, close radar and large wall tiles remain HD",
+    "Seven recorded desert-base approach sizes with independent gun sprites",
+    "Native full, half and empty boss-health segments in a matching BASE display",
+    "Desert and base artwork remain HD through the recorded damage and retry transition",
+    "Complete radar silhouettes across native gaps in both recorded palette families",
+    "Complete recorded Mission 3 base flyover and close ground-gun sizes",
+    "Base artwork remains HD through the missile-hit palette and reset"
   ],
   "not_yet_redrawn": [
-    "Mission 3 enemy base/boss and landing, unrecorded target sizes and outcomes, Mission 4 and ending"
+    "Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -83,7 +90,8 @@
     "desert": "source/mission3_desert_master.png",
     "radar": "source/mission3_radar_master.png",
     "tank": "source/mission3_tank_master.png",
-    "barrier": "source/mission3_barrier_master.png"
+    "barrier": "source/mission3_barrier_master.png",
+    "mission3_base": "source/mission3_base_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -98,5 +106,5 @@
   "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
   "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
   "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief",
-  "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over"
+  "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry; full recorded base flyover through distance stage 12 and missile-hit retry"
 }
