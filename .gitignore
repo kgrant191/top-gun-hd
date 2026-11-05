@@ -6,6 +6,7 @@ __pycache__/
 output/
 handoff/
 transfer_helpers/
+docs/media/
 captures/*
 !captures/baseline/
 tools/Mesen

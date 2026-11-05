@@ -204,7 +204,52 @@ meta['features'].extend(['Complete recorded Mission 3 base flyover and close gro
  'Base artwork remains HD through the missile-hit palette and reset'])
 meta['mission3_coverage']+='; full recorded base flyover through distance stage 12 and missile-hit retry'
 meta['not_yet_redrawn']=['Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes']
+subprocess.run(['python3',str(R/'scripts/build_mission4.py')],check=True)
+meta['version']='0.12.0'
+meta['features'].extend(['Mission 4 tactical briefing and native loadout values',
+ 'Indigo night sky with banked cloud deck and night ocean',
+ 'Night scenery remains present through missile impact and retry',
+ 'Additional close banked aircraft and near/far boats retain HD coverage'])
+meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['sky','clouddeck','water']})
+meta['mission4_coverage']='Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over'
+meta['not_yet_redrawn']=['Later Mission 4 terrain, refueling, space-shuttle target and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_mission4_extension.py')],check=True)
+meta['version']='0.13.0'
+meta['features'].extend(['Single Mission 4 tanker arrival and departure with complete refueling boom and guidance',
+ 'Night red desert and dark rocky terrain with native banking, damage and retry coverage',
+ 'Additional close boats, small fighters, opposite bank poses and reused ground targets'])
+meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['desert','rocky']})
+meta['mission4_coverage']+='; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry'
+meta['not_yet_redrawn']=['Unrecorded Mission 4 target/ending and other outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_mission4_final_target.py')],check=True)
+meta['version']='0.14.0'
+meta['features'].extend(['Animated Mission 4 helicopters in recorded sizes and banked views',
+ 'Clean amber rear-threat display and native warning transitions',
+ 'Seven shuttle-and-gantry approach sizes with native full/half/empty health cells'])
+meta['assets'].update({'mission4_helicopter':'source/mission4_helicopter_master.png',
+ 'mission4_shuttle':'source/mission4_shuttle_master.png'})
+meta['mission4_coverage']+='; 8,420 more inputs cover helicopters, danger display transitions, seven shuttle target approach sizes, damage, retry and game over'
+meta['not_yet_redrawn']=['Closer unrecorded shuttle sizes, target defeat, launch and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_ending.py')],check=True)
+meta['version']='0.15.0'
+meta['features'].extend(['Close shuttle and upper tower through native distance stage 12',
+ 'Gold-and-navy award, game-over and mission-accomplished screens with live scores',
+ 'Painted carrier celebration with native canopy, pilot wave, exhaust, flypast and start prompt'])
+meta['assets'].update({f'ending_{name}':f'source/ending_{name}_master.png' for name in ['award','carrier_closed','carrier_half','carrier_open','figures']})
+meta['mission4_coverage']+='; two further movies totaling 6,960 inputs cover close shuttle flyover, retry, award ending, successful summary, carrier celebration and next-game launch'
+meta['not_yet_redrawn']=['Unrecorded outcomes including Mission 3 boss defeat and landing; continuous shuttle defeat-to-success transition is absent from supplied clips']
+subprocess.run(['python3',str(R/'scripts/build_ending_polish.py')],check=True)
+meta['version']='0.15.1'
+meta['features'].extend(['Bonus value reads 10000 PTS with a numeral 1',
+ 'Consistent adult deck-crew proportions and a fixed pilot body throughout the wave'])
+meta['assets']['ending_pilot_arm_down']='source/ending_pilot_arm_down_master.png'
+meta['version']=(R/'VERSION').read_text().strip()
+meta['release_status']='approved'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
+hires=P/'hires.txt'
+hires_lines=hires.read_text().splitlines()
+hires_lines[0]='# Top Gun HD v'+meta['version']+' - approved release'
+hires.write_text('\n'.join(hires_lines)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')

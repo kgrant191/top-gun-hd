@@ -1,0 +1,472 @@
+{
+  "boats": [
+    {
+      "id": 54,
+      "palette": "FF10000F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 181,
+          "pattern": "0100030307050F0F0101030307070E0C"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 182,
+          "pattern": "C080C0C0E040E0F040C06030D8B81CAC"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 183,
+          "pattern": "0E180D24170305010F0F0F0706030100"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 184,
+          "pattern": "40942C18F1E48088FC6CFCE818F0E0C0"
+        }
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "clip": "m4clip2",
+      "frame": 76,
+      "origin": [
+        78,
+        81
+      ],
+      "count": 126,
+      "clips": {
+        "m4clip2": 46,
+        "m4clip3": 80
+      },
+      "bbox": [
+        2,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": 55,
+      "palette": "FF10000F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 65,
+          "tile": 195,
+          "pattern": "0000C0C0C0F0F0C000002038FC8C1E7E"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 65,
+          "tile": 194,
+          "pattern": "03050303070707070106030206070706"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 65,
+          "tile": 197,
+          "pattern": "062A4EBCF8F17004FADEF2C6BEFC3000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 65,
+          "tile": 196,
+          "pattern": "071013010B0001000703030101000000"
+        }
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "clip": "m4clip2",
+      "frame": 104,
+      "origin": [
+        66,
+        73
+      ],
+      "count": 74,
+      "clips": {
+        "m4clip2": 52,
+        "m4clip3": 22
+      },
+      "bbox": [
+        0,
+        0,
+        13,
+        16
+      ]
+    },
+    {
+      "id": 63,
+      "palette": "FF10000F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 173,
+          "pattern": "0001011B070F0D1D0000011F07080B1E"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 174,
+          "pattern": "000000B0808080E0000000F060707018"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 175,
+          "pattern": "071E142F3F383F3F1F1F1F3F3C3F383A"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 176,
+          "pattern": "C030F0A0C031E0E038C82CDC3CCC1C5C"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "attr": 1,
+          "tile": 177,
+          "pattern": "3F3EAC2F2F3C31373F3733303B3F3F3D"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "attr": 1,
+          "tile": 178,
+          "pattern": "0040606564EC0D98FCBC9C98D8F4F46C"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "attr": 1,
+          "tile": 179,
+          "pattern": "3F105F0F2F170F003E1F180F0F070300"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "attr": 1,
+          "tile": 180,
+          "pattern": "B030E2E08A0410045CD838F0F0E0C000"
+        }
+      ],
+      "size": [
+        16,
+        32
+      ],
+      "clip": "m4clip3",
+      "frame": 152,
+      "origin": [
+        123,
+        88
+      ],
+      "count": 16,
+      "clips": {
+        "m4clip3": 16
+      },
+      "bbox": [
+        0,
+        1,
+        16,
+        32
+      ]
+    }
+  ],
+  "aircraft": [
+    {
+      "id": 11,
+      "palette": "FF381A0F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 2,
+          "tile": 101,
+          "pattern": "00030000000000000000030000000000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 2,
+          "tile": 102,
+          "pattern": "0000C020351A3D3C000000C045320500"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 2,
+          "tile": 171,
+          "pattern": "0E060202020202003408040404040400"
+        }
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "clip": "m4clip1",
+      "frame": 24,
+      "origin": [
+        91,
+        44
+      ],
+      "count": 66,
+      "clips": {
+        "m4clip1": 48,
+        "m4later": 18
+      },
+      "bbox": [
+        6,
+        1,
+        16,
+        15
+      ]
+    },
+    {
+      "id": 20,
+      "palette": "FF381A0F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 2,
+          "tile": 103,
+          "pattern": "008060182E02110300008060300C1605"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 2,
+          "tile": 104,
+          "pattern": "00000000000081E600000000602031D6"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 2,
+          "tile": 105,
+          "pattern": "03030303020000000102000001010000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 2,
+          "tile": 106,
+          "pattern": "FCF8F0D038F868088C307C26F2611030"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "attr": 2,
+          "tile": 107,
+          "pattern": "08280808180800003030101010000000"
+        }
+      ],
+      "size": [
+        16,
+        24
+      ],
+      "clip": "m4clip1",
+      "frame": 74,
+      "origin": [
+        121,
+        37
+      ],
+      "count": 4,
+      "clips": {
+        "m4clip1": 4
+      },
+      "bbox": [
+        0,
+        1,
+        16,
+        22
+      ]
+    },
+    {
+      "id": 64,
+      "palette": "FF381A0F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 2,
+          "tile": 202,
+          "pattern": "000000080C181C00000000103C182400"
+        }
+      ],
+      "size": [
+        8,
+        8
+      ],
+      "clip": "m4clip4",
+      "frame": 1,
+      "origin": [
+        71,
+        70
+      ],
+      "count": 37,
+      "clips": {
+        "m4clip4": 37
+      },
+      "bbox": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "id": 65,
+      "palette": "FF381A0F",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 2,
+          "tile": 201,
+          "pattern": "188D9D080E43361408BDBD187EBD4A2C"
+        }
+      ],
+      "size": [
+        8,
+        8
+      ],
+      "clip": "m4clip4",
+      "frame": 38,
+      "origin": [
+        82,
+        74
+      ],
+      "count": 118,
+      "clips": {
+        "m4clip4": 118
+      },
+      "bbox": [
+        0,
+        0,
+        8,
+        8
+      ]
+    }
+  ],
+  "world_keys": {
+    "0F37060C": [
+      "00000000000000009BFFDFFFFFFFFFFF",
+      "0000000000000000FFFFFFFFFFFFFFFF",
+      "102A00600000040010DDFFBFFFFFFFFF",
+      "6D002104000000009BFFDFFFFFFFFFFF",
+      "C600620800000000C600DDFFFFFFFFFF",
+      "EF85006A00200200EF8500DDFFFFFFFF",
+      "FFFD98004C100400FFFD9800BFFFFFFF",
+      "FFFFFB6100491000FFFFFB6100B7FFFF",
+      "FFFFFFFFC200A210FFFFFFFFC2005DEF",
+      "FFFFFFFFFFDF0446FFFFFFFFFFDF04B9",
+      "FFFFFFFFFFDF8400FFFFFFFFFFFFDC04",
+      "FFFFFFFFFFFF8D00FFFFFFFFFFFF8DFF",
+      "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    ],
+    "0F30000C": [
+      "00000000000000000000000000000000",
+      "0000000000000000D0C88480000080C0",
+      "0000000000000000FFFFFFFFFFFFFFFF",
+      "000000000000010701F8C0000002A107",
+      "000000000000037F010100020000037F",
+      "00000000000080E0701F038040388FE0",
+      "000000000000C0FF808000400000C0FF",
+      "0000000000018181F800000106058D81",
+      "00000000000C070301000000008CC743",
+      "000000000030E1C1000000000031E2C6",
+      "00000007FFFFFFFF00000007FFFFFFFF",
+      "000000804080E1C11F00000020A0D1C1",
+      "000000E0FFFFFFFF000000E0FFFFFFFF",
+      "00000F1F1F9F0F0F30206F5F1F1F0F0F",
+      "00010F0F0707040000010F0F07000304",
+      "00013FFFFFFFFFFF00013FFFFFFFFFFF",
+      "0080FCFFFFFFFFFF0080FCFFFFFFFFFF",
+      "0081F1F3E3E326060080F0F0E000C101",
+      "0301010101010307636161E1C18103C7",
+      "04040404000000006323232303031100",
+      "0804FCFEFCFCF8F80002FAFDFCFBF4F0",
+      "08101000000101831020607070210183",
+      "0F0F0F1F1F3F3FFF0F0F0F1F1F3F3FFF",
+      "0F1F1F3F7FFFFFFF0F1F1F3F7FFFFFFF",
+      "1F07030700000000DFC7C3C0E7E06020",
+      "1FFFFFFFFFC000001FFFFFFFC03FC000",
+      "1FFFFFFFFFFFFFFF1FFFFFFFFFFFFFFF",
+      "6D002104000000009BFFDFFFFFFFFFFF",
+      "7F0300000000C0FC837C03000100C0FC",
+      "7F3F3F3F3F3F3F3F7FBFBFBFBFBFBFBF",
+      "7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F",
+      "808080808080C0E178484C4C4C7CB8C1",
+      "C18080808080C0E0CE8F9E9E9C88C0E0",
+      "D992B0A08000000004090B1B3AB2B0D0",
+      "F0F8FCFCFEFFFFFFF0F9FCFCFEFFFFFF",
+      "F8F8F8F8FCFEFFFFF0F0F0F4FBFDFCFF",
+      "F8FFFFFFFF030000F8FFFFFF03FC0700",
+      "F8FFFFFFFFFFFFFFF8FFFFFFFFFFFFFF",
+      "FEC000000000033FC13EC0000000033F",
+      "FEFEFEFE040C0C58F9F1E101C3830206",
+      "FFC7C0E0F0F8FCFF873887C0E0F0FCFF",
+      "FFE10103070F3FFFE11EE3070F1F7FFF",
+      "FFFF0000000007FFFF00FF80000007FF",
+      "FFFF00000000E0FFFF00FF010000E0FF",
+      "FFFF01030F3FFFFFFF03FD030F3FFFFF",
+      "FFFF1F0000000000FF1FE01F80804000",
+      "FFFF7F0300000080FF7F837C03000080",
+      "FFFFC0C0F0FCFFFFFFC0BFC0F0FCFFFF",
+      "FFFFF80000000000FFF807FC00000000",
+      "FFFFFEC000000001FFFEC13E80000003",
+      "FFFFFF0000000000FFFF00FF01000000",
+      "FFFFFF0000000000FFFF00FF80000000",
+      "FFFFFF0300000010FFFF03FC03000008",
+      "FFFFFFC000000000FFFFC03FC0000018",
+      "FFFFFFFF00000000FFFFFF00FF000000",
+      "FFFFFFFF00000000FFFFFF00FF1F0100",
+      "FFFFFFFF03000000FFFFFF03FC030000",
+      "FFFFFFFF1F000000FFFFFF1FE01F0000",
+      "FFFFFFFFC0000000FFFFFFC03FC00000",
+      "FFFFFFFFF8000000FFFFFFF807F80000",
+      "FFFFFFFFFF7F0300FFFFFFFF7F837C03",
+      "FFFFFFFFFFFEC000FFFFFFFFFEC13EC0",
+      "FFFFFFFFFFFF8D00FFFFFFFFFFFF8DFF",
+      "FFFFFFFFFFFFFF1FFFFFFFFFFFFF1FE0",
+      "FFFFFFFFFFFFFFF8FFFFFFFFFFFFF807",
+      "FFFFFFFFFFFFFFFFFEFCFCFCFCFCFCFC",
+      "FFFFFFFFFFFFFFFFFEFEFEFEFEFEFEFE",
+      "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    ],
+    "0F00100F": [
+      "0000000000000000FFFFFFFFFFFFFFFF",
+      "180000000000000018FFFFFFFFFFFFFF",
+      "8B00000000000000AB00FFFFFFFFFFFF",
+      "FFB8000000000000FFB800FFFFFFFFFF",
+      "FFFFAC0000000000FFFFAC00FFFFFFFF",
+      "FFFFFF9B00000000FFFFFF9B00FFFFFF",
+      "FFFFFFFF8D000000FFFFFFFF8D00FFFF",
+      "FFFFFFFFDF8D0000FFFFFFFFDFAD00FF",
+      "FFFFFFFFFFDF8400FFFFFFFFFFFFDC04",
+      "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    ]
+  }
+}
