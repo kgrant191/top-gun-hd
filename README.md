@@ -1,10 +1,60 @@
 # Top Gun HD
 
-Development review build **v0.7.3** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.9.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Mission 2 naval combat and refueling
+
+v0.9.1 corrects the carrier's close approach. Two views previously interpreted
+as damage/destruction were healthy distance stages. Twelve captured sizes now
+use an opaque HD deck, with separate bridge and gun sprites that follow their
+native movement and lifetime. Three missing banked fighter layouts reuse the
+approved aircraft art, and the ordinal reads **1ST TARGET!** with a numeral 1.
+All 141 v0.9.0 PNGs remain unchanged; new mappings supersede the mistaken
+carrier substitutions. See `source/MISSION2_APPROACH_NOTES.md` and
+`validation/mission2_approach_v0.9.1.json`.
+
+v0.9.0 completes the recorded refueling departure and carrier boss encounter.
+The tanker exits once and stays gone when the scroll resets. Boss-route
+horizon tiles are masked correctly during turns. It introduced carrier art
+and an amber health meter driven by the original six meter cells. The
+damage/destruction interpretation is corrected by v0.9.1 above.
+All 139 v0.8.2 PNGs remain unchanged.
+The two supplied movies also cover the return to combat, retry, successful
+Mission 2 landing and debrief. See `source/MISSION2_COMPLETION_NOTES.md`
+and `validation/mission2_completion_v0.9.0.json`.
+
+v0.8.2 removes the duplicate tanker during refueling entry. One aircraft
+enters from the right and reaches the center before the original boom and
+guidance sequence continues. All 138 v0.8.1 PNGs remain unchanged.
+See `source/TANKER_ENTRY_NOTES.md` and `validation/refuel_entry_v0.8.2.json`.
+
+v0.8.1 fixes the five issues reported in the first Mission 2 review: blue
+horizon strips during the takeoff-to-flight transition, an unmapped distant
+enemy silhouette, the small boat incorrectly using impact artwork, the green
+native danger target during HUD transitions, and green radar blocks at the
+start of refueling. Submarines also have a brighter steel hull and white wake.
+All 136 v0.8.0 PNGs remain unchanged; corrections add an atlas and a small sky-edge strip.
+See `source/MISSION2_FIX_NOTES.md` and `validation/mission2_fixes_v0.8.1.json`.
+
+
+v0.8.0 extends the approved scenery, cockpit, aircraft and effects to the
+Mission 2 palettes. It adds painted boats and submarines, the second tactical
+map, a scrolling tanker, and a growing refueling boom. The live guidance
+monitor preserves the game's instructions and coupling movement.
+
+The refueling blackout came from landing and refueling sharing mode/state
+numbers. The pack now checks the route as well, keeping the cockpit and sky
+visible during refueling. All 132 approved v0.7.3 PNGs remain byte-identical.
+
+The original v0.8.0 coverage follows the supplied 14,475-frame Mission 2
+recording through the refueling controls; v0.9.0 adds the completion and boss
+recordings described above. Unrecorded target sizes, other outcomes and later
+missions still need additional coverage. See `source/MISSION2_NOTES.md` and
+`validation/mission2_v0.8.0.json` for implementation and replay checks.
 
 ## Carrier landing and gunfire
 
@@ -77,7 +127,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-Other landing failure outcomes, terrain, later missions and refuelling still need further artwork and coverage. This is mission-one coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+Other landing failure outcomes, unrecorded Mission 2 encounters, refueling completion and later missions still need further artwork and coverage. This is recording-based coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 
@@ -97,7 +147,7 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.7.2 work is merged into `main` at
-`918a176408d2ecdf31933851813d1abab01c9421`. This development review is on
-`feature/transition-flashes-v0.7.3`. Keep edits on feature branches and review before
+The approved v0.7.3 work is merged into `main` at
+`9c05e3d0c25c468791894377cc250fd4086e9af4`. This development review is on
+`feature/mission2-v0.8.0`. Keep edits on feature branches and review before
 merging. A review build is not a public release or permission to merge.

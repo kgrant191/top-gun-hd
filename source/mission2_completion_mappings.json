@@ -1,0 +1,137 @@
+{
+  "boss_layouts": [
+    {
+      "frame": 620,
+      "origin": [
+        120,
+        200
+      ],
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 192,
+          "pattern": "0000000000000000FDFCF8ACFFFFFFFF"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 193,
+          "pattern": "0000000000000000FFFF0F1AFFFFFFFF"
+        }
+      ],
+      "count": 431,
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        0,
+        16,
+        4
+      ]
+    },
+    {
+      "frame": 1255,
+      "origin": [
+        120,
+        200
+      ],
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 224,
+          "pattern": "000200040F002C00FFFDFCFFFCF0D0FF"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 225,
+          "pattern": "0000C060F0000000FFFFDFAF771F0BFF"
+        }
+      ],
+      "count": 224,
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        2,
+        1,
+        14,
+        7
+      ]
+    },
+    {
+      "frame": 1479,
+      "origin": [
+        120,
+        200
+      ],
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 194,
+          "pattern": "040803207E872018FFEBE3E3F880E0F8"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 195,
+          "pattern": "0000E0387EC00000FFFFFFC70301070B"
+        }
+      ],
+      "count": 206,
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        1,
+        15,
+        8
+      ]
+    }
+  ],
+  "after-refuel_ocean_keys": [
+    "0000000000000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  ],
+  "boss_ocean_keys": [
+    "0000000000000000FFFFFFFFFFFFFFFF",
+    "00000000000C1800FFFFFFFFFFFFFFFF",
+    "0000003002000016FFFFFFFFFFFFFFFF",
+    "001F0100455400C2FFFFFFFFFFFFFFFF",
+    "0400320001043800FFFFFFFFFFFFFFFF",
+    "200A022000000000FFFFFFFFFFFFFFFF",
+    "FF00000000000000FFFFFFFFFFFFFFFF",
+    "FFFF000000000000FFFFFFFFFFFFFFFF",
+    "FFFFFF0000000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFF00000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFF000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFF0000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFF00FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  ],
+  "boss_health": {
+    "FFFFFFFFFFFFFFFF0000000000000000": {
+      "tile": 16,
+      "attributes": 0,
+      "frames": 1459
+    },
+    "00010001000101FF0000000000000000": {
+      "tile": 18,
+      "attributes": 0,
+      "frames": 2411
+    }
+  },
+  "loss_radar_letters": {
+    "R": "7C66663C66666600839999C3999999FF",
+    "A": "3C66663C66666600C39999C3999999FF",
+    "D": "7C66660066667C00839999FF999983FF"
+  }
+}

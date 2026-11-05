@@ -1,0 +1,1334 @@
+{
+  "version": "0.9.1",
+  "stages": [
+    {
+      "stage": 0,
+      "frame": 1020,
+      "origin": [
+        120,
+        200
+      ],
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        0,
+        16,
+        4
+      ],
+      "checks": [
+        {
+          "address": 9007,
+          "value": 192
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "frame": 100,
+      "origin": [
+        120,
+        200
+      ],
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        2,
+        1,
+        14,
+        7
+      ],
+      "checks": [
+        {
+          "address": 9007,
+          "value": 224
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "frame": 300,
+      "origin": [
+        120,
+        200
+      ],
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        1,
+        15,
+        8
+      ],
+      "checks": [
+        {
+          "address": 9007,
+          "value": 194
+        },
+        {
+          "address": 9005,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "frame": 500,
+      "origin": [
+        120,
+        200
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        0,
+        0,
+        16,
+        13
+      ],
+      "checks": [
+        {
+          "address": 9039,
+          "value": 228
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "frame": 750,
+      "origin": [
+        112,
+        200
+      ],
+      "size": [
+        32,
+        16
+      ],
+      "bbox": [
+        4,
+        0,
+        31,
+        16
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 196
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "frame": 950,
+      "origin": [
+        112,
+        200
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "bbox": [
+        0,
+        0,
+        32,
+        20
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 230
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "frame": 1200,
+      "origin": [
+        112,
+        200
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "bbox": [
+        0,
+        1,
+        32,
+        21
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 204
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "frame": 1400,
+      "origin": [
+        112,
+        200
+      ],
+      "size": [
+        40,
+        24
+      ],
+      "bbox": [
+        0,
+        1,
+        40,
+        23
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 242
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "frame": 1600,
+      "origin": [
+        104,
+        200
+      ],
+      "size": [
+        48,
+        32
+      ],
+      "bbox": [
+        0,
+        1,
+        48,
+        28
+      ],
+      "checks": [
+        {
+          "address": 9037,
+          "value": 198
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "frame": 1700,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        32
+      ],
+      "bbox": [
+        3,
+        1,
+        64,
+        32
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 225
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "frame": 1850,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        40
+      ],
+      "bbox": [
+        0,
+        1,
+        64,
+        40
+      ],
+      "checks": [
+        {
+          "address": 9011,
+          "value": 198
+        }
+      ]
+    },
+    {
+      "stage": 11,
+      "frame": 1940,
+      "origin": [
+        88,
+        200
+      ],
+      "size": [
+        80,
+        48
+      ],
+      "bbox": [
+        0,
+        0,
+        80,
+        48
+      ],
+      "checks": [
+        {
+          "address": 9006,
+          "value": 248
+        }
+      ]
+    }
+  ],
+  "boss_background_keys": [
+    "00000000000000000000000000000000",
+    "00000000000000000001010102020204",
+    "00000000000000000813262440408080",
+    "00000000000000001CE0000000000000",
+    "0000000000000000C10E0604C7400332",
+    "0000000000000000FDFCF8ACFFFFFFFF",
+    "0000000000000000FF1B3E07FF09082C",
+    "0000000000000000FFFF0F1AFFFFFFFF",
+    "0000000000000000FFFFFFFFFFFFFCF0",
+    "0000000000000000FFFFFFFFFFFFFFFC",
+    "0000000000000000FFFFFFFFFFFFFFFF",
+    "0000000000000080FFFFFFFFFFFF3F83",
+    "0000000000000080FFFFFFFFFFFF3F8F",
+    "000000000000030108102000C0C0C4CE",
+    "000000000000030FFFFFFFFFFCF0C30F",
+    "0000000000364C180F7FBF397F76BE9C",
+    "00000000008070FFFFFFFFFF7F8F70FF",
+    "000000000080F8FFFFFFFFFF3F83F800",
+    "000000000080F8FFFFFFFFFF3F83F8EF",
+    "000000000080F8FFFFFFFFFF3F83F8FF",
+    "0000000000E00000FFFFFFFF1F0F0F3F",
+    "0000000001070700FFFFFFFEF9F7F0F8",
+    "0000000003013920E0E0E0E0E4CEC050",
+    "0000000003022001950F00670B022083",
+    "000000000302200301C91C0003022083",
+    "00000000030F0F0FFFFFFCF0E1E7E8EE",
+    "00000000030F1F1CFFFFFFFCF3EFD8DF",
+    "00000000030F3F7EFFFFFCF0C1071E1F",
+    "00000000030F3FFBFFFFFFFCF3CF3F5C",
+    "00000000030F3FFEFFFFFFFCF3CF3CF0",
+    "00000000030F3FFFFFFFFCF0C30F3FFF",
+    "00000000030F3FFFFFFFFFFCF3CF3FFF",
+    "00000000060BF500081020C0C0C40AFF",
+    "0000000018ED5AFF020204040012A409",
+    "0000000040C66F2FC740033230006F0F",
+    "00000002001000007F391F3727B5DFDF",
+    "0000008038FEC0F8FFFF3F833800C0F8",
+    "0000008038FFFFFFFFFF3F8338FFFF00",
+    "0000008038FFFFFFFFFF3F8338FFFF3F",
+    "00000080F800E0F0FFFF3F870303E7F7",
+    "00000080F867001CFFFF7F87F867001C",
+    "00000080F8CF0079FFFF3F83F8CF0039",
+    "000000C000808000FFFF3F3F3FBFBF7F",
+    "000000C03CFFF0FCFFFF3FC33C00F0FC",
+    "0000030100000000C0C0C4CEFFFFFFFF",
+    "0000030F3BFBFCFFFCF0C30938F8C0FF",
+    "000003C0FFFD1F7DE3D010C0FF1CFFFC",
+    "0000060BF500000020C0C0C40AFFFFFF",
+    "000007C080FFBF7CFFC004C080FF3E7C",
+    "000013307EFE1F60FBF0F3F0FE9E00E0",
+    "000018ED5AFFE70100002012A409E543",
+    "0000203C3F030000FFFFDFE380C0FEFF",
+    "00003FFF8000FFFFFF003CFF8000FFFF",
+    "00003FFF8000FFFFFFC03CFF8000FFFF",
+    "00003FFFFF000000FF003CFFFF000000",
+    "0000C060F0000000FFFFDFAF771F0BFF",
+    "0000C10C560000003E043EE0A9FFFFFF",
+    "0000E0387EC00000FFFFFFC70301070B",
+    "0000F01F7E7EE000FF0FF0007E7F0103",
+    "0000F807FF3FFF3FFF03F807C07FFF7F",
+    "0000F81FFCFFFF7CFF0FF800FCFFFF7C",
+    "0000F83F00FF7F3FFF03F83F00F0FF3F",
+    "0000F8FFFF000000FF03F83FCF000000",
+    "0000F8FFFF000000FF03FC3B0002FCFF",
+    "0000FCFB0002FFFFFF03FC3B0002FCFF",
+    "0000FCFB001FFFFFFF03FC3B001CFFFF",
+    "00010000000000000000020408102000",
+    "000100000000203CFCFFFFFFFFFFDFE3",
+    "000200040F002C00FFFDFCFFFCF0D0FF",
+    "000401000B000000FEFBFEFFF6FFFFFF",
+    "000458760000000005000508FEFFFFFF",
+    "00100740CFFCFFF8C7D08740CFFCFF18",
+    "00100F070303233FC0F8FFFFFFFFDFE3",
+    "0080002010F8FCF800004000E0F0F0F8",
+    "0080F8FF5F0000007F87F8FF5F000000",
+    "00FFFFFFFC00000000CFF3FCFC000000",
+    "0100000000000000E1FCFFFFFFFFFFFF",
+    "0180F8FEFEFFFFFF00E0F8FEFFFFFFFF",
+    "020C60C66F2F5C80808010006F0F5EE6",
+    "030220030338FE40AF0220830334FDC0",
+    "030F3BFCDFE1FFFDC30F3FDFE0FDFF01",
+    "030F3CFFBFE0FFFFC30F3FBFC0FF7F0F",
+    "030F3FFF7F1F0300F3CF3CDE071080E0",
+    "040803207E872018FFEBE3E3F880E0F8",
+    "060E340000000000C046C9FFFFFFFFFF",
+    "07000001000086A8C0E0FCFFFFFF7F57",
+    "070787FB7A1E3F00FFFF7F060061C0FF",
+    "0FC17C3F3F1F1F1F00C0FCFFFFFFFFFF",
+    "10F8FCF8FCFC509CE0F0F0F8FBFB4363",
+    "18ED5AFF000000000012A409FFFFFFFF",
+    "19390338FE40000098300334FDC0EF61",
+    "1FC0781C0200030000C0F0D8F49BFCFF",
+    "383C5AAD00000000F8FCA550FFFFFFFF",
+    "3A1622000000000042E2D5FFFFFFFFFF",
+    "3C1F1F1F0F0F6FFFBFDFDFDFC30F3FFF",
+    "3C1F1F1F0F0F6FFFBFDFDFDFEFEF8F23",
+    "3EFCFFFDF8FF1F20BEFCFFFCF81F4000",
+    "3F0300000000000080C0FEFFFFFFFFFF",
+    "3F07F8FEFEFFFFFF3807F8FEFFFFFFFF",
+    "3F7778797C7F1F033B303B380C611CE3",
+    "3FF07E81FF9900FF30F00081071900FF",
+    "40C66F2F0000000030006F0FFFFFFFFF",
+    "420C60C66F2F4480000010006F0F5FFF",
+    "4890500000000000A93B0107FF67FF6F",
+    "7D7D7840000000007D7D78431CE00100",
+    "7F0F010000000000708EE1F8FEFEFEFF",
+    "7F7F7F0F010000001F03708EE1FCFFFF",
+    "80000000000000008E71820204080808",
+    "80E00000000000008FEF1FFFFFFFCFBF",
+    "80E0F8FEF8C0000080E0F8FEF8C73FFD",
+    "83FB7A1A350000007F060065CAFFFFFF",
+    "90F8FCFEFEF6BE00E0F0F87F3F0747FF",
+    "BEFEFE7F0F0180703E0E80700E01C078",
+    "BEFEFEFF3F07F8FEBE1E02C03807F8FE",
+    "BF0FFF3F0FF8F8003F3FFFBF1FF80704",
+    "BFC1FDFF03FFFF7FC1FFFF07FFFF1F03",
+    "DEE0FF3F07201C0F417C3F07C0E0FCFF",
+    "DEFE9C00000000000F8283FFFFFFFFFF",
+    "E000000000000000E00CE10718274189",
+    "E000000000000000E10E7080418E0604",
+    "E00000000029B0000204304480874FFF",
+    "E0000000008080000F0F0FFF3FBFBF3F",
+    "F03F07000C0703033E07C0E0FCFFFFFF",
+    "F0FFFF00000080E0FFFF0000013F8FE3",
+    "F1CC000C000000003E80FFF3FFFFFFFF",
+    "F8F8E00000000000F8F8E31FFB3F1CF7",
+    "F8FCFCFCFCFCE000F8FCFCFCFCFCE10F",
+    "F8FE00000080E0F8F80000003F8FE3F9",
+    "FCFC509C00000000FBFB4363FFFFFFFF",
+    "FCFCFCFC509CC470F9FBFBFB43633B8E",
+    "FCFEFEF6BE000000F87F3F0747FFFFFF",
+    "FEBEBEBEA000E8E0BEBEBEBEA00710C0",
+    "FEF0800000000000FEF08F738F193F32",
+    "FEFF0000000000000003020408102000",
+    "FEFF7F7FFF7A183FFFFFFFFF1F0267C0",
+    "FF3F1FF8F8000000FFBF1FF807040810",
+    "FF3FFF7A183F0111FF3F1F0267C0FEEE",
+    "FF7A183F000000001F0267C0FFFFFFFF",
+    "FF7F0F010000070181700E01C0F8FFFF",
+    "FF80E0F8FEFFFFFC0080E0F8FEFFFFFC",
+    "FFAF3F0300400000085080C0FEBFFFFF",
+    "FFF8F80000000003FFF80304102040C3",
+    "FFFC000000000000FF00030408102000",
+    "FFFCC00000000000FFFCC10E70800000",
+    "FFFDF8FF1F2090F8FFFCF81F4000E0F0",
+    "FFFEFEFEFEFF3F07FEFEFE1E02C03807",
+    "FFFF002010F8FCF800C04000E0F0F0F8",
+    "FFFF002090F8FCF87F004000E0F0F0F8",
+    "FFFF1F0098FC7EFEFF1F0000F0F8FCFF",
+    "FFFF3F0300000000080080C0FEFFFFFF",
+    "FFFFC1833FFFFFFFFF001E003FFF1F83",
+    "FFFFE0F8FEFFFFFFFF00E0F8FEFFFFFF",
+    "FFFFFF7F7EFEFEFFFFFF7F7E7E1E02C0",
+    "FFFFFFF080000000FFFFFFF08F718709",
+    "FFFFFFFE7E7E7840FFFFFE7E7E7E7843",
+    "FFFFFFFEF0000000FFFFFFFEF10E7084",
+    "FFFFFFFFFEFF0000FFFFFFFF00030204",
+    "FFFFFFFFFF00FFFFFFFFFFFFFF0000FF",
+    "FFFFFFFFFF7F0F01FFFF7F0F81700E01",
+    "FFFFFFFFFFFF0020FFFFFF7F00C04000",
+    "FFFFFFFFFFFFFEF0FFFFFFFFFFFFFEF1",
+    "FFFFFFFFFFFFFFFF3FCFF0FFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFCFF0FFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  ],
+  "ocean_keys": [
+    "0000000000000000FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  ],
+  "boss_sprite_layouts": [
+    {
+      "kind": "tower",
+      "stage": 4,
+      "frame": 641,
+      "count": 224,
+      "size": [
+        8,
+        8
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 219,
+          "attr": 0,
+          "pattern": "00001038102C386C00001038103C387C"
+        }
+      ],
+      "bbox": [
+        1,
+        2,
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 5,
+      "frame": 865,
+      "count": 224,
+      "size": [
+        8,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 219,
+          "attr": 0,
+          "pattern": "00001038102C386C00001038103C387C"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 218,
+          "attr": 0,
+          "pattern": "3C7C7478000000003C7C5C7800000000"
+        }
+      ],
+      "bbox": [
+        1,
+        2,
+        6,
+        12
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 6,
+      "frame": 1089,
+      "count": 224,
+      "size": [
+        8,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 217,
+          "attr": 0,
+          "pattern": "1038107E307E7CFE1038107E387E7CFE"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 216,
+          "attr": 0,
+          "pattern": "24FE7E567C0000005CFE7E6E7C000000"
+        }
+      ],
+      "bbox": [
+        0,
+        0,
+        7,
+        13
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 7,
+      "frame": 1313,
+      "count": 192,
+      "size": [
+        8,
+        24
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 215,
+          "attr": 0,
+          "pattern": "000000000000083C000000000000083C"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 214,
+          "attr": 0,
+          "pattern": "083A7F387F7EFF52083E7F3C7F7EFF6E"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 213,
+          "attr": 0,
+          "pattern": "FF7FFFFE00000000FF7FB3FE00000000"
+        }
+      ],
+      "bbox": [
+        0,
+        6,
+        8,
+        20
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 8,
+      "frame": 1505,
+      "count": 160,
+      "size": [
+        8,
+        24
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 212,
+          "attr": 0,
+          "pattern": "00000000081C083E00000000081C083E"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 228,
+          "attr": 0,
+          "pattern": "183A7F387F7EFF52183E7F3C7F7EFFEE"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 244,
+          "attr": 0,
+          "pattern": "FF73FFFF7F000000FFCFFFD37F000000"
+        }
+      ],
+      "bbox": [
+        0,
+        4,
+        8,
+        21
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 8,
+      "frame": 1505,
+      "count": 154,
+      "size": [
+        16,
+        8
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 232,
+          "attr": 0,
+          "pattern": "070F00030B0F0000070D00070E1F0000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 237,
+          "attr": 0,
+          "pattern": "80C000A0F0F8000080C000E0F0F80000"
+        }
+      ],
+      "bbox": [
+        3,
+        0,
+        13,
+        6
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 9,
+      "frame": 1665,
+      "count": 128,
+      "size": [
+        16,
+        24
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 206,
+          "attr": 0,
+          "pattern": "03011D0D00033F0F03011F0F07033F0F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 207,
+          "attr": 0,
+          "pattern": "0000C0000000E0000000C0000000E000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 221,
+          "attr": 0,
+          "pattern": "193F1F7F1F3F7F3F393F7F7F1F3F7F73"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 227,
+          "attr": 0,
+          "pattern": "C040E060E0F0F020C0C0E0E0E0F0F0E0"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 222,
+          "attr": 0,
+          "pattern": "7F3F7F687F7F7F007F617F7F7F557F00"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 223,
+          "attr": 0,
+          "pattern": "E020F0F0F0FFFF00E0E0F0F0F03FFF00"
+        }
+      ],
+      "bbox": [
+        1,
+        0,
+        16,
+        23
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 9,
+      "frame": 1665,
+      "count": 32,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 229,
+          "attr": 0,
+          "pattern": "000000000000060F0000000000000609"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 245,
+          "attr": 0,
+          "pattern": "17373F031F3C7F761F3F3F031C37771E"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 246,
+          "attr": 0,
+          "pattern": "C0E0E000E0F0F8FC40E0E000E0B0F8F4"
+        }
+      ],
+      "bbox": [
+        1,
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 9,
+      "frame": 1697,
+      "count": 96,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 231,
+          "attr": 0,
+          "pattern": "000000000000000F000000000000000F"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 247,
+          "attr": 0,
+          "pattern": "17373F001F3F7C77193F3F001F34771F"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 248,
+          "attr": 0,
+          "pattern": "C060E000E0F0F8BC40E0E000E0B0B8E4"
+        }
+      ],
+      "bbox": [
+        1,
+        7,
+        14,
+        16
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 10,
+      "frame": 1793,
+      "count": 96,
+      "size": [
+        16,
+        24
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 210,
+          "attr": 0,
+          "pattern": "07027B1B0006FF1F01067F1F0F06FF1F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 211,
+          "attr": 0,
+          "pattern": "000080000000E000000080000000E000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 226,
+          "attr": 0,
+          "pattern": "337F3FFF3F7FFF7F737FFFFF3F7FFFE7"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 227,
+          "attr": 0,
+          "pattern": "C040E060E0F0F020C0C0E0E0E0F0F0E0"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 242,
+          "attr": 0,
+          "pattern": "FF7FFFFFFFFFFFFFFFC3FFFFAAFF4CFF"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 243,
+          "attr": 0,
+          "pattern": "E020F0F0F0F0FFFFE0E0F0F0F0F07FFF"
+        }
+      ],
+      "bbox": [
+        0,
+        0,
+        16,
+        24
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 10,
+      "frame": 1793,
+      "count": 32,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 234,
+          "attr": 0,
+          "pattern": "00043F7FFFDF000200043B55DB7F0002"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 235,
+          "attr": 0,
+          "pattern": "000080C07078000000008040F0D80000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 250,
+          "attr": 0,
+          "pattern": "3F7FFAE8FF0000003D6AE838FF000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 251,
+          "attr": 0,
+          "pattern": "E0F0B8BEFE000000E0B0F8EEFE000000"
+        }
+      ],
+      "bbox": [
+        0,
+        1,
+        15,
+        13
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 10,
+      "frame": 1825,
+      "count": 64,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 233,
+          "attr": 0,
+          "pattern": "040E3F75DBDF0207040A3559FB7F0205"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 235,
+          "attr": 0,
+          "pattern": "000080C07078000000008040F0D80000"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 249,
+          "attr": 0,
+          "pattern": "3F7AE8EDFF0000003A6CF83DFF000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 251,
+          "attr": 0,
+          "pattern": "E0F0B8BEFE000000E0B0F8EEFE000000"
+        }
+      ],
+      "bbox": [
+        0,
+        0,
+        15,
+        13
+      ]
+    },
+    {
+      "kind": "tower",
+      "stage": 11,
+      "frame": 1889,
+      "count": 96,
+      "size": [
+        16,
+        32
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 204,
+          "attr": 0,
+          "pattern": "0103030101003E060102030101003F07"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 205,
+          "attr": 0,
+          "pattern": "80C0C0808080FCE080C0C0800080FCE0"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 208,
+          "attr": 0,
+          "pattern": "020001017F070C1F070301017F071C1F"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 209,
+          "attr": 0,
+          "pattern": "C0008080FEF0FCE4E0C08080FEF0FCFC"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 224,
+          "attr": 0,
+          "pattern": "0F3F0F1F7F5F3FDF3F3F0F1FFFF9FFF0"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 225,
+          "attr": 0,
+          "pattern": "FEE6FEFFFFF2FEF2FEFEFEFFFFFEFEFE"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "tile": 240,
+          "attr": 0,
+          "pattern": "FF3F7FFFFFFF7F3FFF3F6AFF93937F3F"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 241,
+          "attr": 0,
+          "pattern": "FFFFEFFFFFFFFFFFFFFFBFFFC9C9FFFF"
+        }
+      ],
+      "bbox": [
+        0,
+        0,
+        16,
+        32
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 11,
+      "frame": 1889,
+      "count": 64,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 238,
+          "attr": 0,
+          "pattern": "0002073F7AE8EDFF0002053A6CF83DFF"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 239,
+          "attr": 0,
+          "pattern": "000000E0F0B8BEFE000000E0B0F8EEFE"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 254,
+          "attr": 0,
+          "pattern": "0103071F3FF7F7FF0102051D36FFBFFF"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 220,
+          "attr": 0,
+          "pattern": "80C0E0F8FCEFEFFF8040A0B86CFFFDFF"
+        }
+      ],
+      "bbox": [
+        0,
+        1,
+        16,
+        16
+      ]
+    },
+    {
+      "kind": "turret",
+      "stage": 11,
+      "frame": 1953,
+      "count": 32,
+      "size": [
+        16,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 236,
+          "attr": 0,
+          "pattern": "0000023F7FFAE8FF0000023D6AE838FF"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 239,
+          "attr": 0,
+          "pattern": "000000E0F0B8BEFE000000E0B0F8EEFE"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 252,
+          "attr": 0,
+          "pattern": "0001031F3FFDF6FF0001031E35F7BFFF"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 253,
+          "attr": 0,
+          "pattern": "0080C0F8FCBF6FFF0080C078ACEFFDFF"
+        }
+      ],
+      "bbox": [
+        0,
+        2,
+        16,
+        16
+      ]
+    }
+  ],
+  "aircraft_layouts": [
+    {
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 108,
+          "attr": 2,
+          "pattern": "00000000000000380000000000000000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 109,
+          "attr": 2,
+          "pattern": "00000000000028900000000000002810"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 140,
+          "attr": 2,
+          "pattern": "07000000000000003807000000000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 172,
+          "attr": 2,
+          "pattern": "E870F88804020100A880107008040201"
+        }
+      ],
+      "frame": 267,
+      "origin": [
+        94,
+        51
+      ],
+      "count": 50,
+      "id": 4,
+      "missing": 4,
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        2,
+        6,
+        16,
+        16
+      ]
+    },
+    {
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 96,
+          "attr": 2,
+          "pattern": "000000001F00090000000000000F0900"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 97,
+          "attr": 2,
+          "pattern": "00000000FF3F3F3F0008060100DD5B1B"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 98,
+          "attr": 2,
+          "pattern": "0040C08080C0C0E00040C080E0188040"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 99,
+          "attr": 2,
+          "pattern": "1F0E0D08000000000001030600000000"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 100,
+          "attr": 2,
+          "pattern": "E0F0E8C804120203C0C0D030181C0402"
+        }
+      ],
+      "frame": 317,
+      "origin": [
+        114,
+        76
+      ],
+      "count": 24,
+      "id": 5,
+      "missing": 5,
+      "size": [
+        24,
+        16
+      ],
+      "bbox": [
+        3,
+        1,
+        24,
+        16
+      ]
+    },
+    {
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 121,
+          "attr": 2,
+          "pattern": "07030101000000000003010100000000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 122,
+          "attr": 2,
+          "pattern": "00E0FDFF7F3F1F0F0000C0F87B3D1C0D"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 123,
+          "attr": 2,
+          "pattern": "000FFFFFFFFFFFFF000004ECD8B87879"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "tile": 124,
+          "attr": 2,
+          "pattern": "000000008080C0C00000000000008080"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 125,
+          "attr": 2,
+          "pattern": "033F030101000000033F030101000000"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 126,
+          "attr": 2,
+          "pattern": "FFFFFFFFFF7B0804FBFB7FDCFF7B0804"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 127,
+          "attr": 2,
+          "pattern": "C0C0E0E0F0F8FC3E80800000C0E0F83C"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 128,
+          "attr": 2,
+          "pattern": "0E030000000000000C02000000000000"
+        }
+      ],
+      "frame": 341,
+      "origin": [
+        146,
+        86
+      ],
+      "count": 18,
+      "id": 6,
+      "missing": 8,
+      "size": [
+        32,
+        24
+      ],
+      "bbox": [
+        5,
+        0,
+        32,
+        18
+      ]
+    }
+  ],
+  "ordinal_one_pattern": "1818180018181800E7E7E7FFE7E7E7FF",
+  "body_presence_address": 9008,
+  "body_min_tile": 192,
+  "component_crops": {
+    "deck": [
+      0,
+      0,
+      1536,
+      540
+    ],
+    "tower": [
+      0,
+      540,
+      768,
+      1024
+    ],
+    "turret": [
+      768,
+      540,
+      1536,
+      1024
+    ]
+  }
+}
