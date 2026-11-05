@@ -1,27 +1,31 @@
-TOP GUN HD v0.15.1 — DEVELOPMENT REVIEW
+TOP GUN HD v1.0.0
 
-NEW IN THIS BUILD
-- Bonus value correctly reads 10000 PTS with a numeral 1.
-- Yellow deck crew share consistent adult proportions.
-- Pilot body stays fixed while only his waving arm changes.
-
-INCLUDED FROM v0.15.0
-- HD close shuttle and upper tower through distance stage 12 and flyover.
-- New navy-and-gold award, game-over and successful mission summary.
-- Original live score, high score and remaining-player values.
-- Painted sunset carrier celebration with native canopy and pilot animation,
-  exhaust phases, passing aircraft and blinking start prompt.
-- Includes the helicopters, danger-screen and target improvements from v0.14.0.
-- Preserves all 240 v0.14.0 PNGs.
+A 4x HD graphics pack for Top Gun (USA) on NES, for Mesen / MesenCE.
+An unofficial fan project. No ROM or emulator is included.
 
 INSTALL
-Copy all files from this ZIP into your existing Top Gun HD pack folder,
-replacing files when prompted. Enable HD packs and reopen your own ROM.
-No ROM or emulator is included.
+1. Download and extract Top_Gun_HD_v1.0.0.zip.
+2. Copy every extracted file into the HD pack directory for your own ROM.
+   The directory name must match the ROM filename without its extension.
+   Example: Top_Gun_HD.nes uses HdPacks/Top_Gun_HD/hires.txt.
+   Keep hires.txt and all PNG files together, without an extra nested folder.
+3. Enable HD packs in the emulator and reopen the ROM.
+   When upgrading, replace existing pack files with this complete set.
 
-SCOPE
-Covers the two new movies (6,960 inputs): close shuttle flyover, retry,
-award ending, successful summary, carrier celebration and next-game launch.
-The continuous shuttle-defeat-to-success transition is not in the recordings.
-This remains a development review build, with other unrecorded outcomes
-including Mission 3 boss defeat and landing not yet verified.
+INCLUDED
+Painted launch, cockpit, skies, sea, desert and night scenery; aircraft,
+ships, ground targets and helicopters; live HULL and danger displays;
+carrier landing, aerial refueling, final shuttle target and both endings.
+The bonus reads 10000 PTS, the deck crew have consistent adult proportions,
+and the pilot's body stays fixed while his arm waves.
+
+The original game controls positions, timing, scores, damage, collision
+and audio. This pack replaces graphics and adds native-state-driven displays.
+
+TESTING SCOPE
+Validated against the supplied recordings across all four missions.
+Unrecorded outcomes are not certified. Mission 3 boss defeat/landing and
+the continuous shuttle-defeat-to-success transition remain unrecorded.
+
+Project, source and validation notes:
+https://github.com/kgrant191/top-gun-hd

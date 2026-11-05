@@ -1,0 +1,214 @@
+{
+  "video_seconds": 65,
+  "video_dimensions": [
+    1080,
+    1920
+  ],
+  "video_fps": 60,
+  "audio_tracks": 1,
+  "capture_pairs": {
+    "launch": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 9666720,
+        "sha256": "92bcd8bd31a8fce7a2bfa0705a2777bb8560b129571830168669eb70d881d1ad"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 18063360,
+        "sha256": "3b802bfd27eec92b082b0fc3105b8ea6723ae3fe1519b3d8fcfbf11534bc8fca"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 1760838,
+        "sha256": "77c39dd68dea734ffd34ac493a62af7e2425febf3ea4ca409f75d33636f924de"
+      }
+    },
+    "clouds": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 45383168,
+        "sha256": "54b746dd77905a54666e65ddb8234a56410a539ff9ce55f3c757fe4edfc9c712"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 84803584,
+        "sha256": "1f9119b98178aef9d9548a21f3193230cc766546cd31aaecdc5efaed24ae6631"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 8267721,
+        "sha256": "59bb690dcbafa03008826d459b939a39bb28bf93188f95197da6930c4d9c8346"
+      }
+    },
+    "heli": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 36913280,
+        "sha256": "8b871b796591e2f743f20b1af317464469978ad9e09f44f1fe70e4309e9c8a6b"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 68976640,
+        "sha256": "a1cba4fd5e89e755c20f92f728f7ac5b2e73d5bb6c591d1b15e6f3a00eae1615"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 6724662,
+        "sha256": "8b8404ea11b386c33f66dd031657d9fa855124d7be285f0ae82ed72b72e7d6b0"
+      }
+    },
+    "shuttle": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 20845920,
+        "sha256": "66d16e13cae44c7ada48af556c6523bcfebb9b8e4aac65bfb01709856c2b8754"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 38952960,
+        "sha256": "a3df5c3244510d04232d46235f03db24bd3257d0b5669031876a3a418d7eea61"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 3797483,
+        "sha256": "fa8cee4a5d48c5df5d63aff3155d2d700d7c959a19a1c40e3b1b569e054aa43a"
+      }
+    },
+    "refuel": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 28649440,
+        "sha256": "b7c6ec68359d19f6b2b01dc8d8c7da5051149303fb3e2312bbaa3300c792a5af"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 53534720,
+        "sha256": "80734e86e6213bcfef43d2600e0fb9c65b7c7fddfa509d746584f265293884f9"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 5219142,
+        "sha256": "48be26abb2d83cf04a5df88487354a3dbb7e39a5c5d39dd25bb4b10d3448ab92"
+      }
+    },
+    "desert": {
+      "trace.bin": {
+        "identical": true,
+        "bytes": 3204704,
+        "sha256": "01dca7a8a27a0923664d6f4fdb76a4d6ff2a72b98e096e79c7d42c1e31310cc4"
+      },
+      "chr.bin": {
+        "identical": true,
+        "bytes": 5988352,
+        "sha256": "771f6b40f4c768a17b2ad67588117e7850ba91b210f85d26103480d03d855c1a"
+      },
+      "pcm": {
+        "identical": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_frames": 583577,
+        "sha256": "044788b0beb2c517a07e1343dcc2f710ffd066bcd11b81f54de0f84a66f47e4c"
+      }
+    }
+  },
+  "stills": [
+    {
+      "capture": "launch",
+      "input": 2160,
+      "title": "Carrier launch",
+      "slug": "Carrier_Launch"
+    },
+    {
+      "capture": "desert",
+      "input": 300,
+      "title": "Desert combat",
+      "slug": "Desert_Combat"
+    },
+    {
+      "capture": "shuttle",
+      "input": 780,
+      "title": "Final target",
+      "slug": "Final_Target"
+    },
+    {
+      "capture": "launch",
+      "input": 900,
+      "title": "Mission accomplished",
+      "slug": "Mission_Accomplished"
+    }
+  ],
+  "segments": [
+    {
+      "capture": "launch",
+      "input": 2005,
+      "seconds": 3,
+      "title": "Carrier launch"
+    },
+    {
+      "capture": "clouds",
+      "input": 2520,
+      "seconds": 7,
+      "title": "Above the clouds"
+    },
+    {
+      "capture": "desert",
+      "input": 120,
+      "seconds": 8,
+      "title": "Desert combat"
+    },
+    {
+      "capture": "heli",
+      "input": 2,
+      "seconds": 6,
+      "title": "Night helicopters"
+    },
+    {
+      "capture": "heli",
+      "input": 1740,
+      "seconds": 6,
+      "title": "Danger behind you"
+    },
+    {
+      "capture": "refuel",
+      "input": 3240,
+      "seconds": 8,
+      "title": "Aerial refueling"
+    },
+    {
+      "capture": "shuttle",
+      "input": 360,
+      "seconds": 8,
+      "title": "Final target"
+    },
+    {
+      "capture": "shuttle",
+      "input": 4320,
+      "seconds": 5,
+      "title": "Top Gun honors"
+    },
+    {
+      "capture": "launch",
+      "input": 300,
+      "seconds": 14,
+      "title": "Mission accomplished"
+    }
+  ],
+  "video_sha256": "bd0636e96ba7d6b1aeef0c00406bf9c6c59345c63d68b648c383d3607bdcd927",
+  "image_sha256": {
+    "Top_Gun_HD_Before_After_01_Carrier_Launch.png": "e26279c6a56bd1f1ea466fbeb1c11b69bc778a4fade8f1b80e6ded7661e29e44",
+    "Top_Gun_HD_Before_After_02_Desert_Combat.png": "49f23b46fdfe04e40e38635bdfdd514586a30f0f8fba5380e7b99ed7b0d78e08",
+    "Top_Gun_HD_Before_After_03_Final_Target.png": "57188ee8ae3810886717f2ca655f693e02c144b2e0c87dfdc226a7bb6a4e097e",
+    "Top_Gun_HD_Before_After_04_Mission_Accomplished.png": "6bb11b286b73b96056625d691e14ddac351ff21d015952929f39e8f8b259a58f"
+  }
+}

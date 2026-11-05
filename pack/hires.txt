@@ -1,4 +1,4 @@
-# Top Gun HD v0.15.1 - bonus numeral and registered crew/pilot
+# Top Gun HD v1.0.0 - approved release
 <ver>109
 <scale>4
 <overscan>0,0,0,0

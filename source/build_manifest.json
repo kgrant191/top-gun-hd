@@ -1,5 +1,5 @@
 {
-  "version": "0.15.1",
+  "version": "1.0.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -135,5 +135,6 @@
   "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
   "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief",
   "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry; full recorded base flyover through distance stage 12 and missile-hit retry",
-  "mission4_coverage": "Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry; 8,420 more inputs cover helicopters, danger display transitions, seven shuttle target approach sizes, damage, retry and game over; two further movies totaling 6,960 inputs cover close shuttle flyover, retry, award ending, successful summary, carrier celebration and next-game launch"
+  "mission4_coverage": "Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry; 8,420 more inputs cover helicopters, danger display transitions, seven shuttle target approach sizes, damage, retry and game over; two further movies totaling 6,960 inputs cover close shuttle flyover, retry, award ending, successful summary, carrier celebration and next-game launch",
+  "release_status": "approved"
 }

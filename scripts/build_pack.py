@@ -243,7 +243,13 @@ meta['version']='0.15.1'
 meta['features'].extend(['Bonus value reads 10000 PTS with a numeral 1',
  'Consistent adult deck-crew proportions and a fixed pilot body throughout the wave'])
 meta['assets']['ending_pilot_arm_down']='source/ending_pilot_arm_down_master.png'
+meta['version']=(R/'VERSION').read_text().strip()
+meta['release_status']='approved'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
+hires=P/'hires.txt'
+hires_lines=hires.read_text().splitlines()
+hires_lines[0]='# Top Gun HD v'+meta['version']+' - approved release'
+hires.write_text('\n'.join(hires_lines)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')
