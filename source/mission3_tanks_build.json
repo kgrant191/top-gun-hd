@@ -1,0 +1,12 @@
+{
+  "specific_rules": 18,
+  "fallback_rules": 16,
+  "conditions": 36,
+  "new_images": 0,
+  "new_exact_keys": 0,
+  "source_layout": 79,
+  "native_close_size": [
+    24,
+    24
+  ]
+}

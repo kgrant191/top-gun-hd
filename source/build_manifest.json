@@ -1,5 +1,5 @@
 {
-  "version": "0.9.1",
+  "version": "0.10.1",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -44,10 +44,16 @@
     "Painted carrier approach, independent bridge/guns and native amber health meter",
     "Twelve carrier distance sizes with opaque deck and native-timed bridge/gun sprites",
     "Three additional banked fighter poses reuse approved aviation artwork",
-    "Correct numeral in the native 1ST TARGET message"
+    "Correct numeral in the native 1ST TARGET message",
+    "Mission 3 briefing map, cockpit and native live instruments",
+    "Banked and scrolling painted desert terrain with clean sky edge",
+    "Native-sized radar dishes, armored ground targets and modular barricades",
+    "Additional banked fighter poses and ground-palette projectile coverage",
+    "Mission 3 refueling arrival, boom, guidance and departure reuse the approved artwork",
+    "Both close tank orientations stay HD in Mission 3, with unchanged artwork"
   ],
   "not_yet_redrawn": [
-    "Unrecorded target sizes, later missions, terrain, remaining outcomes and ending"
+    "Mission 3 enemy base/boss and landing, unrecorded target sizes and outcomes, Mission 4 and ending"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -73,7 +79,11 @@
     "boom": "source/mission2_boom_master.png",
     "submarine_bright": "source/mission2_submarine_bright_master.png",
     "mission2_boss_approach": "source/mission2_boss_approach_master.png",
-    "mission2_boss_components": "source/mission2_boss_components_master.png"
+    "mission2_boss_components": "source/mission2_boss_components_master.png",
+    "desert": "source/mission3_desert_master.png",
+    "radar": "source/mission3_radar_master.png",
+    "tank": "source/mission3_tank_master.png",
+    "barrier": "source/mission3_barrier_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -87,5 +97,6 @@
   },
   "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
   "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
-  "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief"
+  "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief",
+  "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over"
 }
