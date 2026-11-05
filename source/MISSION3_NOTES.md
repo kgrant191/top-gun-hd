@@ -69,7 +69,13 @@ PCM comparison, visual checks, preserved assets, rebuild and installer hashes.
 The full recording is replayed from its embedded state. The final ten-rule
 takeoff-mask correction is checked separately across inputs 1801–2400 against
 an identical native run. It adds no image or exact palette keys and changes
-only Mission 3 takeoff mode 6; the preceding full replay covers all other modes.
+only Mission 3 takeoff mode 6. A second ten-rule correction masks the native
+desert horizon when refueling phase 8 restores its palette. One additional
+upper sky layer prevents scrolling sand from wrapping over the top scanline
+while the lower refueling edge remains active. This correction is checked
+across inputs 16801–17400 against an identical native run. All added tile keys
+already exist, and all images remain identical to the full replay. The
+preceding full replay covers the remaining modes and phases.
 Mesen's default test-runner wall-clock timeout is too short for this recording;
 use `--testRunner --timeout=900` and isolated runtime folders/settings.
 Native recording uses the existing capture hook. Screenshots in this runtime

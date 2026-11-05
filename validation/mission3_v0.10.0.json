@@ -49,6 +49,35 @@
       2400
     ]
   },
+  "refuel_return_final_patch": {
+    "identical_native_trace_frames": 600,
+    "identical_checkpoints": {
+      "ram": 7,
+      "chr": 7,
+      "nt": 7,
+      "oam": 7,
+      "pal": 7,
+      "state": 7
+    },
+    "identical_pcm": {
+      "channels": 2,
+      "sample_width": 2,
+      "rate": 48000,
+      "sample_frames": 478949,
+      "sha256": "00fe6ebbf20215beab3fe97c9ab712476c77c9691ab36bdf5799d2ca77701beb"
+    },
+    "trace_sha256": "789ced24ecbd7e74d2fe10376f28301b90967efb9cddbfdfbfb27cf04c83b6ad",
+    "added_tile_rules": 10,
+    "added_background_rules": 1,
+    "added_conditions": 1,
+    "scope": "Mission 3 flight mode 7, route 4, phase 8, desert palette, windshield only",
+    "new_exact_keys": false,
+    "removed_rules": 0,
+    "range": [
+      16801,
+      17400
+    ]
+  },
   "unchanged_v091_pngs": [
     "pack/carrier.png",
     "pack/cockpit.png",
@@ -207,12 +236,12 @@
   ],
   "unchanged_preceding_mission2_video_frames": 246,
   "decoded_pngs": 171,
-  "visual_samples": 220,
+  "visual_samples": 224,
   "sampled_native_artifact_colors": [],
   "isolated_rebuild_identical": true,
   "installer": {
     "file": "Top_Gun_HD_v0.10.0.zip",
-    "sha256": "41af3b22bbb200f65fd1a72c436734e02f8ee6d28f1207cfbc2e59b12d326c4a",
+    "sha256": "ae28e1c56764faaef5823a37f7168fadc75cfb6c846ff5db00216cf5f7ecb69b",
     "files": 173,
     "exact_pack": true
   },
@@ -262,7 +291,7 @@
     "exhaust_50.png": "f05959ee001508927c6b0ab8daee0f2ae83b26fb449e836f966b445dee6fe53d",
     "exhaust_68.png": "82715219249dce8e60c8174187d54bff7a96876c99ee095e851e941a1c797685",
     "flight_ui.png": "7825772dc52fada3e7af0bebecb3b0d399da17770617404e4fe73bd0853f40a7",
-    "hires.txt": "d75324b35ad43f5365a7f6bdab77bf3a38ae7d80e9d21f219c6fc8bc4949bd5b",
+    "hires.txt": "1aaefea4d646415d9e1208c573549e326ea1eadb24fc369b247d24033affb2a3",
     "hull_00_center.png": "494852d95fc5204872758e5112422f70b6f9c592ca6052a88e5551bdcfd89d6a",
     "hull_00_left.png": "b76792a9093918f49314a774ebced0401c235c76990f6678122b3267a2e0c220",
     "hull_00_right.png": "797aa05d97aa7218534a135e9b207a1c1688db23f6db43165a25ec48b9f66861",
@@ -395,7 +424,7 @@
   "limitations": [
     "Movie ends at game over; Mission 3 base boss and landing are not covered.",
     "Unrecorded target layouts, outcomes, Mission 4 and ending need further coverage.",
-    "Visual inspection and exact native-color checks are sampled; full replay plus final 600-frame takeoff patch cover gameplay and audio.",
+    "Visual inspection and exact native-color checks are sampled; full replay plus two final 600-frame transition checks cover gameplay and audio.",
     "Audio-device metadata excluded from state dictionaries; PCM checked separately."
   ]
 }

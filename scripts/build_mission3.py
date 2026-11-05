@@ -13,6 +13,7 @@ assert '<condition>missionThree,memoryCheckConstant,0030,==,03' not in lines
 index=sum(l.startswith('<img>') for l in lines);atlas=Image.new('RGBA',(1024,1024));slot=0
 conditions=['<condition>missionThree,memoryCheckConstant,0030,==,03',
  '<condition>mission3Desert,ppuMemoryCheckConstant,3F06,==,27',
+ '<condition>mission3RefuelReturn,memoryCheckConstant,009F,==,08',
  f'<condition>menuMissionThree,tileAtPosition,80,32,{M["mission_three_pattern"]},00000000,Y',
  f'<condition>menuMapThree,tileAtPosition,80,112,{M["map_anchor"]},00000000,Y']
 rules=[];backgrounds=[]
@@ -62,6 +63,10 @@ for bank,slope in [(0,0),(-1,1/32),(-2,1/16),(-3,1/8),(1,-1/32),(2,-1/16),(3,-1/
 # Exact desert horizon keys; repainting is confined to the flight window.
 for p in M.get('terrain_keys',[]):rules.insert(0,f'[{world}&mission3Desert]<tile>0,{p},0F302721,0,0,1,N')
 for p in M['takeoff_terrain_keys']:rules.insert(0,f'[{scene}&mission2Takeoff&environmentWorld&mission3Desert]<tile>0,{p},0F302721,0,0,1,N')
+for p in M['terrain_keys']:rules.insert(0,f'[{scene}&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,{p},0F302721,0,0,1,N')
+# The lower refueling edge occupies priority 21 through the departure reset.
+# Give the upper edge its own layer while the desert palette returns.
+backgrounds.insert(0,f'[{scene}&mission2Flight&refuelRoute&mission3RefuelReturn&mission3Desert&envBank_zero]<background>mission3_sky_edge_zero.png,1,0,0,22')
 for l in list(rules):
  if ',0F301121,' in l and 'missionThree' in l:rules.append(l.replace(',0F301121,',',0F302721,'))
 # Map retains its geography and moving native marker, using the console colors.

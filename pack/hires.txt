@@ -22,6 +22,7 @@
 <img>mission3_sprites.png
 <condition>missionThree,memoryCheckConstant,0030,==,03
 <condition>mission3Desert,ppuMemoryCheckConstant,3F06,==,27
+<condition>mission3RefuelReturn,memoryCheckConstant,009F,==,08
 <condition>menuMissionThree,tileAtPosition,80,32,3C06063C06063C00C3F9F9C3F9F9C3FF,00000000,Y
 <condition>menuMapThree,tileAtPosition,80,112,FFFFFFFFFFFFFFFF0000000000000000,00000000,Y
 <condition>m3Object0_0_0,spriteNearby,0,0,00000018180000000000181818000000,FF381A0F,N
@@ -3698,6 +3699,7 @@
 <condition>refuelArrival,memoryCheckConstant,009F,==,01
 [cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&refuelActive]<background>mission3_refuel_lower_edge.png,1,0,0,21
 [menuMissionM&menuMissionN&menuMissionThree&menuHeaderPresent&menuMapThree]<background>mission3_map.png,1,0,0,11
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&mission3Desert&envBank_zero]<background>mission3_sky_edge_zero.png,1,0,0,22
 [cockpit&cockpitBorder&missionThree&mission3Desert&envBank_right3]<background>mission3_sky_edge_right3.png,1,0,0,21
 [cockpit&cockpitBorder&missionThree&mission3Desert&envBank_right3]<background>mission3_desert_right3.png,1,0,1,7
 [cockpit&cockpitBorder&missionThree&mission3Desert&envBank_right2]<background>mission3_sky_edge_right2.png,1,0,0,21
@@ -6619,6 +6621,16 @@
 [cockpit&cockpitBorder&missionThree&mission2Flight&rearCombatPhase&enemyWorld&!hmirror&!vmirror]<tile>17,1B1E1E0E060300001F1F1F0D07030000,FF381A0F,640,96,1,N
 [cockpit&cockpitBorder&missionThree&mission2Flight&rearCombatPhase&enemyWorld&!hmirror&!vmirror]<tile>17,07081126FF1B9E1CFFFFFFFBC7EFFE3C,FF381A0F,672,96,1,N
 [cockpit&cockpitBorder&missionThree&mission2Flight&rearCombatPhase&enemyWorld&!hmirror&!vmirror]<tile>17,FEFEFEFEFCF800007EFEFEFEFCF80000,FF381A0F,704,96,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFFFFFFFDF8400FFFFFFFFFFFFDC04,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFFFFFDF8D0000FFFFFFFFDFAD00FF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFFFFF8D000000FFFFFFFF8D00FFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFFF9B00000000FFFFFF9B00FFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFFFAC0000000000FFFFAC00FFFFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,FFB8000000000000FFB800FFFFFFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,8B00000000000000AB00FFFFFFFFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,180000000000000018FFFFFFFFFFFFFF,0F302721,0,0,1,N
+[cockpit&cockpitBorder&missionThree&mission2Flight&refuelRoute&mission3RefuelReturn&environmentWorld&mission3Desert]<tile>0,0000000000000000FFFFFFFFFFFFFFFF,0F302721,0,0,1,N
 [cockpit&cockpitBorder&missionThree&mission2Takeoff&environmentWorld&mission3Desert]<tile>0,FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,0F302721,0,0,1,N
 [cockpit&cockpitBorder&missionThree&mission2Takeoff&environmentWorld&mission3Desert]<tile>0,FFFFFFFFFFDF8400FFFFFFFFFFFFDC04,0F302721,0,0,1,N
 [cockpit&cockpitBorder&missionThree&mission2Takeoff&environmentWorld&mission3Desert]<tile>0,FFFFFFFFDF8D0000FFFFFFFFDFAD00FF,0F302721,0,0,1,N
