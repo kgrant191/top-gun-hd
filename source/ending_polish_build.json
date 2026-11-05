@@ -1,0 +1,81 @@
+{
+  "crew_scale": 0.31,
+  "crew_helmet_to_boot_height": 155.0,
+  "crew_registration": [
+    {
+      "crop": [
+        0,
+        0,
+        320,
+        680
+      ],
+      "head_x": 150,
+      "x": 112,
+      "feet": 896
+    },
+    {
+      "crop": [
+        320,
+        0,
+        620,
+        680
+      ],
+      "head_x": 155,
+      "x": 440,
+      "feet": 896
+    },
+    {
+      "crop": [
+        620,
+        0,
+        980,
+        680
+      ],
+      "head_x": 150,
+      "x": 664,
+      "feet": 896
+    },
+    {
+      "crop": [
+        0,
+        0,
+        320,
+        680
+      ],
+      "head_x": 150,
+      "x": 920,
+      "feet": 912
+    }
+  ],
+  "pilot_scale": 0.145,
+  "pilot_canvas": [
+    49,
+    61
+  ],
+  "pilot_anchor": [
+    746,
+    395
+  ],
+  "bonus_address": "2ACB",
+  "bonus_text": "10000 PTS.",
+  "bonus_pattern": "1818180018181800E7E7E7FFE7E7E7FF",
+  "bonus_palettes": [
+    "0F2A0A03",
+    "0F2A0A0C",
+    "0F2A0A0F",
+    "0F2A0A11",
+    "0F2A0A13",
+    "0F2A0A16",
+    "0F2A0A21",
+    "0F2A0A31",
+    "0F2A0F0F",
+    "0F300F0F"
+  ],
+  "changed_existing_pngs": [
+    "ending_carrier_0.png",
+    "ending_carrier_1.png",
+    "ending_carrier_2.png",
+    "ending_carrier_3.png",
+    "ending_carrier_4.png"
+  ]
+}

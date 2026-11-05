@@ -1,4 +1,4 @@
-# Top Gun HD v0.15.0 - recorded close shuttle and endings
+# Top Gun HD v0.15.1 - bonus numeral and registered crew/pilot
 <ver>109
 <scale>4
 <overscan>0,0,0,0
@@ -27,6 +27,18 @@
 <img>mission4_extension.png
 <img>mission4_final_target.png
 <img>ending_details.png
+<img>ending_polish.png
+<condition>bonus10000_0,ppuMemoryCheckConstant,2ACB,==,02
+<condition>bonus10000_1,ppuMemoryCheckConstant,2ACC,==,01
+<condition>bonus10000_2,ppuMemoryCheckConstant,2ACD,==,01
+<condition>bonus10000_3,ppuMemoryCheckConstant,2ACE,==,01
+<condition>bonus10000_4,ppuMemoryCheckConstant,2ACF,==,01
+<condition>bonus10000_5,ppuMemoryCheckConstant,2AD0,==,0F
+<condition>bonus10000_6,ppuMemoryCheckConstant,2AD1,==,1F
+<condition>bonus10000_7,ppuMemoryCheckConstant,2AD2,==,23
+<condition>bonus10000_8,ppuMemoryCheckConstant,2AD3,==,22
+<condition>bonusDigitX,originPositionCheckX,==,88
+<condition>bonusDigitY,originPositionCheckY,==,176
 <condition>endShuttle7_0,ppuMemoryCheckConstant,22EE,==,C0
 <condition>endShuttle7_1,ppuMemoryCheckConstant,22EF,==,C1
 <condition>endShuttle7_2,ppuMemoryCheckConstant,230E,==,C2
@@ -9014,6 +9026,16 @@
 <condition>m3TankClose1_7_1,spriteNearby,8,0,FAFEFEFEFC780000F4F8FEFEFC780000,FF381A0F,N
 <condition>m3TankClose1_8_0,spriteNearby,-16,-16,000000000002030B0000000000010307,FF381A0F,N
 <condition>m3TankClose1_8_1,spriteNearby,0,0,FAFEFEFEFC780000F4F8FEFEFC780000,FF381A0F,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A03,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A0C,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A0F,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A11,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A13,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A16,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A21,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0A31,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F2A0F0F,0,0,1,N
+[cockpit&cockpitBorder&bonus10000_0&bonus10000_1&bonus10000_2&bonus10000_3&bonus10000_4&bonus10000_5&bonus10000_6&bonus10000_7&bonus10000_8&bonusDigitX&bonusDigitY]<tile>25,1818180018181800E7E7E7FFE7E7E7FF,0F300F0F,0,0,1,N
 [cockpit&cockpitBorder&missionFour&mission2Flight&rearCombatPhase&bossBodyPresent&endShuttle7_0&endShuttle7_1&endShuttle7_2&endShuttle7_3&endShuttle7_4&endShuttle7_5&endShuttle7_6&endShuttle7_7&endShuttle7_8&endShuttle7_9&endShuttle7_10&endShuttle7_11&endShuttle7_12&endShuttle7_13&endShuttle7_14&endShuttle7_15&endShuttle7_16&endShuttle7_17]<background>mission4_shuttle_07.png,1,1,1,9,0,0
 [cockpit&cockpitBorder&missionFour&mission2Flight&rearCombatPhase&bossBodyPresent&endShuttle8_0&endShuttle8_1&endShuttle8_2&endShuttle8_3&endShuttle8_4&endShuttle8_5&endShuttle8_6&endShuttle8_7&endShuttle8_8&endShuttle8_9&endShuttle8_10&endShuttle8_11&endShuttle8_12&endShuttle8_13&endShuttle8_14&endShuttle8_15&endShuttle8_16&endShuttle8_17&endShuttle8_18&endShuttle8_19&endShuttle8_20&endShuttle8_21]<background>mission4_shuttle_08.png,1,1,1,9,0,0
 [cockpit&cockpitBorder&missionFour&mission2Flight&rearCombatPhase&bossBodyPresent&endShuttle9_0&endShuttle9_1&endShuttle9_2&endShuttle9_3&endShuttle9_4&endShuttle9_5&endShuttle9_6&endShuttle9_7&endShuttle9_8&endShuttle9_9&endShuttle9_10&endShuttle9_11&endShuttle9_12&endShuttle9_13&endShuttle9_14&endShuttle9_15&endShuttle9_16&endShuttle9_17&endShuttle9_18&endShuttle9_19&endShuttle9_20&endShuttle9_21&endShuttle9_22&endShuttle9_23&endShuttle9_24&endShuttle9_25&endShuttle9_26&endShuttle9_27&endShuttle9_28&endShuttle9_29&endShuttle9_30]<background>mission4_shuttle_09.png,1,1,1,9,0,0

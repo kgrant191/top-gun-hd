@@ -1,6 +1,11 @@
-TOP GUN HD v0.15.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.15.1 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Bonus value correctly reads 10000 PTS with a numeral 1.
+- Yellow deck crew share consistent adult proportions.
+- Pilot body stays fixed while only his waving arm changes.
+
+INCLUDED FROM v0.15.0
 - HD close shuttle and upper tower through distance stage 12 and flyover.
 - New navy-and-gold award, game-over and successful mission summary.
 - Original live score, high score and remaining-player values.

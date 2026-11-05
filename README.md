@@ -1,10 +1,18 @@
 # Top Gun HD
 
-Development review build **v0.15.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.15.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Ending polish
+
+v0.15.1 corrects the bonus value to **10000 PTS**, gives the yellow deck crew
+consistent adult proportions, and holds the pilot's helmet, body and seat
+fixed while only his waving arm changes. The native animation timing stays
+intact. See `source/ENDING_POLISH_NOTES.md` and
+`validation/ending_polish_v0.15.1.json`.
 
 ## Close shuttle and both endings
 
