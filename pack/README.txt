@@ -1,12 +1,13 @@
-TOP GUN HD v0.10.0 — DEVELOPMENT REVIEW
+TOP GUN HD v0.10.1 — DEVELOPMENT REVIEW
 
 NEW IN THIS BUILD
+- Close tanks remain HD in both viewing directions.
 - Mission 3 painted desert follows native pitch and bank.
 - HD radar dishes, armored ground targets and modular barricades.
 - Mission 3 briefing map and missile selection in the approved console style.
 - Approved cockpit, HULL health, danger, aircraft, clouds and effects carry over.
 - Corrected tanker arrival, guidance, boom and departure cover Mission 3.
-- Preserves all 154 approved v0.9.1 PNGs.
+- Preserves all 171 v0.10.0 PNGs.
 
 INSTALL
 Copy all files from this ZIP into your existing Top Gun HD pack folder,

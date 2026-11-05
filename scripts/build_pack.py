@@ -183,6 +183,9 @@ meta['features'].extend(['Mission 3 briefing map, cockpit and native live instru
 meta['assets'].update({name:'source/mission3_'+name+'_master.png' for name in ['desert','radar','tank','barrier']})
 meta['mission3_coverage']='Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over'
 meta['not_yet_redrawn']=['Mission 3 enemy base/boss and landing, unrecorded target sizes and outcomes, Mission 4 and ending']
+subprocess.run(['python3',str(R/'scripts/build_mission3_tanks.py')],check=True)
+meta['version']='0.10.1'
+meta['features'].append('Both close tank orientations stay HD in Mission 3, with unchanged artwork')
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.

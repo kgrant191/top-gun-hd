@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.10.1",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -49,7 +49,8 @@
     "Banked and scrolling painted desert terrain with clean sky edge",
     "Native-sized radar dishes, armored ground targets and modular barricades",
     "Additional banked fighter poses and ground-palette projectile coverage",
-    "Mission 3 refueling arrival, boom, guidance and departure reuse the approved artwork"
+    "Mission 3 refueling arrival, boom, guidance and departure reuse the approved artwork",
+    "Both close tank orientations stay HD in Mission 3, with unchanged artwork"
   ],
   "not_yet_redrawn": [
     "Mission 3 enemy base/boss and landing, unrecorded target sizes and outcomes, Mission 4 and ending"

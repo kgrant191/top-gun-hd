@@ -1,12 +1,16 @@
 # Top Gun HD
 
-Development review build **v0.10.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.10.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 3 desert combat
+
+v0.10.1 fixes close tanks reverting to NES artwork when viewed from the
+opposite side. Both orientations reuse the same HD tank atlas. All 171
+v0.10.0 PNGs are unchanged. See `source/MISSION3_TANK_FIX_NOTES.md`.
 
 v0.10.0 adds a painted desert surface that follows native pitch and all seven
 bank stages, radar emplacements, armored vehicles and modular barricades.

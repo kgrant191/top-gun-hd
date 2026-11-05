@@ -1,0 +1,90 @@
+{
+  "recording": "Top_Gun_HD(8).mmo",
+  "input_frames": 901,
+  "layout": {
+    "kind": 1,
+    "tiles": [
+      {
+        "x": 0,
+        "y": 0,
+        "attr": 1,
+        "tile": 243,
+        "pattern": "000000000002030B0000000000010307"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "attr": 1,
+        "tile": 244,
+        "pattern": "00000031F03176DD0000001E7FFEFDFB"
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "attr": 1,
+        "tile": 245,
+        "pattern": "00000000A0B03068000000006060F0F0"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "attr": 1,
+        "tile": 246,
+        "pattern": "3143737E7E7F7E3F0F3F4E777F7F7F3F"
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "attr": 1,
+        "tile": 247,
+        "pattern": "9D1BBB7F1EDF7C8EFBF77FBFFFFCFFFF"
+      },
+      {
+        "x": 16,
+        "y": 8,
+        "attr": 1,
+        "tile": 248,
+        "pattern": "E8E478282464E2E2F0F8FCF8F8F87CFC"
+      },
+      {
+        "x": 0,
+        "y": 16,
+        "attr": 1,
+        "tile": 249,
+        "pattern": "07030000000000000703000000000000"
+      },
+      {
+        "x": 8,
+        "y": 16,
+        "attr": 1,
+        "tile": 250,
+        "pattern": "E3FE7F0F03000000FFFF7F0F03000000"
+      },
+      {
+        "x": 16,
+        "y": 16,
+        "attr": 1,
+        "tile": 251,
+        "pattern": "FAFEFEFEFC780000F4F8FEFEFC780000"
+      }
+    ],
+    "frame": 37,
+    "count": 156,
+    "origin": [
+      59,
+      68
+    ],
+    "palette": "FF101B0F",
+    "id": 3,
+    "size": [
+      24,
+      24
+    ],
+    "bbox": [
+      1,
+      3,
+      23,
+      22
+    ]
+  }
+}
