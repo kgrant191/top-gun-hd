@@ -198,6 +198,12 @@ meta['not_yet_redrawn']=['Unrecorded Mission 3 base sizes, defeat and landing; M
 subprocess.run(['python3',str(R/'scripts/build_mission3_radar_edges.py')],check=True)
 meta['version']='0.11.1'
 meta['features'].append('Complete radar silhouettes across native gaps in both recorded palette families')
+subprocess.run(['python3',str(R/'scripts/build_mission3_base_close.py')],check=True)
+meta['version']='0.11.2'
+meta['features'].extend(['Complete recorded Mission 3 base flyover and close ground-gun sizes',
+ 'Base artwork remains HD through the missile-hit palette and reset'])
+meta['mission3_coverage']+='; full recorded base flyover through distance stage 12 and missile-hit retry'
+meta['not_yet_redrawn']=['Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.

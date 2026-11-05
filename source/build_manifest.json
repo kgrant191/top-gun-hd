@@ -1,5 +1,5 @@
 {
-  "version": "0.11.1",
+  "version": "0.11.2",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -55,10 +55,12 @@
     "Seven recorded desert-base approach sizes with independent gun sprites",
     "Native full, half and empty boss-health segments in a matching BASE display",
     "Desert and base artwork remain HD through the recorded damage and retry transition",
-    "Complete radar silhouettes across native gaps in both recorded palette families"
+    "Complete radar silhouettes across native gaps in both recorded palette families",
+    "Complete recorded Mission 3 base flyover and close ground-gun sizes",
+    "Base artwork remains HD through the missile-hit palette and reset"
   ],
   "not_yet_redrawn": [
-    "Unrecorded Mission 3 base sizes, defeat and landing; Mission 4, ending and other unrecorded outcomes"
+    "Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -104,5 +106,5 @@
   "environment_coverage": "Mission-one native bank stages, vertical scroll and palette transitions; controller-driven cloud turns plus takeoff and landing replays",
   "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
   "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief",
-  "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry"
+  "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry; full recorded base flyover through distance stage 12 and missile-hit retry"
 }

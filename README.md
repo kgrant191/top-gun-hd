@@ -1,12 +1,17 @@
 # Top Gun HD
 
-Development review build **v0.11.1** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.11.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
 ## Mission 3 desert combat
+
+v0.11.2 completes the recorded base flyover through distance stage 12,
+including the closer ground guns and geometry crossing the nametable boundary.
+The base stays HD through the missile-hit palette and retry. All 180 v0.11.1
+PNGs remain unchanged. See `source/MISSION3_BASE_CLOSE_NOTES.md`.
 
 v0.11.1 fills the missing left edges of radar dishes in both radar recordings.
 Render-only sprite additions complete the painted silhouette where the native
@@ -38,8 +43,8 @@ All 154 v0.9.1 PNGs remain unchanged. No ROM, game memory, collision, input,
 score, timing or audio is modified. See `source/MISSION3_NOTES.md` and
 `validation/mission3_v0.10.0.json` for replay checks and scope.
 The supplied movie ends at game over after refueling and further combat;
-v0.11.0 adds the recorded base approach described above; later base sizes,
-boss defeat and Mission 3 landing still need coverage.
+v0.11.2 adds the full recorded base flyover described above; boss defeat and
+Mission 3 landing still need coverage.
 
 ## Mission 2 naval combat and refueling
 
@@ -162,7 +167,7 @@ The new artwork is limited to the windshield and exact sprite palettes. All 30 e
 - Mission-one tactical briefing map with correctly filled inland water and all three missile-selection diagrams.
 - Artwork masters, build scripts, capture references, supplied replay movies, and recorded validation reports.
 
-Other landing failure outcomes, unrecorded encounters, later Mission 3 base sizes, boss defeat, landing and later missions still need further artwork and coverage. This is recording-based coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
+Other landing failure outcomes, unrecorded encounters, Mission 3 boss defeat, landing and later missions still need further artwork and coverage. This is recording-based coverage, not a full-game QA claim. See `source/MAP_WATER_NOTES.md`, `source/COCKPIT_COLOR_NOTES.md` and `source/SCREEN_POLISH_NOTES.md` for the included earlier fixes. `README.txt` and `source/PROJECT_NOTES.txt` preserve the earlier handoff.
 
 ## Build
 

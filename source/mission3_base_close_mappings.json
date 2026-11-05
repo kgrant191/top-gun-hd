@@ -1,0 +1,2438 @@
+{
+  "version": "0.11.2",
+  "movie": "Top_Gun_HD(9).mmo",
+  "input_frames": 2683,
+  "boss_stages": [
+    {
+      "stage": 7,
+      "frame": 206,
+      "count": 32,
+      "origin": [
+        104,
+        200
+      ],
+      "size": [
+        48,
+        40
+      ],
+      "bbox": [
+        0,
+        0,
+        48,
+        40
+      ],
+      "tiles": [
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 192,
+          "address": 9006,
+          "pattern": "000000000806050AFFFFFFFFF7F1F4F8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 193,
+          "address": 9007,
+          "pattern": "000000001060A0C0FFFFFFFFEF8F2F8F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "tile": 194,
+          "address": 9008,
+          "pattern": "000000000001070EFFFFFFFFFFFEF8F0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "tile": 195,
+          "address": 9009,
+          "pattern": "0000003068B6EB48FFFFFFFFDFFD9CBD",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "tile": 196,
+          "address": 9010,
+          "pattern": "00000000000080C0FFFFFFFFFFFF7F3F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 197,
+          "address": 9037,
+          "pattern": "0000000001020200FFFFFFFFFFFCFEF0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 198,
+          "address": 9038,
+          "pattern": "0501010000808008F1F7FDF0FF7FF333",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 199,
+          "address": 9039,
+          "pattern": "E000000000200820CF6F3F0FFFDFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 200,
+          "address": 9040,
+          "pattern": "1D312264C89090C1E1C1D38589D1D1E1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 8,
+          "tile": 201,
+          "address": 9041,
+          "pattern": "CAE6DEDA9A9A3832BA663E3A7A7AF8F2",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 8,
+          "tile": 202,
+          "address": 9042,
+          "pattern": "A090884C44244448DFFFBF5F4F2F4F5F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 203,
+          "address": 9069,
+          "pattern": "0000000000000000FFFDF8F3FFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 204,
+          "address": 9070,
+          "pattern": "080000000003061BFBE30104FFFFFDEF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "tile": 205,
+          "address": 9071,
+          "pattern": "1028000000008060FFFFFFFFFFFFFFDF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 206,
+          "address": 9072,
+          "pattern": "41A170A81605000AE1F1F8FEFFFFFFF7",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "tile": 207,
+          "address": 9073,
+          "pattern": "30B0E04001FE0000F0F0E041FFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 16,
+          "tile": 208,
+          "address": 9074,
+          "pattern": "08143050808000001F3F7FFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "tile": 209,
+          "address": 9101,
+          "pattern": "0000010302060C09FFFFFEFCFDF8F8FD",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 210,
+          "address": 9102,
+          "pattern": "7EE4DC1E2D4D8909890B1B1633539717",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "tile": 211,
+          "address": 9103,
+          "pattern": "B88CAA69E8A4A4A2C7D3AD6FEBA5A4A2",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "tile": 212,
+          "address": 9104,
+          "pattern": "0000000080C04040FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 24,
+          "tile": 213,
+          "address": 9105,
+          "pattern": "101800002019162BFFFFFFFFDFC6D0E2",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 24,
+          "tile": 214,
+          "address": 9106,
+          "pattern": "0040800040808000FFBF1FFFBF3FBF3F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "tile": 215,
+          "address": 9133,
+          "pattern": "090C040A070A0100FDFEFEFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "tile": 216,
+          "address": 9134,
+          "pattern": "0313131B0E84605F1F1F1F1F8EE4FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "tile": 217,
+          "address": 9135,
+          "pattern": "84240001030418E884250103071FFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 32,
+          "tile": 218,
+          "address": 9136,
+          "pattern": "40C0C080C8140000FFFF3FFFF7E3FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "tile": 219,
+          "address": 9137,
+          "pattern": "1704040000000000C7DDF4C0FFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 32,
+          "tile": 220,
+          "address": 9138,
+          "pattern": "80000000000000003FBFFF3FFFFFFFFF",
+          "palette": "0F302721"
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "frame": 302,
+      "count": 36,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        48
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        48
+      ],
+      "tiles": [
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 224,
+          "address": 9006,
+          "pattern": "00000080403F2D56FFFFFF7F3F006144",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "tile": 225,
+          "address": 9007,
+          "pattern": "0000004080008000FFFFFFBF3F3FBFBF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "tile": 226,
+          "address": 9008,
+          "pattern": "000000000107070AFFFFFFFFFEF8F0E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "tile": 227,
+          "address": 9009,
+          "pattern": "000C1E3192167722FFFFF7FD232F4F7E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "tile": 228,
+          "address": 9010,
+          "pattern": "0000000060783C3EFFFFFFFF1F0703B1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 229,
+          "address": 9037,
+          "pattern": "0000000000081414FFFFFFFFFFFFE3F7",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 230,
+          "address": 9038,
+          "pattern": "2F1A0800000000200E5BFBE100FFCFCF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 231,
+          "address": 9039,
+          "pattern": "80000000000101A1BF3FBFFF3FFFFF7F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 8,
+          "tile": 232,
+          "address": 9040,
+          "pattern": "3279F0E0C0CCD4D4C2C58484849C9494",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 8,
+          "tile": 233,
+          "address": 9041,
+          "pattern": "79676767674F4E0E199F9F9F9FBFBEFE",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 8,
+          "tile": 234,
+          "address": 9042,
+          "pattern": "3F9F9ECE565A5A4CB8DCDFCF575B5A4C",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 8,
+          "tile": 235,
+          "address": 9043,
+          "pattern": "0000800040404040FFFF7FFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 236,
+          "address": 9069,
+          "pattern": "000000000000000081FFEFEFC09CFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "tile": 237,
+          "address": 9070,
+          "pattern": "0020200000000000CFEFEF8F0713FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 238,
+          "address": 9071,
+          "pattern": "8101E1A000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "tile": 239,
+          "address": 9072,
+          "pattern": "E0C068F8583E170AC0E0F8F8FEFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 16,
+          "tile": 240,
+          "address": 9073,
+          "pattern": "8E9ADAF86000C03FFEFAFAF860C0FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "tile": 241,
+          "address": 9074,
+          "pattern": "440001020519E0004501030F1FFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 16,
+          "tile": 242,
+          "address": 9075,
+          "pattern": "80800080C0800000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 226,
+          "address": 9101,
+          "pattern": "000000000107070AFFFFFFFFFEF8F0E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "tile": 227,
+          "address": 9102,
+          "pattern": "000C1E3192167722FFFFF7FD232F4F7E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "tile": 228,
+          "address": 9103,
+          "pattern": "0000000060783C3EFFFFFFFF1F0703B1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 24,
+          "tile": 243,
+          "address": 9104,
+          "pattern": "0001000000000000FFFEFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 24,
+          "tile": 244,
+          "address": 9105,
+          "pattern": "0343030300000000FCFDFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "tile": 245,
+          "address": 9106,
+          "pattern": "808000840A0000007FFFFFF9F1FFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "tile": 246,
+          "address": 9132,
+          "pattern": "0000000000010101FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "tile": 232,
+          "address": 9133,
+          "pattern": "3279F0E0C0CCD4D4C2C58484849C9494",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "tile": 233,
+          "address": 9134,
+          "pattern": "79676767674F4E0E199F9F9F9FBFBEFE",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 32,
+          "tile": 234,
+          "address": 9135,
+          "pattern": "3F9F9ECE565A5A4CB8DCDFCF575B5A4C",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "tile": 235,
+          "address": 9136,
+          "pattern": "0000800040404040FFFF7FFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 32,
+          "tile": 247,
+          "address": 9137,
+          "pattern": "0804030205020100F7F3F0F6F4F0F5FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "tile": 248,
+          "address": 9138,
+          "pattern": "0408F0D860F8A080FBF3031B4BEBB3BB",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "tile": 249,
+          "address": 10252,
+          "pattern": "0101010000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 40,
+          "tile": 239,
+          "address": 10253,
+          "pattern": "E0C068F8583E170AC0E0F8F8FEFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 40,
+          "tile": 240,
+          "address": 10254,
+          "pattern": "8E9ADAF86000C03FFEFAFAF860C0FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 40,
+          "tile": 250,
+          "address": 10255,
+          "pattern": "440000020418E0004501030F1FFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 40,
+          "tile": 251,
+          "address": 10256,
+          "pattern": "E0E0C0E40A0000001F7FFFF9F1FFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 40,
+          "tile": 252,
+          "address": 10257,
+          "pattern": "0000000000000000FEF0FFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 40,
+          "tile": 253,
+          "address": 10258,
+          "pattern": "00000000000000001F03FFFFFFFFFFFF",
+          "palette": "0F302721"
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "frame": 510,
+      "count": 20,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        56
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        56
+      ],
+      "tiles": [
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 192,
+          "address": 9005,
+          "pattern": "0000020101010101FFFFFDFCFDFDFDFD",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 193,
+          "address": 9006,
+          "pattern": "000000817E255BACFFFFFF7E0001C389",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "tile": 194,
+          "address": 9007,
+          "pattern": "0000408080008000FFFFBF3FBFBFBFBF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "tile": 195,
+          "address": 9008,
+          "pattern": "0000000003071B34FFFFFFFFFCF8E0C0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "tile": 196,
+          "address": 9009,
+          "pattern": "00000E75EAFA9B11FFFFFF913367274F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "tile": 197,
+          "address": 9010,
+          "pattern": "00000080F0FC3E0FFFFFFF7F8F838100",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 198,
+          "address": 9037,
+          "pattern": "0102020200080824FDFFFEFFFFF6FFD3",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 199,
+          "address": 9038,
+          "pattern": "1F013410000000005D00F6F78100FF9F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 200,
+          "address": 9039,
+          "pattern": "0000010103030303BF3F3FBFFE3EFEFE",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 8,
+          "tile": 201,
+          "address": 9040,
+          "pattern": "78E0C0869A1222A6820202060A122226",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 8,
+          "tile": 202,
+          "address": 9041,
+          "pattern": "20213373676777664E51CF8F9F9F8F9E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 8,
+          "tile": 203,
+          "address": 9042,
+          "pattern": "333532D1C1515158B0BCBEDFC753595C",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 8,
+          "tile": 204,
+          "address": 9043,
+          "pattern": "80C0E060F09090907F3F3F3F9FBFBFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 205,
+          "address": 9069,
+          "pattern": "2400000000000000F701E3FFDFDF8038",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "tile": 206,
+          "address": 9070,
+          "pattern": "40400040400000009F9F9FDFDF8F0F27",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 207,
+          "address": 9071,
+          "pattern": "E18101E0A10100003FFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "tile": 208,
+          "address": 9072,
+          "pattern": "8A92D0C0E0F85EAF0A1A108080E0F0FC",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 16,
+          "tile": 209,
+          "address": 9073,
+          "pattern": "6666464C1C1C3C809E9EBEBCFCFC7C00",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "tile": 210,
+          "address": 9074,
+          "pattern": "4E4757520801020C4E47575209071F7F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 16,
+          "tile": 211,
+          "address": 9075,
+          "pattern": "20A02040409078707FFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 195,
+          "address": 9101,
+          "pattern": "0000000003071B34FFFFFFFFFCF8E0C0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "tile": 196,
+          "address": 9102,
+          "pattern": "00000E75EAFA9B11FFFFFF913367274F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "tile": 197,
+          "address": 9103,
+          "pattern": "00000080F0FC3E0FFFFFFF7F8F838100",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 24,
+          "tile": 212,
+          "address": 9104,
+          "pattern": "570A000000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 24,
+          "tile": 213,
+          "address": 9105,
+          "pattern": "F87F00000000000087FFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "tile": 214,
+          "address": 9106,
+          "pattern": "7080000000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 24,
+          "tile": 215,
+          "address": 9107,
+          "pattern": "00000000000040A0FFFFFFFFFFFF9F1F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "tile": 216,
+          "address": 9132,
+          "pattern": "0000010101010101FFFFFFFFFEFEFEFE",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "tile": 201,
+          "address": 9133,
+          "pattern": "78E0C0869A1222A6820202060A122226",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "tile": 202,
+          "address": 9134,
+          "pattern": "20213373676777664E51CF8F9F9F8F9E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 32,
+          "tile": 203,
+          "address": 9135,
+          "pattern": "333532D1C1515158B0BCBEDFC753595C",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "tile": 204,
+          "address": 9136,
+          "pattern": "80C0E060F09090907F3F3F3F9FBFBFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 32,
+          "tile": 192,
+          "address": 9137,
+          "pattern": "0000020101010101FFFFFDFCFDFDFDFD",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "tile": 193,
+          "address": 9138,
+          "pattern": "000000817E255BACFFFFFF7E0001C389",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 32,
+          "tile": 194,
+          "address": 9139,
+          "pattern": "0000408080008000FFFFBF3FBFBFBFBF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "tile": 217,
+          "address": 10252,
+          "pattern": "0101010001010000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 40,
+          "tile": 208,
+          "address": 10253,
+          "pattern": "8A92D0C0E0F85EAF0A1A108080E0F0FC",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 40,
+          "tile": 209,
+          "address": 10254,
+          "pattern": "6666464C1C1C3C809E9EBEBCFCFC7C00",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 40,
+          "tile": 210,
+          "address": 10255,
+          "pattern": "4E4757520801020C4E47575209071F7F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 40,
+          "tile": 218,
+          "address": 10256,
+          "pattern": "20A03C645CB80C007FFFC3CFDFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 40,
+          "tile": 219,
+          "address": 10257,
+          "pattern": "01020202000040A0FDFFFEFFFFFE9F1F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 40,
+          "tile": 220,
+          "address": 10258,
+          "pattern": "1F013410000000005D00F6F78100FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 40,
+          "tile": 221,
+          "address": 10259,
+          "pattern": "0000000000000000BF3F3FBFFF3FFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 48,
+          "tile": 212,
+          "address": 10285,
+          "pattern": "570A000000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "tile": 222,
+          "address": 10286,
+          "pattern": "F87F00000000000087FFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 48,
+          "tile": 223,
+          "address": 10287,
+          "pattern": "7080000000000000FFFFFFFFFFFFFFFF",
+          "palette": "0F302721"
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "frame": 542,
+      "count": 4,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        56
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        56
+      ],
+      "tiles": [
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 224,
+          "address": 9005,
+          "pattern": "0000C0F09FD4CBE5FFFF3FCFC0D0F8F1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "tile": 225,
+          "address": 9006,
+          "pattern": "00000830C0904080FFFFF3CB23137B53",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "tile": 226,
+          "address": 9008,
+          "pattern": "000000000000020EFFFFFFFFFFFFFCF0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "tile": 227,
+          "address": 9009,
+          "pattern": "00083E5882BA73F1FFFFF7F2E3C78F0F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "tile": 228,
+          "address": 9010,
+          "pattern": "000000000000303CFFFFFFFF7F7F8F83",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 229,
+          "address": 9037,
+          "pattern": "D3E8C0C482000000DBF8E0DCFEF080FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "tile": 230,
+          "address": 9038,
+          "pattern": "F028000000000000D3330B73FB0F03FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 231,
+          "address": 9039,
+          "pattern": "0000000103030706FFFFFFFEFCFCF8F8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 8,
+          "tile": 232,
+          "address": 9040,
+          "pattern": "1E6ED4E0C8880000E080010901010909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 8,
+          "tile": 233,
+          "address": 9041,
+          "pattern": "616384C18383C1C11F1F1C017F7F3F3F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 8,
+          "tile": 234,
+          "address": 9042,
+          "pattern": "5F0F119898CD85E1404050DCFFEEA6E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 8,
+          "tile": 235,
+          "address": 9043,
+          "pattern": "00C0E0E070705878FF3F1F0F07C7C3E3",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 236,
+          "address": 9068,
+          "pattern": "0001010404000000FFFEFFFAFEC0FCFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 237,
+          "address": 9069,
+          "pattern": "0000004444000004FFFFF1B1F11131F5",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "tile": 238,
+          "address": 9070,
+          "pattern": "0018000000000000FFE3EFFFFFE1EDFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 239,
+          "address": 9071,
+          "pattern": "0606040404060617F8F8F8F8F8F8FCFC",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "tile": 240,
+          "address": 9072,
+          "pattern": "502040849888A8081929418D99C9A909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 16,
+          "tile": 241,
+          "address": 9073,
+          "pattern": "C1C1C181C1C783033F3F3F7F3F3F7FFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "tile": 242,
+          "address": 9074,
+          "pattern": "ACAAA8A985818909ADAEAEAF87838909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 16,
+          "tile": 243,
+          "address": 9075,
+          "pattern": "7868687838381000E3E3E3F33323073F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "tile": 244,
+          "address": 9100,
+          "pattern": "0000000000000000FFF7F7E08FFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 245,
+          "address": 9101,
+          "pattern": "040400000000000EF5F5F00002FFFFF0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "tile": 227,
+          "address": 9102,
+          "pattern": "00083E5882BA73F1FFFFF7F2E3C78F0F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "tile": 246,
+          "address": 9103,
+          "pattern": "091E43050803003CFCFEFFFFFFFFFF83",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 24,
+          "tile": 247,
+          "address": 9104,
+          "pattern": "A88860B04E73140029090080C0F0FCFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 24,
+          "tile": 248,
+          "address": 9105,
+          "pattern": "010347DA70B07F00FFFFFFFA703000FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "tile": 249,
+          "address": 9106,
+          "pattern": "0D060400107080000D0605030C030FFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 24,
+          "tile": 250,
+          "address": 9107,
+          "pattern": "00000000000000006F5FBB41EBE3FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "tile": 231,
+          "address": 9132,
+          "pattern": "0000000103030706FFFFFFFEFCFCF8F8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "tile": 232,
+          "address": 9133,
+          "pattern": "1E6ED4E0C8880000E080010901010909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "tile": 233,
+          "address": 9134,
+          "pattern": "616384C18383C1C11F1F1C017F7F3F3F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 32,
+          "tile": 234,
+          "address": 9135,
+          "pattern": "5F0F119898CD85E1404050DCFFEEA6E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "tile": 235,
+          "address": 9136,
+          "pattern": "00C0E0E070705878FF3F1F0F07C7C3E3",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 32,
+          "tile": 238,
+          "address": 9137,
+          "pattern": "0018000000000000FFE3EFFFFFE1EDFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "tile": 253,
+          "address": 9138,
+          "pattern": "1F10000000000000E0E2E0FDF1FCFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 32,
+          "tile": 251,
+          "address": 9139,
+          "pattern": "0000000000040A007F7F7FFFFFF9F1FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "tile": 239,
+          "address": 10252,
+          "pattern": "0606040404060617F8F8F8F8F8F8FCFC",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 40,
+          "tile": 240,
+          "address": 10253,
+          "pattern": "502040849888A8081929418D99C9A909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 40,
+          "tile": 241,
+          "address": 10254,
+          "pattern": "C1C1C181C1C783033F3F3F7F3F3F7FFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 40,
+          "tile": 242,
+          "address": 10255,
+          "pattern": "ACAAA8A985818909ADAEAEAF87838909",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 40,
+          "tile": 243,
+          "address": 10256,
+          "pattern": "7868687838381000E3E3E3F33323073F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 40,
+          "tile": 224,
+          "address": 10258,
+          "pattern": "0000C0F09FD4CBE5FFFF3FCFC0D0F8F1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 40,
+          "tile": 225,
+          "address": 10259,
+          "pattern": "00000830C0904080FFFFF3CB23137B53",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "tile": 252,
+          "address": 10284,
+          "pattern": "091E430508030000FCFEFFFFFFFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 48,
+          "tile": 247,
+          "address": 10285,
+          "pattern": "A88860B04E73140029090080C0F0FCFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "tile": 248,
+          "address": 10286,
+          "pattern": "010347DA70B07F00FFFFFFFA703000FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 48,
+          "tile": 249,
+          "address": 10287,
+          "pattern": "0D060400107080000D0605030C030FFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "tile": 253,
+          "address": 10288,
+          "pattern": "1F10000000000000E0E2E0FDF1FCFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 48,
+          "tile": 251,
+          "address": 10289,
+          "pattern": "0000000000040A007F7F7FFFFFF9F1FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 48,
+          "tile": 229,
+          "address": 10290,
+          "pattern": "D3E8C0C482000000DBF8E0DCFEF080FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 48,
+          "tile": 230,
+          "address": 10291,
+          "pattern": "F028000000000000D3330B73FB0F03FF",
+          "palette": "0F302721"
+        }
+      ]
+    },
+    {
+      "stage": 11,
+      "frame": 654,
+      "count": 8,
+      "origin": [
+        96,
+        200
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "tile": 192,
+          "address": 9004,
+          "pattern": "C0F09FD4CBE5D3E83FCFC0D0F8F1DBF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "tile": 193,
+          "address": 9005,
+          "pattern": "0C30C0904080F028F1CD25157D55D535",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 0,
+          "tile": 194,
+          "address": 9007,
+          "pattern": "0000000000000205FFFFFFFFFFFFFCF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "tile": 195,
+          "address": 9008,
+          "pattern": "0000011F7FFDF140FFFFFEE183000000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "tile": 196,
+          "address": 9009,
+          "pattern": "107CF0C4F4E6E2C2FFEFA5060E1F1F3E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "tile": 197,
+          "address": 9010,
+          "pattern": "000000E0787C1F2FFFFFFF1F07030000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "tile": 198,
+          "address": 9036,
+          "pattern": "C0C2810100000000E0DEFFFFFCC0FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "tile": 199,
+          "address": 9037,
+          "pattern": "040000800000000009397DFF0301FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "tile": 200,
+          "address": 9039,
+          "pattern": "0E1E3E3C787071E2F0E0C2C480809100",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 8,
+          "tile": 201,
+          "address": 9040,
+          "pattern": "82434307378707070000004070C04040",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 8,
+          "tile": 202,
+          "address": 9041,
+          "pattern": "C60883C7C78383833E38033F3F7F7F7F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 8,
+          "tile": 203,
+          "address": 9042,
+          "pattern": "333D1E1686A290D0A0A090D9C9EDF7FB",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 8,
+          "tile": 204,
+          "address": 9043,
+          "pattern": "C0E0F070389898DC3F1F0F07038383C1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "tile": 205,
+          "address": 9068,
+          "pattern": "0000020208080000FFFFFDFFF5FDF500",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "tile": 206,
+          "address": 9069,
+          "pattern": "0000000088880800FFFFFFE363E36323",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "tile": 207,
+          "address": 9070,
+          "pattern": "0000300000000000FFFFC7D7FFDFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "tile": 208,
+          "address": 9071,
+          "pattern": "E2C4C444406021302204040400008080",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "tile": 209,
+          "address": 9072,
+          "pattern": "070717678743034340405060C0440444",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 16,
+          "tile": 210,
+          "address": 9073,
+          "pattern": "83830383830307037F7FFF7F7FFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "tile": 211,
+          "address": 9074,
+          "pattern": "50585A0C2C250103797D7E2E2E270303",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 16,
+          "tile": 212,
+          "address": 9075,
+          "pattern": "CCECECE8685850B0C1E1E1E363434787",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 24,
+          "tile": 213,
+          "address": 9100,
+          "pattern": "0000000000000000F0FFFFDFDF803EFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 24,
+          "tile": 214,
+          "address": 9101,
+          "pattern": "000808080000000063EBEBEBE10104F7",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 24,
+          "tile": 215,
+          "address": 9102,
+          "pattern": "0000000000000000FF8787B7FFFEFFCF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 24,
+          "tile": 216,
+          "address": 9103,
+          "pattern": "104C461B148F0260C0E0F0F8FCFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 24,
+          "tile": 217,
+          "address": 9104,
+          "pattern": "43010300C0701E0144020001000080E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 24,
+          "tile": 218,
+          "address": 9105,
+          "pattern": "83870702040001FE7F7FFFFE7C000000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "tile": 219,
+          "address": 9106,
+          "pattern": "030805030C38E000030804000003071F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 24,
+          "tile": 220,
+          "address": 9107,
+          "pattern": "20C08000000000000F1F3F7DC0EDE1FF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "tile": 194,
+          "address": 9132,
+          "pattern": "0000000000000205FFFFFFFFFFFFFCF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "tile": 195,
+          "address": 9133,
+          "pattern": "0000011F7FFDF140FFFFFEE183000000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "tile": 196,
+          "address": 9134,
+          "pattern": "107CF0C4F4E6E2C2FFEFA5060E1F1F3E",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 32,
+          "tile": 197,
+          "address": 9135,
+          "pattern": "000000E0787C1F2FFFFFFF1F07030000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 32,
+          "tile": 207,
+          "address": 9137,
+          "pattern": "0000300000000000FFFFC7D7FFDFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "tile": 221,
+          "address": 9138,
+          "pattern": "000F080000000000FFF0F1F0FEF8FEFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 32,
+          "tile": 222,
+          "address": 9139,
+          "pattern": "0080000000000205FF3F3F3FFFFF7CF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "tile": 200,
+          "address": 10252,
+          "pattern": "0E1E3E3C787071E2F0E0C2C480809100",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 40,
+          "tile": 201,
+          "address": 10253,
+          "pattern": "82434307378707070000004070C04040",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 40,
+          "tile": 202,
+          "address": 10254,
+          "pattern": "C60883C7C78383833E38033F3F7F7F7F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 40,
+          "tile": 203,
+          "address": 10255,
+          "pattern": "333D1E1686A290D0A0A090D9C9EDF7FB",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 40,
+          "tile": 204,
+          "address": 10256,
+          "pattern": "C0E0F070389898DC3F1F0F07038383C1",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "tile": 208,
+          "address": 10284,
+          "pattern": "E2C4C444406021302204040400008080",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 48,
+          "tile": 209,
+          "address": 10285,
+          "pattern": "070717678743034340405060C0440444",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "tile": 210,
+          "address": 10286,
+          "pattern": "83830383830307037F7FFF7F7FFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 48,
+          "tile": 211,
+          "address": 10287,
+          "pattern": "50585A0C2C250103797D7E2E2E270303",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "tile": 212,
+          "address": 10288,
+          "pattern": "CCECECE8685850B0C1E1E1E363434787",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 48,
+          "tile": 192,
+          "address": 10290,
+          "pattern": "C0F09FD4CBE5D3E83FCFC0D0F8F1DBF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 48,
+          "tile": 193,
+          "address": 10291,
+          "pattern": "0C30C0904080F028F1CD25157D55D535",
+          "palette": "0F302721"
+        },
+        {
+          "x": 0,
+          "y": 56,
+          "tile": 216,
+          "address": 10316,
+          "pattern": "104C461B148F0260C0E0F0F8FCFFFFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 8,
+          "y": 56,
+          "tile": 217,
+          "address": 10317,
+          "pattern": "43010300C0701E0144020001000080E0",
+          "palette": "0F302721"
+        },
+        {
+          "x": 16,
+          "y": 56,
+          "tile": 218,
+          "address": 10318,
+          "pattern": "83870702040001FE7F7FFFFE7C000000",
+          "palette": "0F302721"
+        },
+        {
+          "x": 24,
+          "y": 56,
+          "tile": 219,
+          "address": 10319,
+          "pattern": "030805030C38E000030804000003071F",
+          "palette": "0F302721"
+        },
+        {
+          "x": 32,
+          "y": 56,
+          "tile": 221,
+          "address": 10320,
+          "pattern": "000F080000000000FFF0F1F0FEF8FEFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 40,
+          "y": 56,
+          "tile": 222,
+          "address": 10321,
+          "pattern": "0080000000000205FF3F3F3FFFFF7CF8",
+          "palette": "0F302721"
+        },
+        {
+          "x": 48,
+          "y": 56,
+          "tile": 198,
+          "address": 10322,
+          "pattern": "C0C2810100000000E0DEFFFFFCC0FFFF",
+          "palette": "0F302721"
+        },
+        {
+          "x": 56,
+          "y": 56,
+          "tile": 199,
+          "address": 10323,
+          "pattern": "040000800000000009397DFF0301FFFF",
+          "palette": "0F302721"
+        }
+      ]
+    }
+  ],
+  "last_stage_alias": {
+    "12": 11
+  },
+  "boss_background_keys": [
+    "00000000000000001F03FFFFFFFFFFFF",
+    "00000000000000006F5FBB41EBE3FFFF",
+    "00000000000000007FFFFFFFFFFFFFFF",
+    "000000000000000081FFEFEFC09CFFFF",
+    "0000000000000000BF3F3FBFFF3FFFFF",
+    "0000000000000000F0FFFFDFDF803EFF",
+    "0000000000000000F3FFFFFFFFFFFFFF",
+    "0000000000000000F8FFFFFFFFFFFFFF",
+    "0000000000000000FEF0FFFFFFFFFFFF",
+    "0000000000000000FF8787B7FFFEFFCF",
+    "0000000000000000FFF7F7E08FFFFFFF",
+    "0000000000000000FFFDC8FFEF87FFE1",
+    "0000000000000000FFFDF8F3FFFFFFFF",
+    "0000000000000000FFFFF9F08FFF8FFF",
+    "0000000000000205FFFFFFFFFFFFFCF8",
+    "000000000000020EFFFFFFFFFFFFFCF0",
+    "000000000000303CFFFFFFFF7F7F8F83",
+    "00000000000040A0FFFFFFFFFFFF9F1F",
+    "00000000000080C0FFFFFFFFFFFF7F3F",
+    "000000000000C020FFFFFFFFFFFF7F7F",
+    "0000000000010101FFFFFFFFFFFFFFFF",
+    "000000000001070EFFFFFFFFFFFEF8F0",
+    "0000000000030E1AFFFFFFFFFFFDF0E3",
+    "0000000000040A007F7F7FFFFFF9F1FF",
+    "0000000000081414FFFFFFFFFFFFE3F7",
+    "0000000001020200FFFFFFFFFFFCFEF0",
+    "000000000107070AFFFFFFFFFEF8F0E0",
+    "0000000003071B34FFFFFFFFDFFD9CBD",
+    "0000000003071B34FFFFFFFFFCF8E0C0",
+    "00000000030E183207F7B743FDF0E1C3",
+    "00000000030E1832FFFFFFFFFDF0E1C3",
+    "000000000806050AFFFFFFFFF7F1F4F8",
+    "00000000083A1141FFFFFFFFFFDDD0F7",
+    "000000001060A0C0FFFFFFFFEF8F2F8F",
+    "0000000060783C3EFFFFFFFF1F0703B1",
+    "0000000080C04040FFFFFFFFFFFFFFFF",
+    "0000000088880800FFFFFFE363E36323",
+    "0000000102091020FFFFFFFFFFF3E3C3",
+    "0000000103030706FFFFFFFEFCFCF8F8",
+    "000000060C000000FFFFFFE7FFFFFFFF",
+    "0000000800000000FFFFFFEFE3FFEDD0",
+    "00000010231E0000FFFFFFF1E3FFFFFF",
+    "000000186B88988107FFFFFFB91919E7",
+    "0000003068B6EB48FFFFFFFFDFFD9CBD",
+    "0000004080008000FFFFFFBF3F3FBFBF",
+    "0000004444000004FFFFF1B1F11131F5",
+    "00000060D08CB725FFFFFFFF9F5B706C",
+    "0000008000061A22FFFFFFFF7FFFEEC6",
+    "00000080403F2D56FFFFFF7F3F006144",
+    "0000008040588482FFFFFFFFFF4F8F87",
+    "00000080F0FC3E0FFFFFFF7F8F838100",
+    "000000817E255BACFFFFFF7E0001C389",
+    "000000817E255BACFFFFFFFFEF8F2F8F",
+    "000000C070C4A2E0FFFFFFFFAF5BA563",
+    "000000E0787C1F2FFFFFFF1F07030000",
+    "0000010000000000FFFFFFFCFFFEFDFF",
+    "0000010101010101FFFFFFFFFEFEFEFE",
+    "0000010103030303BF3F3FBFFE3EFEFE",
+    "0000010302060C09FFFFFEFCFDF8F8FD",
+    "0000010408102011FFFFFFF9F1E1F1F9",
+    "0000011F7FFDF140FFFFFEE183000000",
+    "0000020000000000FCFEFFFEFFFFFFFF",
+    "0000020101010101FFFFFDFCFDFDFDFD",
+    "0000020208080000FFFFFDFFF5FDF500",
+    "0000030202000100FFFFFCFFFCFDFFFC",
+    "0000030E1A326262FFFFFDF0E3C3C3C3",
+    "0000050000000000FFFFF8F8D88FFFEF",
+    "00000830C0904080FFFFF3CB23137B53",
+    "00000E75EAFA9B11FFFFFF913367274F",
+    "0000200000000000BF3F7F3FFFFFFFFF",
+    "0000280010080000FFFFDFFFFFFFFFFF",
+    "0000300000000000FFFFC7D7FFDFFFFF",
+    "0000408080008000FFFFBF3FBFBFBFBF",
+    "000060802000C000FFFF9F5F1F5FFF1F",
+    "0000800040404040FFFF7FFFFFFFFFFF",
+    "0000882088880000FFFF770707DF8FFF",
+    "0000C0F09FD4CBE5FFFF3FCFC0D0F8F1",
+    "0001000000000000FFFEFFFFFFFFFFFF",
+    "0001000101000060FFFEFEFEFFFFFFFF",
+    "0001010404000000FFFEFFFAFEC0FCFF",
+    "000808080000000063EBEBEBE10104F7",
+    "00083E5882BA73F1FFFFF7F2E3C78F0F",
+    "000C1E3192167722FFFFF7FD232F4F7E",
+    "000F080000000000FFF0F1F0FEF8FEFF",
+    "0010401010000004FFEF0F0FBF1FFFFF",
+    "0018000000000000FFE3EFFFFFE1EDFF",
+    "0020200000000000CFEFEF8F0713FFFF",
+    "0040800040808000FFBF1FFFBF3FBF3F",
+    "0080000000000205FF3F3F3FFFFF7CF8",
+    "0080C00808000000FF7FF313FBE305FF",
+    "00C020AC42418182FFFFFFA7C7C38387",
+    "00C0E0E070705878FF3F1F0F07C7C3E3",
+    "0101010000000000FFFFFFFFFFFFFFFF",
+    "0101010001010000FFFFFFFFFFFFFFFF",
+    "01020202000040A0FDFFFEFFFFFE9F1F",
+    "0102020200080824FDFFFEFFFFF6FFD3",
+    "010347DA70B07F00FFFFFFFA703000FF",
+    "02040834C0000020070F3FFFFFFFFFDF",
+    "030805030C38E000030804000003071F",
+    "0313131B0E84605F1F1F1F1F8EE4FFFF",
+    "0343030300000000FCFDFFFFFFFFFFFF",
+    "040000800000000009397DFF0301FFFF",
+    "040400000000000EF5F5F00002FFFFF0",
+    "0408F0D860F8A080FBF3031B4BEBB3BB",
+    "041AE000000000001FFFFFFFFFFFFFFF",
+    "0501010000808008F1F7FDF0FF7FF333",
+    "0606040404060617F8F8F8F8F8F8FCFC",
+    "070717678743034340405060C0440444",
+    "080000000003061BFBE30104FFFFFDEF",
+    "0804030205020100F7F3F0F6F4F0F5FF",
+    "08143050808000001F3F7FFFFFFFFFFF",
+    "08300000000000008FFFFFFFFFFFFFFF",
+    "083A514136080000FFDD90F7FFFFFFFF",
+    "090C040A070A0100FDFEFEFFFFFFFFFF",
+    "091E430508030000FCFEFFFFFFFFFFFF",
+    "091E43050803003CFCFEFFFFFFFFFF83",
+    "0A001400008000C0FFFFEFFFFF7F7FFF",
+    "0C30C0904080F028F1CD25157D55D535",
+    "0D060400107080000D0605030C030FFF",
+    "0E1E3E3C787071E2F0E0C2C480809100",
+    "100804C070C4A2E0EFFFFFFFAF5BA563",
+    "101800002019162BFFFFFFFFDFC6D0E2",
+    "1028000000008060FFFFFFFFFFFFFFDF",
+    "104C461B148F0260C0E0F0F8FCFFFFFF",
+    "107CF0C4F4E6E2C2FFEFA5060E1F1F3E",
+    "1704040000000000C7DDF4C0FFFFFFFF",
+    "1D312264C89090C1E1C1D38589D1D1E1",
+    "1E6ED4E0C8880000E080010901010909",
+    "1F013410000000005D00F6F78100FF9F",
+    "1F013410000000005D00F6F78100FFFF",
+    "1F10000000000000E0E2E0FDF1FCFFFF",
+    "20213373676777664E51CF8F9F9F8F9E",
+    "20408040000000807FFFFFFFFFFFFFFF",
+    "20A02040409078707FFFFFFFFFFFFFFF",
+    "20A03C645CB80C007FFFC3CFDFFFFFFF",
+    "20C08000000000000F1F3F7DC0EDE1FF",
+    "211E000000000000E1FFFFFFFFFFFFFF",
+    "2400000000000000F701E3FFDFDF8038",
+    "2621592E00808500C6F9FFFFFFFFF8F8",
+    "281E030000000000FEFFFFFFFFFFFFFF",
+    "2F1A0800000000200E5BFBE100FFCFCF",
+    "307060030CF00000F0F0E30FFFFFFFFF",
+    "30B0E04001FE0000F0F0E041FFFFFFFF",
+    "3262624222502C57C3C3C3E3F3FCFFFF",
+    "3279F0E0C0CCD4D4C2C58484849C9494",
+    "333532D1C1515158B0BCBEDFC753595C",
+    "333D1E1686A290D0A0A090D9C9EDF7FB",
+    "3608000000000000FFFFFDF8FFFFFFFF",
+    "3F9F9ECE565A5A4CB8DCDFCF575B5A4C",
+    "40400040400000009F9F9FDFDF8F0F27",
+    "40C0C080C8140000FFFF3FFFF7E3FFFF",
+    "4123503C07000002E3F3FCFFFFFFFFFD",
+    "41A170A81605000AE1F1F8FEFFFFFFF7",
+    "42A2502C03010000E3F3FCFFFFFFFFFF",
+    "43010300C0701E0144020001000080E0",
+    "440000020418E0004501030F1FFFFFFF",
+    "440001020519E0004501030F1FFFFFFF",
+    "4410004400000000BB83C7EFC7FFFFFF",
+    "4E4757520801020C4E47575209071F7F",
+    "502040849888A8081929418D99C9A909",
+    "50585A0C2C250103797D7E2E2E270303",
+    "570A000000000000FFFFFFFFFFFFFFFF",
+    "5F0F119898CD85E1404050DCFFEEA6E0",
+    "60D08CB7259CB4B0FF9F5B706C1C7470",
+    "616384C18383C1C11F1F1C017F7F3F3F",
+    "62C2C2A2712C1700C3E3F3FBFFFFFFFF",
+    "6666464C1C1C3C809E9EBEBCFCFC7C00",
+    "66B9000000000000FFFFFFFFFFFFFFFF",
+    "7080000000000000FFFFFFFFFFFFFFFF",
+    "7868687838381000E3E3E3F33323073F",
+    "78E0C0869A1222A6820202060A122226",
+    "79676767674F4E0E199F9F9F9FBFBEFE",
+    "7EE4DC1E2D4D8909890B1B1633539717",
+    "80000000000000003FBFFF3FFFFFFFFF",
+    "80000000000101A1BF3FBFFF3FFFFF7F",
+    "8020A0A040A040007F7FFFFFFFFFFFFF",
+    "8040C04810000000FFFFBFF7E7FFFFFF",
+    "80800080C0800000FFFFFFFFFFFFFFFF",
+    "808000840A0000007FFFFFF9F1FFFFFF",
+    "8080800000000000FFFFFFFFFFFFFFFF",
+    "80C0E060F09090907F3F3F3F9FBFBFFF",
+    "8101E1A000000000FFFFFFFFFFFFFFFF",
+    "82434307378707070000004070C04040",
+    "83830383830307037F7FFF7F7FFFFFFF",
+    "83870702040001FE7F7FFFFE7C000000",
+    "84240001030418E884250103071FFFFF",
+    "8A92D0C0E0F85EAF0A1A108080E0F0FC",
+    "8E9ADAF86000C03FFEFAFAF860C0FFFF",
+    "92EE828200000000838301AFC701FFFF",
+    "9CB4B0307060030C1C7470F0F0E30FFF",
+    "A090884C44244448DFFFBF5F4F2F4F5F",
+    "A88860B04E73140029090080C0F0FCFF",
+    "ACAAA8A985818909ADAEAEAF87838909",
+    "B88CAA69E8A4A4A2C7D3AD6FEBA5A4A2",
+    "C040D081020CF20041C1D3871FBFFFFF",
+    "C0C2810100000000E0DEFFFFFCC0FFFF",
+    "C0E0F070389898DC3F1F0F07038383C1",
+    "C0F09FD4CBE5D3E83FCFC0D0F8F1DBF8",
+    "C1C1C181C1C783033F3F3F7F3F3F7FFF",
+    "C60883C7C78383833E38033F3F7F7F7F",
+    "CAE6DEDA9A9A3832BA663E3A7A7AF8F2",
+    "CCECECE8685850B0C1E1E1E363434787",
+    "D3E8C0C482000000DBF8E0DCFEF080FF",
+    "E000000000200820CF6F3F0FFFDFFFFF",
+    "E0C068F8583E170AC0E0F8F8FEFFFFFF",
+    "E0E0C0E40A0000001F7FFFF9F1FFFFFF",
+    "E18101E0A10100003FFFFFFFFFFFFFFF",
+    "E2C4C444406021302204040400008080",
+    "F028000000000000D3330B73FB0F03FF",
+    "F20080C2040082EEFFFF7FFDF8FF7D93",
+    "F87F00000000000087FFFFFFFFFFFFFF"
+  ],
+  "gun_layouts": [
+    {
+      "id": 0,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        3,
+        12,
+        8
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 227,
+          "pattern": "000000050A122D67000000070D1F3F67"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 228,
+          "pattern": "0000000080C060300000000080C0E030"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        1,
+        2,
+        11,
+        10
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 229,
+          "pattern": "0000002A55163C01000000002A7F3C00"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 230,
+          "pattern": "00002020A0A0E00000000020A0A0E0E0"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 231,
+          "pattern": "061F000000000000061F000000000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 232,
+          "pattern": "80800000000000008080000000000000"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        2,
+        0,
+        15,
+        6
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 233,
+          "pattern": "01060A132F31000001070F1F3F310000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 234,
+          "pattern": "40A0B068F4CE0000C060F0F8FCCE0000"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        4,
+        3,
+        16,
+        12
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 235,
+          "pattern": "00000000020D090F0000000000020F0F"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 236,
+          "pattern": "00000001A15565CF0000000001A5F5CF"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 237,
+          "pattern": "00000001000000000000000100000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 238,
+          "pattern": "1E0068F800000000001E68F800000000"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        1,
+        0,
+        15,
+        7
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 239,
+          "pattern": "01060A12235F630001070F1F3F7F6300"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 240,
+          "pattern": "40A0F0A864FACE00C060B0F8FCFECE00"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        0,
+        3,
+        13,
+        13
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 241,
+          "pattern": "000000002D7F92FC000000000000FFFC"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 242,
+          "pattern": "0000000808A82878000000000828A878"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 243,
+          "pattern": "010000061F000000000101061F000000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 244,
+          "pattern": "F0000040C000000000F0F040C0000000"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        8
+      ],
+      "bbox": [
+        0,
+        0,
+        16,
+        8
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 245,
+          "pattern": "01060B12235FFFF101070E1F3F7FFFF1"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 246,
+          "pattern": "40B0F8BC72FDFFC7C070B8FCFEFFFFC7"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        1,
+        4,
+        15,
+        16
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 247,
+          "pattern": "000000000000363F0000000000000000"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 248,
+          "pattern": "000000000202C2EA000000000002020A"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 249,
+          "pattern": "497F00000000030F7F7F00000000030F"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 250,
+          "pattern": "0A9E7C00000030F0EA9E007C7C1030F0"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "palette": "FF101B0F",
+      "size": [
+        16,
+        16
+      ],
+      "bbox": [
+        1,
+        1,
+        16,
+        14
+      ],
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "attr": 1,
+          "tile": 251,
+          "pattern": "0000001B1F647F0000000000007F7F00"
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "attr": 1,
+          "tile": 252,
+          "pattern": "00010161F585CF000000010105F5CF00"
+        },
+        {
+          "x": 0,
+          "y": 8,
+          "attr": 1,
+          "tile": 253,
+          "pattern": "00000000010700000000000001070000"
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "attr": 1,
+          "tile": 254,
+          "pattern": "003E000098F8000000003E0898F80000"
+        }
+      ]
+    }
+  ]
+}
