@@ -1,10 +1,29 @@
 # Top Gun HD
 
-Development review build **v0.11.2** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.12.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Mission 4 night combat
+
+v0.12.0 adds an indigo-violet night sky, a silver-lavender cloud deck and a
+dark ocean surface. All seven native bank stages and vertical scrolling are
+preserved. The night terrain remains visible during the missile-hit palette,
+with the original impact wash, and after retry. The Mission 4 briefing retains
+its geography, moving markers and live weapon selection.
+
+The approved instruments, HULL bar, danger display, aircraft, clouds, effects
+and naval targets now cover the recorded Mission 4 palettes. Six close banked
+aircraft layouts and two boat distance sizes are added from the approved art.
+All 186 v0.11.2 PNGs remain byte-identical. No ROM, input, collision, game-memory,
+timing or audio changes are included.
+
+The supplied 10,352-input recording covers the preceding debrief, Mission 4
+briefing, takeoff, cloud-top combat, ocean transition, damage, retries and game
+over. Later terrain, refueling, the space-shuttle target and ending are not in
+this recording. See `source/MISSION4_NOTES.md` and `validation/mission4_v0.12.0.json`.
 
 ## Mission 3 desert combat
 
@@ -187,8 +206,8 @@ The v0.3.2 map correction fills the three enclosed water regions with the sea co
 
 ## Repository workflow
 
-The approved v0.10.1 work is merged into `main` at
-`dce71e720f4fb98dd39f030dabccb6590636db23` (approved source commit `2950abb`).
-This development review is on `feature/mission3-completion-v0.11.0`.
-Keep edits on feature branches and review before merging. A review build
-is not a public release or permission to merge.
+The approved v0.11.2 work is merged into `main` at
+`6b19e505d87ebf531fe08847383d3271d95290a3` (approved source commit `5b53b7b`).
+This development review continues from that exact approved source tree on
+`feature/mission4-v0.12.0`. Keep edits on feature branches and review before
+merging. A review build is not a public release or permission to merge.

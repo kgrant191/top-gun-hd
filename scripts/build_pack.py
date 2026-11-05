@@ -204,6 +204,15 @@ meta['features'].extend(['Complete recorded Mission 3 base flyover and close gro
  'Base artwork remains HD through the missile-hit palette and reset'])
 meta['mission3_coverage']+='; full recorded base flyover through distance stage 12 and missile-hit retry'
 meta['not_yet_redrawn']=['Mission 3 boss defeat and landing; Mission 4, ending and other unrecorded outcomes']
+subprocess.run(['python3',str(R/'scripts/build_mission4.py')],check=True)
+meta['version']='0.12.0'
+meta['features'].extend(['Mission 4 tactical briefing and native loadout values',
+ 'Indigo night sky with banked cloud deck and night ocean',
+ 'Night scenery remains present through missile impact and retry',
+ 'Additional close banked aircraft and near/far boats retain HD coverage'])
+meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['sky','clouddeck','water']})
+meta['mission4_coverage']='Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over'
+meta['not_yet_redrawn']=['Later Mission 4 terrain, refueling, space-shuttle target and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
