@@ -1,10 +1,24 @@
 # Top Gun HD
 
-Development review build **v0.13.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.14.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
+
+## Mission 4 helicopters and shuttle target
+
+v0.14.0 adds painted helicopters with the native rotor animation, recorded
+sizes and banked views. Newly recorded background curve cells no longer
+show original green fragments over the amber rear-threat display.
+The shuttle and launch tower follow all seven recorded approach sizes,
+native scrolling and damage. Its six native health cells now say SHUTTLE.
+
+The additional movie contains 8,420 inputs through damage, retry and game
+over. Closer sizes, target defeat/launch and the ending remain unrecorded.
+All 232 v0.13.0 PNGs are unchanged. See
+`source/MISSION4_FINAL_TARGET_NOTES.md` and
+`validation/mission4_final_target_v0.14.0.json`.
 
 ## Mission 4 night combat and refueling
 

@@ -221,6 +221,15 @@ meta['features'].extend(['Single Mission 4 tanker arrival and departure with com
 meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['desert','rocky']})
 meta['mission4_coverage']+='; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry'
 meta['not_yet_redrawn']=['Unrecorded Mission 4 target/ending and other outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_mission4_final_target.py')],check=True)
+meta['version']='0.14.0'
+meta['features'].extend(['Animated Mission 4 helicopters in recorded sizes and banked views',
+ 'Clean amber rear-threat display and native warning transitions',
+ 'Seven shuttle-and-gantry approach sizes with native full/half/empty health cells'])
+meta['assets'].update({'mission4_helicopter':'source/mission4_helicopter_master.png',
+ 'mission4_shuttle':'source/mission4_shuttle_master.png'})
+meta['mission4_coverage']+='; 8,420 more inputs cover helicopters, danger display transitions, seven shuttle target approach sizes, damage, retry and game over'
+meta['not_yet_redrawn']=['Closer unrecorded shuttle sizes, target defeat, launch and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
