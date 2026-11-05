@@ -173,6 +173,17 @@ meta['assets'].pop('mission2_boss_damaged',None)
 meta['assets'].update({'mission2_boss_approach':'source/mission2_boss_approach_master.png',
  'mission2_boss_components':'source/mission2_boss_components_master.png'})
 meta['mission2_coverage']='Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief'
+subprocess.run(['python3',str(R/'scripts/build_mission3.py')],check=True)
+meta['version']='0.10.0'
+meta['features'].extend(['Mission 3 briefing map, cockpit and native live instruments',
+ 'Banked and scrolling painted desert terrain with clean sky edge',
+ 'Native-sized radar dishes, armored ground targets and modular barricades',
+ 'Additional banked fighter poses and ground-palette projectile coverage',
+ 'Mission 3 refueling arrival, boom, guidance and departure reuse the approved artwork'])
+meta['assets'].update({name:'source/mission3_'+name+'_master.png' for name in ['desert','radar','tank','barrier']})
+meta['mission3_coverage']='Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over'
+meta['not_yet_redrawn']=['Mission 3 enemy base/boss and landing, unrecorded target sizes and outcomes, Mission 4 and ending']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
+(P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
 print('Built',len(lines),'lines;',slot,'instrument tiles')
