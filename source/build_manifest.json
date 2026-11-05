@@ -1,5 +1,5 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.0",
   "emulator": "MesenCE 2.2.1 (user supplied)",
   "scale": 4,
   "features": [
@@ -61,10 +61,13 @@
     "Mission 4 tactical briefing and native loadout values",
     "Indigo night sky with banked cloud deck and night ocean",
     "Night scenery remains present through missile impact and retry",
-    "Additional close banked aircraft and near/far boats retain HD coverage"
+    "Additional close banked aircraft and near/far boats retain HD coverage",
+    "Single Mission 4 tanker arrival and departure with complete refueling boom and guidance",
+    "Night red desert and dark rocky terrain with native banking, damage and retry coverage",
+    "Additional close boats, small fighters, opposite bank poses and reused ground targets"
   ],
   "not_yet_redrawn": [
-    "Later Mission 4 terrain, refueling, space-shuttle target and ending; other unrecorded outcomes including Mission 3 boss defeat and landing"
+    "Unrecorded Mission 4 target/ending and other outcomes including Mission 3 boss defeat and landing"
   ],
   "assets": {
     "title": "source/title_master.png",
@@ -98,7 +101,9 @@
     "mission3_base": "source/mission3_base_master.png",
     "mission4_sky": "source/mission4_sky_master.png",
     "mission4_clouddeck": "source/mission4_clouddeck_master.png",
-    "mission4_water": "source/mission4_water_master.png"
+    "mission4_water": "source/mission4_water_master.png",
+    "mission4_desert": "source/mission4_desert_master.png",
+    "mission4_rocky": "source/mission4_rocky_master.png"
   },
   "approved_intro_version": "0.1.1",
   "combat_coverage": {
@@ -114,5 +119,5 @@
   "landing_coverage": "Supplied successful mission-one landing and failed water landing through debrief; other failure outcomes and later missions need additional coverage",
   "mission2_coverage": "Supplied Mission 2 briefing, takeoff, naval combat, refueling entry/completion, carrier approach through close pass, boss combat, successful landing and debrief",
   "mission3_coverage": "Supplied 21,467-frame movie: preceding Mission 2 debrief, Mission 3 briefing, takeoff, desert combat, refueling completion, return to combat and game over; six further recordings cover missing enemy views, the base approach through distance stage 6, damage and retry; full recorded base flyover through distance stage 12 and missile-hit retry",
-  "mission4_coverage": "Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over"
+  "mission4_coverage": "Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry"
 }

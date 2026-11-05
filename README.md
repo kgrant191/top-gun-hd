@@ -1,29 +1,33 @@
 # Top Gun HD
 
-Development review build **v0.12.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
+Development review build **v0.13.0** for the NES Top Gun (USA), using a Mesen HD pack. This is unfinished work, not a full-game release.
 
 ## Install
 
 Copy the contents of `pack/` (not the surrounding source tree) into the emulator’s HD pack folder associated with your own Top Gun (USA) ROM. Enable HD packs and reopen the ROM. No ROM or emulator executable is included.
 
-## Mission 4 night combat
+## Mission 4 night combat and refueling
 
-v0.12.0 adds an indigo-violet night sky, a silver-lavender cloud deck and a
-dark ocean surface. All seven native bank stages and vertical scrolling are
-preserved. The night terrain remains visible during the missile-hit palette,
-with the original impact wash, and after retry. The Mission 4 briefing retains
-its geography, moving markers and live weapon selection.
+v0.13.0 fixes the duplicate refueling aircraft: one tanker enters, connects,
+and departs, with no second copy at the scroll reset. The boom and native
+control messages stay HD through the recorded connection and release.
+Night red desert and dark rocky surfaces now follow the native banking,
+scrolling, impact and retry transitions. The approved ground-target artwork,
+complete radar edges, cockpit and effects cover these additional palettes.
+The new clips also add close boat sizes, two opposite bank fighter poses,
+and two distant fighter sizes.
 
-The approved instruments, HULL bar, danger display, aircraft, clouds, effects
-and naval targets now cover the recorded Mission 4 palettes. Six close banked
-aircraft layouts and two boat distance sizes are added from the approved art.
-All 186 v0.11.2 PNGs remain byte-identical. No ROM, input, collision, game-memory,
-timing or audio changes are included.
+All 216 v0.12.0 PNGs are unchanged. No ROM, input, collision, game-memory,
+timing or audio changes are included. See `source/MISSION4_EXTENSION_NOTES.md`
+and `validation/mission4_extension_v0.13.0.json` for replay validation.
 
-The supplied 10,352-input recording covers the preceding debrief, Mission 4
-briefing, takeoff, cloud-top combat, ocean transition, damage, retries and game
-over. Later terrain, refueling, the space-shuttle target and ending are not in
-this recording. See `source/MISSION4_NOTES.md` and `validation/mission4_v0.12.0.json`.
+v0.12.0 introduced the Mission 4 tactical map, indigo night sky, lavender
+cloud deck, dark ocean, additional aircraft and boats. The first movie
+covers 10,352 inputs from the preceding debrief through Mission 4 cloud-top
+and ocean combat, damage, retries and game over. The five new movies add
+8,672 inputs covering more enemy views, ground combat, complete refueling,
+and the later rocky terrain. The final target, ending and other unrecorded
+outcomes still need footage and testing.
 
 ## Mission 3 desert combat
 

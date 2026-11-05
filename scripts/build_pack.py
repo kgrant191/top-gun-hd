@@ -213,6 +213,14 @@ meta['features'].extend(['Mission 4 tactical briefing and native loadout values'
 meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['sky','clouddeck','water']})
 meta['mission4_coverage']='Supplied 10,352-frame movie: preceding Mission 3 debrief, Mission 4 briefing, loadout, takeoff, cloud-top combat, air-to-sea transition, ocean combat, damage, retries and game over'
 meta['not_yet_redrawn']=['Later Mission 4 terrain, refueling, space-shuttle target and ending; other unrecorded outcomes including Mission 3 boss defeat and landing']
+subprocess.run(['python3',str(R/'scripts/build_mission4_extension.py')],check=True)
+meta['version']='0.13.0'
+meta['features'].extend(['Single Mission 4 tanker arrival and departure with complete refueling boom and guidance',
+ 'Night red desert and dark rocky terrain with native banking, damage and retry coverage',
+ 'Additional close boats, small fighters, opposite bank poses and reused ground targets'])
+meta['assets'].update({f'mission4_{name}':f'source/mission4_{name}_master.png' for name in ['desert','rocky']})
+meta['mission4_coverage']+='; five additional movies totaling 8,672 inputs cover close boats, fighter views, red ground combat, complete refueling, transition to dark rocky terrain, damage and retry'
+meta['not_yet_redrawn']=['Unrecorded Mission 4 target/ending and other outcomes including Mission 3 boss defeat and landing']
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.
