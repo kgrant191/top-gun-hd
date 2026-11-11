@@ -1,4 +1,4 @@
-"""Validate the exact approved v1.0.0 pack, without requiring a ROM."""
+"""Validate the v1.0.1 pack and its preserved artwork, without requiring a ROM."""
 from pathlib import Path
 import hashlib
 import json
@@ -11,7 +11,7 @@ PACK = ROOT / 'pack'
 
 def verify():
     version=(ROOT/'VERSION').read_text().strip()
-    assert version=='1.0.0', version
+    assert version=='1.0.1', version
     assert json.loads((ROOT/'source/build_manifest.json').read_text())['version']==version
     approved=json.loads((ROOT/'validation/ending_polish_v0.15.1.json').read_text())['pack_sha256']
     actual={p.name for p in PACK.iterdir() if p.is_file()}
@@ -22,9 +22,17 @@ def verify():
             assert hashlib.sha256((PACK/name).read_bytes()).hexdigest()==digest, name
     text=(PACK/'hires.txt').read_text()
     lines=text.splitlines()
-    previous='# Top Gun HD v0.15.1 - bonus numeral and registered crew/pilot\n'+'\n'.join(lines[1:])+'\n'
-    assert hashlib.sha256(previous.encode()).hexdigest()==approved['hires.txt']
-    assert lines[0]=='# Top Gun HD v1.0.0 - approved release'
+    # Resolve references in loader order, including deliberate later redefinitions.
+    known={'hmirror','vmirror'}
+    for line in lines:
+        if line.startswith('<condition>'):
+            known.add(line[11:].split(',')[0])
+        if line.startswith('['):
+            assert all(n.lstrip('!') in known for n in line[1:line.index(']')].split('&')), line
+    assert '<condition>v101RefuelI_X,originPositionCheckX,==,136' in lines
+    assert '<condition>v101RefuelI_Y,originPositionCheckY,==,144' in lines
+    assert any('missionTwo' in l and 'm3BoomConnected' in l for l in lines)
+    assert lines[0]=='# Top Gun HD v1.0.1 - refueling regression fixes'
     assert '<scale>4' in lines and '<ver>109' in lines
     assert not re.search(r'<(?:patch|bgm|sfx)>',text)
     sizes={}
@@ -45,9 +53,9 @@ def verify():
                 name=line.split(tag,1)[1].split(',')[0]
                 assert name in sizes,name
     assert (PACK/'README.txt').read_bytes()==(ROOT/'README.txt').read_bytes()
-    print(f'PASS v{version}: {len(sizes)} approved PNGs, {tiles} tile rules, 273 install files; no ROM/audio patches.')
+    print(f'PASS v{version}: {len(sizes)} preserved PNGs, {tiles} tile rules, 273 install files; no ROM/audio patches.')
     return {'version':version,'approved_pngs':len(sizes),'tile_rules':tiles,'install_files':273,
-            'mapping_rules_unchanged':True,'rom_audio_patches':False}
+            'unresolved_condition_references':0,'rom_audio_patches':False}
 
 
 if __name__=='__main__':verify()

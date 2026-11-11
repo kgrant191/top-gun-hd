@@ -1,4 +1,4 @@
-TOP GUN HD v1.0.0
+TOP GUN HD v1.0.1
 
 A 4x HD graphics pack for Top Gun (USA) on NES, for Mesen / MesenCE.
 An unofficial fan project. No ROM or emulator is included.
@@ -6,7 +6,7 @@ An unofficial fan project. No ROM or emulator is included.
 INSTALL
 Use standalone MesenCE 2.2.1, the tested emulator for these packs. [Download MesenCE](https://github.com/nesdev-org/MesenCE/releases/tag/2.2.1). These packs use modern Mesen 2 / MesenCE HD-pack features; original Mesen 0.9.x and RetroArch’s legacy Mesen core are not compatible. That core supports pack format 106, while these projects use newer features. A separate MesenCE-based RetroArch core now exists, but these releases have not been validated with it. Standalone MesenCE is the supported setup described here.
 
-1. Download Top_Gun_HD_v1.0.0.zip from the game’s Releases page. Leave the ZIP compressed.
+1. Download Top_Gun_HD_v1.0.1.zip from the game’s Releases page. Leave the ZIP compressed.
 2. Open your own supported ROM in MesenCE.
 3. Choose Tools > HD Packs (NES) > Install HD Pack and select the downloaded ZIP.
 4. When MesenCE reports that installation succeeded, click OK to reset the game and load the HD pack.
@@ -71,6 +71,10 @@ and the pilot's body stays fixed while his arm waves.
 
 The original game controls positions, timing, scores, damage, collision
 and audio. This pack replaces graphics and adds native-state-driven displays.
+
+V1.0.1 FIXES
+Correct REFUELING COMPLETE lettering, restore the Mission 2 connected
+refueling boom, and resolve HD condition definitions before use.
 
 TESTING SCOPE
 Validated against the supplied recordings across all four missions.
