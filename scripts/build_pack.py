@@ -243,12 +243,14 @@ meta['version']='0.15.1'
 meta['features'].extend(['Bonus value reads 10000 PTS with a numeral 1',
  'Consistent adult deck-crew proportions and a fixed pilot body throughout the wave'])
 meta['assets']['ending_pilot_arm_down']='source/ending_pilot_arm_down_master.png'
+subprocess.run(['python3',str(R/'scripts/build_v101_fixes.py')],check=True)
+meta['features'].extend(['Correct letter I in REFUELING COMPLETE without changing numerical counters', 'HD connected refueling boom in Mission 2', 'Resolve forward condition references before use'])
 meta['version']=(R/'VERSION').read_text().strip()
-meta['release_status']='approved'
+meta['release_status']='review candidate'
 (R/'source/build_manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 hires=P/'hires.txt'
 hires_lines=hires.read_text().splitlines()
-hires_lines[0]='# Top Gun HD v'+meta['version']+' - approved release'
+hires_lines[0]='# Top Gun HD v'+meta['version']+' - refueling regression fixes'
 hires.write_text('\n'.join(hires_lines)+'\n')
 (P/'README.txt').write_bytes((R/'README.txt').read_bytes())
 # Install pack/ manually or through the emulator after reviewing the build.

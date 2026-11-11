@@ -1,37 +1,19 @@
-# Top Gun HD v1.0.0
+# Top Gun HD v1.0.1
 
-The first approved release of Top Gun HD, a 4x graphics pack for the NES
-version of **Top Gun (USA)** on Mesen / MesenCE.
+Refueling corrections for the 4× Top Gun (USA) HD pack on MesenCE 2.2.1.
 
-- Painted title, animated carrier launch, cockpit and briefing screens.
-- Detailed skies, ocean, desert and night scenery across four missions.
-- HD aircraft, naval and ground targets, helicopters, missiles and effects.
-- Live HULL display, amber danger screen, carrier landings and aerial refueling.
-- Final shuttle target, award screen and sunset carrier celebration.
-- Correct **10000 PTS** text, consistent deck crew and a steady pilot wave.
+- Correct **REFUEL1NG COMPLETE** to **REFUELING COMPLETE**. The native tile is shared by the letter I and numeral 1; the override applies only to the completion-message cell. Numeric counters remain unchanged.
+- Keep the **Mission 2 connected refueling boom** in HD. Reuse the approved connected-pose artwork already mapped for Missions 3 and 4.
+- Define 305 referenced conditions before their first use, eliminating HD-pack loader warnings. Preserve graphics-rule priority and later condition redefinitions.
 
-The pack keeps the original game logic, input, collision, scores, animation
-timing and audio. No ROM or emulator is included.
+All 271 artwork PNGs are unchanged. No ROM, gameplay, input, collision, timing or audio patches are included.
 
-## Downloads
+## Install or update
 
-**Players:** download `Top_Gun_HD_v1.0.0.zip`. Extract all contents into the
-HD pack folder matching your own ROM filename, enable HD packs, then reopen
-the ROM. Keep `hires.txt` and all PNGs together. Replace the old pack files
-when upgrading. GitHub's automatic source archives are for development.
+Download `Top_Gun_HD_v1.0.1.zip`, open your supported ROM in standalone MesenCE 2.2.1, and use **Tools > HD Packs (NES) > Install HD Pack**. Select the ZIP, then accept the reset to activate it. The ZIP contains only the installable pack.
 
-**Posting:** `Top_Gun_HD_v1.0.0_Before_After_Images.zip` contains four
-1080×1920 before/after PNGs: carrier launch, desert combat, final shuttle
-target and mission accomplished. The gallery is also visible in the README.
+## Regression coverage
 
-## Validation
+34 distinct supplied recordings, totaling 122,329 recorded inputs, were replayed to collect native-state checkpoints. The v1.0.0 and v1.0.1 packs were rendered from the same 1,003 checkpoints spanning all four missions, menus, takeoff, combat, damage, retries, landings, refueling and endings. 995 checkpoints are pixel-identical; eight contain the intended text or boom corrections. A separate continuous 1,380-input refueling replay matched native RAM on every frame. See `validation/regression_v1.0.1.json` for results.
 
-The release preserves all 271 approved v0.15.1 PNGs and every graphics rule.
-The supplied replay suite covers all four missions, recorded target
-approaches, damage and retry transitions, refueling, landings and both endings.
-The release media uses matched game-state and CHR traces for every capture pair.
-
-This is recording-based coverage, not an exhaustive certification of every
-outcome. Mission 3 boss defeat/landing and the continuous shuttle-defeat-to-success
-transition remain absent from the supplied recordings. Details are in
-`validation/` and `source/`.
+This is checkpoint-based visual regression, not an inspection of every rendered frame. Unrecorded outcomes remain outside coverage, including Mission 3 boss defeat/landing and the continuous shuttle-defeat-to-success transition. This build is prepared for user review before publication.
