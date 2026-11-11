@@ -20,11 +20,18 @@ All four 1080×1920 posting images are also available together in the release's 
 
 ## Install
 
-1. Download **Top_Gun_HD_v1.0.0.zip** from [Releases](https://github.com/kgrant191/top-gun-hd/releases). GitHub's automatic source ZIP is for development.
-2. Extract all 273 files into the HD pack folder associated with your own **Top Gun (USA)** ROM. The folder name must match the ROM filename without its extension. For example, `Top_Gun_HD.nes` uses `HdPacks/Top_Gun_HD/hires.txt`.
-3. Keep `hires.txt` and all PNGs together, without another nested folder. Enable HD packs in the emulator and reopen the ROM. When upgrading, replace the old files with this complete pack.
+Use **standalone MesenCE 2.2.1**, the tested emulator for these packs. [Download MesenCE](https://github.com/nesdev-org/MesenCE/releases/tag/2.2.1). These packs use modern Mesen 2 / MesenCE HD-pack features; original Mesen 0.9.x and RetroArch’s **legacy Mesen core** are not compatible. That core supports pack format 106, while these projects use newer features. A separate MesenCE-based RetroArch core now exists, but these releases have not been validated with it. Standalone MesenCE is the supported setup described here.
 
-No ROM or emulator is included. The source tree, validation captures and promotion files are not needed to play.
+1. Download **Top_Gun_HD_v1.0.0.zip** from the game’s Releases page. Leave the ZIP compressed.
+2. Open your own supported **ROM in MesenCE**.
+3. Choose **Tools > HD Packs (NES) > Install HD Pack** and select the downloaded ZIP.
+4. When MesenCE reports that installation succeeded, click **OK** to reset the game and load the HD pack.
+
+No manual extraction or folder renaming is needed for this normal installation. To update a pack, open the same ROM and install the newer release ZIP through the same menu.
+
+[Full installation guide and troubleshooting](docs/INSTALLATION.md).
+
+No ROM or emulator is included. Supply your own supported ROM.
 
 ## Included
 
@@ -58,3 +65,4 @@ Generated installation files go in `pack/`; release ZIPs go in `output/release/`
 The promotion composition script is `scripts/build_promo.py`. Its capture-manifest format and scene selections are documented in [docs/PROMOTION.md](docs/PROMOTION.md).
 
 An unofficial fan project. Top Gun and the original game belong to their respective rights holders.
+
